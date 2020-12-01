@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈 관리자</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="/a/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/swiper-6.2.0.min.css">
+<link type="text/css" rel="stylesheet" href="/a/styles/admin.css">
+<script type="text/javascript" src="/a/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="/a/plugins/swiper-6.2.0.min.js"></script>
+<script type="text/javascript" src="/a/scripts/admin.js"></script>
+</head>
+<body>
+<div class="container admin"><!-- .container.admin: 관리자 -->
+	<div class="header common"><!-- ajax load: common.html --></div>
+	<div class="nav common"><!-- ajax load: common.html --></div>
+	<div id="main" class="main">
+		<div class="section q1">
+			<div class="content">
+				<div class="title-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c">
+								<h2>에러모니터링</h2>
+							</div>
+							<div class="c"></div>
+						</div>
+					</div>
+				</div>
+				<div class="tbl-dtl error-dtl"><!-- .error-dtl: 에러모니터링 상세 -->
+					<table>
+						<colgroup>
+							<col class="th">
+							<col class="td">
+							<col class="th">
+							<col class="td">
+							<col class="th">
+							<col class="td">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">에러 순번</th>
+								<td>264228</td>
+								<th scope="row">에러 일자</th>
+								<td>2020-10-05</td>
+								<th scope="row">에러 시간</th>
+								<td>14:06:48</td>
+							</tr>
+							<tr>
+								<th scope="row">고객번호</th>
+								<td>A1234867890</td>
+								<th scope="row">앱웹 구분</th>
+								<td>APP (모바일앱)</td>
+								<th scope="row">OS 종류</th>
+								<td>A (Android)</td>
+							</tr>
+							<tr>
+								<th scope="row">프로그램</th>
+								<td colspan="5">서류제출 자동화서비스 > 신청완료 화면호출 (LC110800Action)</td>
+							</tr>
+							<tr>
+								<th scope="row">메시지</th>
+								<td colspan="5">
+<textarea readonly="readonly">
+java.lang.RuntimeException: An error occured while executing doInBackground()
+at android.os.AsyncTask$3.done(AsyncTask.java:300)
+at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355)
+at java.util.concurrent.FutureTask.setException(FutureTask.java:222)
+at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+at java.lang.Thread.run(Thread.java:818)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String org.json.JSONObject.toString()' on a null object reference
+at com.example.vashisht.myapplication.AllProducts$LoadAllProducts.doInBackground(AllProducts.java:76)
+at com.example.vashisht.myapplication.AllProducts$LoadAllProducts.doInBackground(AllProducts.java:57)
+at android.os.AsyncTask$2.call(AsyncTask.java:288)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+at java.lang.Thread.run(Thread.java:818)
+09-03 16:10:40.980 27696-27696/com.example.vashisht.myapplication E/WindowManager﹕ android.view.WindowLeaked: Activity com.example.vashisht.myapplication.AllProducts has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView{10a4b377 V.E..... R......D 0,0-1026,348} that was originally added here
+at android.view.ViewRootImpl. (ViewRootImpl.java:382)
+at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:261)
+at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+at android.app.Dialog.show(Dialog.java:298)
+at com.example.vashisht.myapplication.AllProducts$LoadAllProducts.onPreExecute(AllProducts.java:67)
+at android.os.AsyncTask.executeOnExecutor(AsyncTask.java:587)
+at android.os.AsyncTask.execute(AsyncTask.java:535)
+at com.example.vashisht.myapplication.AllProducts.onCreate(AllProducts.java:50)
+at android.app.Activity.performCreate(Activity.java:5958)
+at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1129)
+at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2364)
+at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2474)
+at android.app.ActivityThread.access$800(ActivityThread.java:144)
+at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1359)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:155)
+at android.app.ActivityThread.main(ActivityThread.java:5696)
+at java.lang.reflect.Method.invoke(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:372)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1029)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:824)
+</textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btn-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c">
+								<button type="button" class="btn btn-proc btn-lst"><span class="icn"></span><span class="lbl">목록</span></button>
+							</div>
+							<div class="c">
+								<button type="button" class="btn btn-proc btn-del"><span class="icn"></span><span class="lbl">삭제</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer common"><!-- ajax load: common.html --></div>
+</div>
+</body>
+</html>

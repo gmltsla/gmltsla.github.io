@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈 관리자</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="/a/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/swiper-6.2.0.min.css">
+<link type="text/css" rel="stylesheet" href="/a/styles/admin.css">
+<script type="text/javascript" src="/a/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="/a/plugins/swiper-6.2.0.min.js"></script>
+<script type="text/javascript" src="/a/scripts/admin.js"></script>
+</head>
+<body>
+<div class="container admin"><!-- .container.admin: 관리자 -->
+	<div class="header common"><!-- ajax load: common.html --></div>
+	<div class="nav common"><!-- ajax load: common.html --></div>
+	<div id="main" class="main">
+		<div class="section q1">
+			<div class="content">
+				<div class="title-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c">
+								<h2>사회공헌추진전략</h2>
+							</div>
+							<div class="c"></div>
+						</div>
+					</div>
+				</div>
+				<div class="ui-cnt">
+					<div class="subtitle-bar">
+						<h3>메인 비주얼 영역</h3>
+					</div>
+					<div class="unt-lst">
+						<ul>
+							<li>
+								<div class="unt">
+									<div class="tool-bar">
+										<div class="t">
+											<div class="r">
+												<div class="c"></div>
+												<div class="c"><button type="button" class="btn btn-unt-del"><span class="icn"></span><span class="lbl">슬라이드 삭제</span></button></div>
+											</div>
+										</div>
+									</div>
+									<div class="trc">
+										<div class="t">
+											<div class="r">
+												<div class="c th">서브카피</div>
+												<div class="c td">
+													<div class="field db"><input type="text" class="db" value="Lottecapital Corporate Social Responsibility"></div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">헤드카피</div>
+												<div class="c td">
+													<div class="field db">
+<textarea class="db">
+롯데캐피탈은 종합여신금융서비스를
+바탕으로 고객과 이해관계자를 위한
+'따뜻한 금융'을 제공하고자 노력합니다
+</textarea>
+													</div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">이미지 (1350 * 600px)</div>
+												<div class="c td">
+													<div class="field db">
+														<div class="ui-file">
+															<div class="t">
+																<div class="r">
+																	<div class="c"><a href="/a/images/temp/rolling_banner1.jpg" target="_blank" class="fig"><img src="/a/images/temp/rolling_banner1.jpg"></a></div>
+																	<div class="c">
+																		<div class="field"><button type="button" class="btn btn-file-del"><span class="icn"></span><span class="lbl">파일삭제</span></button></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="unt">
+									<div class="tool-bar">
+										<div class="t">
+											<div class="r">
+												<div class="c"></div>
+												<div class="c"><button type="button" class="btn btn-unt-del"><span class="icn"></span><span class="lbl">슬라이드 삭제</span></button></div>
+											</div>
+										</div>
+									</div>
+									<div class="trc">
+										<div class="t">
+											<div class="r">
+												<div class="c th">서브카피</div>
+												<div class="c td">
+													<div class="field db"><input type="text" class="db" value="Lottecapital Corporate Social Responsibility"></div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">헤드카피</div>
+												<div class="c td">
+													<div class="field db">
+<textarea class="db">
+고객과 함께 사랑·풍요·행복의 꿈을 실현하겠습니다
+</textarea>
+													</div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">이미지 (1350 * 600px)</div>
+												<div class="c td">
+													<div class="field db">
+														<div class="ui-file">
+															<div class="t">
+																<div class="r">
+																	<div class="c"><a href="/a/images/temp/rolling_banner2.jpg" target="_blank" class="fig"><img src="/a/images/temp/rolling_banner2.jpg"></a></div>
+																	<div class="c">
+																		<div class="field"><button type="button" class="btn btn-file-del"><span class="icn"></span><span class="lbl">파일삭제</span></button></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="unt">
+									<div class="tool-bar">
+										<div class="t">
+											<div class="r">
+												<div class="c"></div>
+												<div class="c"><button type="button" class="btn btn-unt-del"><span class="icn"></span><span class="lbl">슬라이드 삭제</span></button></div>
+											</div>
+										</div>
+									</div>
+									<div class="trc">
+										<div class="t">
+											<div class="r">
+												<div class="c th">서브카피</div>
+												<div class="c td">
+													<div class="field db"><input type="text" class="db" value="Lottecapital Corporate Social Responsibility"></div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">헤드카피</div>
+												<div class="c td">
+													<div class="field db">
+<textarea class="db">
+롯데캐피탈은 지역사회문제를 함께
+고민하고 해결하기위해 사회적 책임을
+준수하고 나눔 경영을
+적극 실천하고 있습니다.
+</textarea>
+													</div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">이미지 (1350 * 600px)</div>
+												<div class="c td">
+													<div class="field db">
+														<div class="ui-file">
+															<div class="t">
+																<div class="r">
+																	<div class="c"><a href="/a/images/temp/rolling_banner3.jpg" target="_blank" class="fig"><img src="/a/images/temp/rolling_banner3.jpg"></a></div>
+																	<div class="c">
+																		<div class="field"><button type="button" class="btn btn-file-del"><span class="icn"></span><span class="lbl">파일삭제</span></button></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="unt">
+									<div class="tool-bar">
+										<div class="t">
+											<div class="r">
+												<div class="c"></div>
+												<div class="c">
+													<div class="btn btn-unt-new"><span class="icn"></span><span class="lbl">새 슬라이드</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="trc">
+										<div class="t">
+											<div class="r">
+												<div class="c th">서브카피</div>
+												<div class="c td">
+													<div class="field db"><input type="text" class="db"></div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">헤드카피</div>
+												<div class="c td">
+													<div class="field db">
+														<textarea class="db"></textarea>
+													</div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">이미지 (1350 * 600px)</div>
+												<div class="c td">
+													<div class="field db">
+														<div class="ui-file">
+															<div class="t">
+																<div class="r">
+																	<div class="c"><a href="#" target="_blank" class="fig"></a></div>
+																	<div class="c">
+																		<label>
+																			<input type="file">
+																			<div class="btn btn-file-add"><span class="icn"></span><span class="lbl">파일추가</span></div>
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="btn-bar">
+						<div class="t">
+							<div class="r">
+								<div class="c"><button type="button" class="btn btn-proc btn-add"><span class="icn"></span><span class="lbl">슬라이드 추가</span></button></div>
+								<div class="c"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ui-cnt">
+					<div class="subtitle-bar">
+						<h3>대표 프로그램</h3>
+					</div>
+					<div class="unt-lst">
+						<ul>
+							<li>
+								<div class="unt">
+									<div class="tool-bar">
+										<div class="t">
+											<div class="r">
+												<div class="c"></div>
+												<div class="c"><button type="button" class="btn btn-unt-del"><span class="icn"></span><span class="lbl">슬라이드 삭제</span></button></div>
+											</div>
+										</div>
+									</div>
+									<div class="trc">
+										<div class="t">
+											<div class="r">
+												<div class="c th">제목</div>
+												<div class="c td">
+													<div class="field db"><input type="text" class="db" value="도담도담 복합치료센타"></div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">설명</div>
+												<div class="c td">
+													<div class="field db">
+<textarea class="db">
+아이들의 건강한 성장을 지원하기 위한 복합치료센타입니다.
+발달 모니터링을 통한 놀이치료실 그리고 원예활동을 통한
+체험형 활동체험관 원예치료실로 구성되어 있습니다.
+</textarea>
+													</div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">이미지 (320 * 216px)</div>
+												<div class="c td">
+													<div class="field db">
+														<div class="ui-file">
+															<div class="t">
+																<div class="r">
+																	<div class="c"><a href="/a/images/temp/program_1.png" target="_blank" class="fig"><img src="/a/images/temp/program_1.png"></a></div>
+																	<div class="c">
+																		<div class="field"><button type="button" class="btn btn-file-del"><span class="icn"></span><span class="lbl">파일삭제</span></button></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="unt">
+									<div class="tool-bar">
+										<div class="t">
+											<div class="r">
+												<div class="c"></div>
+												<div class="c"><button type="button" class="btn btn-unt-del"><span class="icn"></span><span class="lbl">슬라이드 삭제</span></button></div>
+											</div>
+										</div>
+									</div>
+									<div class="trc">
+										<div class="t">
+											<div class="r">
+												<div class="c th">제목</div>
+												<div class="c td">
+													<div class="field db"><input type="text" class="db" value="도담도담 복합치료센타"></div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">설명</div>
+												<div class="c td">
+													<div class="field db">
+<textarea class="db">
+아이들의 건강한 성장을 지원하기 위한 복합치료센타입니다.
+발달 모니터링을 통한 놀이치료실 그리고 원예활동을 통한
+체험형 활동체험관 원예치료실로 구성되어 있습니다.
+</textarea>
+													</div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">이미지 (320 * 216px)</div>
+												<div class="c td">
+													<div class="field db">
+														<div class="ui-file">
+															<div class="t">
+																<div class="r">
+																	<div class="c"><a href="/a/images/temp/program_2.png" target="_blank" class="fig"><img src="/a/images/temp/program_2.png"></a></div>
+																	<div class="c">
+																		<div class="field"><button type="button" class="btn btn-file-del"><span class="icn"></span><span class="lbl">파일삭제</span></button></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="unt">
+									<div class="tool-bar">
+										<div class="t">
+											<div class="r">
+												<div class="c"></div>
+												<div class="c"><button type="button" class="btn btn-unt-del"><span class="icn"></span><span class="lbl">슬라이드 삭제</span></button></div>
+											</div>
+										</div>
+									</div>
+									<div class="trc">
+										<div class="t">
+											<div class="r">
+												<div class="c th">제목</div>
+												<div class="c td">
+													<div class="field db"><input type="text" class="db" value="도담도담 복합치료센타"></div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">설명</div>
+												<div class="c td">
+													<div class="field db">
+<textarea class="db">
+아이들의 건강한 성장을 지원하기 위한 복합치료센타입니다.
+발달 모니터링을 통한 놀이치료실 그리고 원예활동을 통한
+체험형 활동체험관 원예치료실로 구성되어 있습니다.
+</textarea>
+													</div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">이미지 (320 * 216px)</div>
+												<div class="c td">
+													<div class="field db">
+														<div class="ui-file">
+															<div class="t">
+																<div class="r">
+																	<div class="c"><a href="/a/images/temp/program_3.png" target="_blank" class="fig"><img src="/a/images/temp/program_3.png"></a></div>
+																	<div class="c">
+																		<div class="field"><button type="button" class="btn btn-file-del"><span class="icn"></span><span class="lbl">파일삭제</span></button></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="unt">
+									<div class="tool-bar">
+										<div class="t">
+											<div class="r">
+												<div class="c"></div>
+												<div class="c">
+													<div class="btn btn-unt-new"><span class="icn"></span><span class="lbl">새 슬라이드</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="trc">
+										<div class="t">
+											<div class="r">
+												<div class="c th">제목</div>
+												<div class="c td">
+													<div class="field db"><input type="text" class="db" value=""></div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">설명</div>
+												<div class="c td">
+													<div class="field db">
+														<textarea class="db"></textarea>
+													</div>
+												</div>
+											</div>
+											<div class="r">
+												<div class="c th">이미지 (320 * 216px)</div>
+												<div class="c td">
+													<div class="field db">
+														<div class="ui-file">
+															<div class="t">
+																<div class="r">
+																	<div class="c"><a href="#" target="_blank" class="fig"></a></div>
+																	<div class="c">
+																		<label>
+																			<input type="file">
+																			<div class="btn btn-file-add"><span class="icn"></span><span class="lbl">파일추가</span></div>
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="btn-bar">
+						<div class="t">
+							<div class="r">
+								<div class="c"><button type="button" class="btn btn-proc btn-add"><span class="icn"></span><span class="lbl">슬라이드 추가</span></button></div>
+								<div class="c"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c"></div>
+							<div class="c">
+								<button type="button" class="btn btn-proc btn-sav"><span class="icn"></span><span class="lbl">저장</span></button>
+								<button type="button" class="btn btn-proc btn-rst"><span class="icn"></span><span class="lbl">취소</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer common"><!-- ajax load: common.html --></div>
+</div>
+</body>
+</html>
