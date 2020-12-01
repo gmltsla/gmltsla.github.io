@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/device.css">
+<script type="text/javascript" src="../../../m/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../m/scripts/common.js"></script>
+<script type="text/javascript" src="../../../m/scripts/default.js"></script>
+</head>
+<body>
+<div class="container cc ui-sheet has-stepper">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="btn btn-back">
+									<span class="icn"></span>
+									<span class="lbl">뒤로</span>
+								</a>
+								<a href="#" class="btn btn-close-sheet">
+									<span class="icn"></span>
+									<span class="lbl">닫기</span>
+								</a>
+							</div>
+							<div class="c q2"></div>
+							<div class="c q3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div class="section">
+			<div class="content">
+				<div class="ui-stepper">
+					<ol>
+						<li class="q1">
+							<div class="stepper"><span class="num">1</span><span class="lbl">신용대출현황</span></div>
+						</li>
+						<li class="q2">
+							<div class="stepper"><span class="num">2</span><span class="lbl">고객정보확인</span></div>
+						</li>
+						<li class="q3">
+							<div class="stepper"><span class="num">3</span><span class="lbl">약관동의</span></div>
+						</li>
+						<li class="q4 current">
+							<div class="stepper"><span class="num">4</span><span class="lbl">본인인증</span></div>
+						</li>
+					</ol>
+					<span class="handle stepper-over"></span>
+				</div>
+			</div>
+			<div class="sheet">
+				<div class="content">
+					<div class="scroll">
+						<div class="title-bar">
+							<h2>필요한 서류를 확인하고<br> 준비해주세요</h2>
+						</div>
+						<div class="doc-lst">
+							<ul>
+								<li>
+									<p><strong><em>신분증 앞면과 소득서류(해당시)을 촬영하여 1670-7075로 발송해주시면<br> 심사 후 연락드립니다.</em></strong></p>
+								</li>
+								<li>
+									<p><strong><em>소득서류</em></strong></p>
+									<ul>
+										<li>
+											<p>1. 직장인</p>
+											<p class="sub-d">건강보험득실, 납부확인서 / 급여거래내역서 최근3개월 / 소득금액증명 중 택 1</p>
+										</li>
+										<li class="mt8">
+											<p>2. 사업자</p>
+											<p class="sub-d">소득금액증명 / 부가가치세과세표준증명 중 택 1</p>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-bar tar">
+							<a href="#" class="btn btn-proc"><span class="lbl">다음</span><span class="icn rarr"></span></a>
+						</div>
+					</div>
+				</div>
+				<span class="handle sheet-over"></span>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="section">
+			<div class="content"></div>
+		</div>
+	</div>
+</div>
+<div id="dialog_01" class="dialog alert" title="Confirm">
+	<div class="content">
+		<div class="notice-view">
+			<p>상담사에게 전화연결을 하시겠습니까?</p>
+		</div>
+		<div class="btn-bar">
+			<div class="t">
+				<div class="c"><a href="#" class="btn btn-cancel btn-contained close-dialog"><span class="icn"></span><span class="lbl">취소</span></a></div>
+				<div class="c"><a href="#" class="btn btn-contained"><span class="icn"></span><span class="lbl">전화연결</span></a></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

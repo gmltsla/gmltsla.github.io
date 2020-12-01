@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/device.css">
+<script type="text/javascript" src="../../../m/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../m/scripts/common.js"></script>
+<script type="text/javascript" src="../../../m/scripts/default.js"></script>
+<script type="text/javascript">
+	$(document).on("ready", function () {
+		var $uiForm = $(".ui-form").uiForm(); // 인스턴스 생성
+		$uiForm.init();
+		var $af = [];
+		var $field = [];
+		$field[1] = $(".field.select-car-01");
+		var maker, model;
+		$(".option", $field[1]).on("click", function () { // 제조사
+			if ($af[2] === "object") $af[2].remove();
+			var classes = $(this).attr("class").split(" ");;
+			var classPrefix = "run-case-";
+			for (var i = 0; i < classes.length; i++) {
+				if (classes[i].match(/run-case-/)) {
+					maker = parseInt(classes[i].replace("run-case-", ""));
+				}
+			}
+			var html = [], h = -1;
+			html[++h] = "<div class=\"field select select-car-02\">";
+			html[++h] = "<label class=\"lbl\">모델을 선택해주세요</label>";
+			html[++h] = "<div class=\"input\">";
+			html[++h] = "<div class=\"options\">";
+			html[++h] = "<ul>";
+			switch (maker) {
+				case 1:
+					// 벤츠
+					break;
+				case 2:
+					// BMW
+					break;
+				case 3:
+					// 아우디
+					break;
+				case 4:
+					// 랜드로바
+					break;
+				case 5:
+					// 혼다
+					break;
+				case 6:
+					// 지프
+					break;
+				case 7:
+					// 현대
+					html[++h] = "<li><a href=\"#\" class=\"option run-next run-case-1\"><span class=\"lbl\">i30</span><span class=\"icn\"></span><span class=\"val\">i30</span></a></li>";
+					html[++h] = "<li><a href=\"#\" class=\"option run-next run-case-2\"><span class=\"lbl\">i40</span><span class=\"icn\"></span><span class=\"val\">i40</span></a></li>";
+					html[++h] = "<li><a href=\"#\" class=\"option run-next run-case-3\"><span class=\"lbl\">그랜져</span><span class=\"icn\"></span><span class=\"val\">그랜져</span></a></li>";
+					html[++h] = "<li><a href=\"#\" class=\"option run-next run-case-4\"><span class=\"lbl\">넥쏘</span><span class=\"icn\"></span><span class=\"val\">넥쏘</span></a></li>";
+					html[++h] = "<li><a href=\"#\" class=\"option run-next run-case-5\"><span class=\"lbl\">맥스크루즈</span><span class=\"icn\"></span><span class=\"val\">맥스크루즈</span></a></li>";
+					html[++h] = "<li><a href=\"#\" class=\"option run-next run-case-6\"><span class=\"lbl\">벨로스터</span><span class=\"icn\"></span><span class=\"val\">벨로스터</span></a></li>";
+					html[++h] = "<li><a href=\"#\" class=\"option run-next run-case-7\"><span class=\"lbl\">EQ900</span><span class=\"icn\"></span><span class=\"val\">EQ900</span></a></li>";
+					break;
+				case 8:
+					// 기아
+					html[++h] = "<li><a href=\"#\" class=\"option run-next run-case-1\"><span class=\"lbl\">셀토스</span><span class=\"icn\"></span><span class=\"val\">셀토스</span></a></li>";
+					html[++h] = "<li><a href=\"#\" class=\"option run-next run-case-2\"><span class=\"lbl\">리오</span><span class=\"icn\"></span><span class=\"val\">리오</span></a></li>";
+					html[++h] = "<li><a href=\"#\" class=\"option run-next run-case-3\"><span class=\"lbl\">K3</span><span class=\"icn\"></span><span class=\"val\">K3</span></a></li>";
+					html[++h] = "<li><a href=\"#\" class=\"option run-next run-case-4\"><span class=\"lbl\">K5</span><span class=\"icn\"></span><span class=\"val\">K5</span></a></li>";
+					html[++h] = "<li><a href=\"#\" class=\"option run-next run-case-5\"><span class=\"lbl\">K9</span><span class=\"icn\"></span><span class=\"val\">K9</span></a></li>";
+					html[++h] = "<li><a href=\"#\" class=\"option run-next run-case-6\"><span class=\"lbl\">쏘렌토</span><span class=\"icn\"></span><span class=\"val\">쏘렌토</span></a></li>";
+					html[++h] = "<li><a href=\"#\" class=\"option run-next run-case-7\"><span class=\"lbl\">카니발</span><span class=\"icn\"></span><span class=\"val\">카니발</span></a></li>";
+					break;
+				case 9:
+					// 쌍용
+					break;
+				case 10:
+					// 르노삼성
+					break;
+				case 11:
+					// 쉐보레(대우)
+					break;
+				default:
+			}
+			html[++h] = "</ul>";
+			html[++h] = "</div>";
+			html[++h] = "</div>";
+			html[++h] = "</div>";
+			$af[2] = $(html.join("")).insertAfter($field[1]);
+			$field[2] = $af[2];
+			$uiForm.init();
+			$uiForm.next($(this));
+
+			$(".option", $af[2]).on("click", function () { // 모델
+				if ($af[3] === "object") $af[3].remove();
+				var classes = $(this).attr("class").split(" ");;
+				var classPrefix = "run-case-";
+				for (var i = 0; i < classes.length; i++) {
+					if (classes[i].match(/run-case-/)) {
+						model = parseInt(classes[i].replace("run-case-", ""));
+					}
+				}
+				html = [];
+				h = -1;
+				html[++h] = "<div class=\"field select select-car-03\">";
+				html[++h] = "<label class=\"lbl\">모델 등급을 선택해주세요</label>";
+				html[++h] = "<div class=\"input\">";
+				html[++h] = "<div class=\"options\">";
+				html[++h] = "<ul>";
+
+				if (maker == 7) {
+					switch (model) {
+						case 1:
+							// 현대 - i30
+							html[++h] = "<li><a href=\"#\" class=\"option run-next\"><span class=\"lbl\">글이 긴 경우의 케이스 글이 긴 경우의 케이스</span><span class=\"icn\"></span><span class=\"val\">글이 긴 경우의 케이스 글이 긴 경우의 케이스</span></a></li>";
+							html[++h] = "<li><a href=\"#\" class=\"option run-next\"><span class=\"lbl\">2.0T 슈프림</span><span class=\"icn\"></span><span class=\"val\">2.0T 슈프림</span></a></li>";
+							html[++h] = "<li><a href=\"#\" class=\"option run-next\"><span class=\"lbl\">2.0T AWD 슈프림</span><span class=\"icn\"></span><span class=\"val\">2.0T AWD 슈프림</span></a></li>";
+							html[++h] = "<li><a href=\"#\" class=\"option run-next\"><span class=\"lbl\">2.0T AWD 어드밴스드</span><span class=\"icn\"></span><span class=\"val\">2.0T AWD 어드밴스드</span></a></li>";
+							html[++h] = "<li><a href=\"#\" class=\"option run-next\"><span class=\"lbl\">2.0T 엘리트</span><span class=\"icn\"></span><span class=\"val\">2.0T 엘리트</span></a></li>";
+							html[++h] = "<li><a href=\"#\" class=\"option run-next\"><span class=\"lbl\">2.0D 슈프림</span><span class=\"icn\"></span><span class=\"val\">2.0D 슈프림</span></a></li>";
+							html[++h] = "<li><a href=\"#\" class=\"option run-next\"><span class=\"lbl\">2.0D 어드밴스드</span><span class=\"icn\"></span><span class=\"val\">2.0D 어드밴스드</span></a></li>";
+							break;
+						default:
+					}
+				}
+				html[++h] = "</ul>";
+				html[++h] = "</div>";
+				html[++h] = "</div>";
+				html[++h] = "</div>";
+				$af = $(html.join("")).insertAfter($field[2]);
+				$uiForm.init();
+				$uiForm.next($(this));
+			});
+		});
+
+	});
+</script>
+</head>
+<body>
+<div class="container auto">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="btn btn-back">
+									<span class="icn"></span>
+									<span class="lbl">뒤로</span>
+								</a>
+							</div>
+							<div class="c q2"></div>
+							<div class="c q3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div class="section">
+			<div class="content">
+				<div class="form ui-form">
+					<div class="field select select-car-01"><!-- .field.select-car-01: 차량 제조사 -->
+						<label class="lbl">제조사를 선택해주세요</label>
+						<div class="input">
+							<div class="options">
+								<div class="option-subtitle">수입차</div>
+								<ul>
+									<li><a href="#" class="option run-next run-case-1"><span class="lbl">벤츠</span><span class="icn"></span><span class="val">벤츠</span></a></li>
+									<li><a href="#" class="option run-next run-case-2"><span class="lbl">BMW</span><span class="icn"></span><span class="val">BMW</span></a></li>
+									<li><a href="#" class="option run-next run-case-3"><span class="lbl">아우디</span><span class="icn"></span><span class="val">아우디</span></a></li>
+									<li><a href="#" class="option run-next run-case-4"><span class="lbl">랜드로바</span><span class="icn"></span><span class="val">랜드로바</span></a></li>
+									<li><a href="#" class="option run-next run-case-5"><span class="lbl">혼다</span><span class="icn"></span><span class="val">혼다</span></a></li>
+									<li><a href="#" class="option run-next run-case-6"><span class="lbl">지프</span><span class="icn"></span><span class="val">지프</span></a></li>
+								</ul>
+								<div class="option-subtitle">국산차</div>
+								<ul>
+									<li><a href="#" class="option run-next run-case-7"><span class="lbl">현대</span><span class="icn"></span><span class="val">현대</span></a></li>
+									<li><a href="#" class="option run-next run-case-8"><span class="lbl">기아</span><span class="icn"></span><span class="val">기아</span></a></li>
+									<li><a href="#" class="option run-next run-case-9"><span class="lbl">쌍용</span><span class="icn"></span><span class="val">쌍용</span></a></li>
+									<li><a href="#" class="option run-next run-case-10"><span class="lbl">르노삼성</span><span class="icn"></span><span class="val">르노삼성</span></a></li>
+									<li><a href="#" class="option run-next run-case-11"><span class="lbl">쉐보레(대우)</span><span class="icn"></span><span class="val">쉐보레(대우)</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="section">
+			<div class="content">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

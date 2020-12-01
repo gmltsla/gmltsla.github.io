@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/device.css">
+<script type="text/javascript" src="../../../w/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="../../../w/scripts/common.js"></script>
+<script type="text/javascript" src="../../../w/scripts/default.js"></script>
+<script type="text/javascript" src="../../../w/scripts/device.js"></script>
+</head>
+<body>
+<div class="container my ui-split">
+	<div class="header common"></div>
+	<div id="main" class="main" tabindex="-1">
+		<div class="section">
+			<div class="content">
+				<div class="sub-tit">
+					<div class="location t">
+						<div class="r">
+							<div class="c"><a href="#" class="btn"><span class="lbl">1depth</span><span class="icn rang"></span></a><a href="#" class="btn"><span class="lbl">2depth</span><span class="icn rang"></span></a><a href="#" class="btn"><span class="lbl">3depth</span><span class="icn rang"></span></a><a href="#" class="btn current"><span class="lbl">4depth</span><span class="icn rang"></span></a></div>
+						</div>
+					</div>
+					<div class="title-bar">
+						<h2 class="title">가결제일 설정</h2>
+						<p class="desc">미리내고 혜택을 받을 수 있어요</p>
+					</div>
+					<div class="visual"></div>
+				</div>
+				<div class="sub-cont">
+					<div class="title-bar">
+                        <h2>가결제일 선택</h2>
+                        <div class="desc">
+                            <p>가결제일을 등록·변경·해지할 수 있어요</p>
+                        </div>
+					</div>
+					<div class="form mt40">
+						<div class="field checkbox on-hint">
+							<label class="lbl">가결제일을 선택해주세요</label>
+							<div class="input">
+								<div class="ui-irc db">
+									<label>
+										<input type="checkbox" autocomplete="off" name="checkbox_01">
+										<div class="t">
+											<div class="c"><span class="icn"></span></div>
+											<div class="c">
+												<span class="lbl">15일</span>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div class="ui-irc db">
+									<label>
+										<input type="checkbox" autocomplete="off" name="checkbox_01">
+										<div class="t">
+											<div class="c"><span class="icn"></span></div>
+											<div class="c">
+												<span class="lbl">20일*</span>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div class="ui-irc db">
+									<label>
+										<input type="checkbox" autocomplete="off" name="checkbox_01">
+										<div class="t">
+											<div class="c"><span class="icn"></span></div>
+											<div class="c">
+												<span class="lbl">21일*</span>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div class="ui-irc db">
+									<label>
+										<input type="checkbox" autocomplete="off" name="checkbox_01">
+										<div class="t">
+											<div class="c"><span class="icn"></span></div>
+											<div class="c">
+												<span class="lbl">25일</span>
+											</div>
+										</div>
+									</label>
+								</div>
+							</div>
+							<div class="hint lprj">
+								<p>※ 다중선택 가능합니다.<br>단, 20일, 21일은 중복 등록 불가</p>
+							</div>
+						</div>
+                        <!-- <div class="field select on-hint">
+                            <label class="lbl">가결제일을 선택해주세요</label>
+                            <div class="input">
+                                <div class="options">
+                                    <ul>
+                                        <li><a href="#" class="option"><span class="lbl">15일</span><span class="icn"></span><span class="val">15일</span></a></li>
+                                        <li><a href="#" class="option selected"><span class="lbl">20일*</span><span class="icn"></span><span class="val">20일*</span></a></li>
+                                        <li><a href="#" class="option"><span class="lbl">21일*</span><span class="icn"></span><span class="val">21일*</span></a></li>
+                                        <li><a href="#" class="option"><span class="lbl">25일</span><span class="icn"></span><span class="val">25일</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="hint lprj">
+                                <p>※ 다중선택 가능합니다.<br>단, 20일, 21일은 중복 등록 불가</p>
+                            </div>
+                        </div> -->
+                    </div>
+					<div class="btn-bar botm-fix gradient mov-pch"><!-- .btn-bar.mov-pch: 모바일(세로배열) PC(가로배열) -->
+						<div class="t">
+							<div class="c"><a href="#" class="btn btn-outlined"><span class="lbl">해지</span></a></div>
+							<div class="c"><a href="#dialog_01" class="btn btn-contained run-dialog"><span class="lbl">등록/변경</span><span class="icn"></span></a></div>
+						</div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer common"></div>
+</div>
+
+<div id="dialog_01" class="dialog" title="가결제일 등록">
+	<div class="title-bar">
+		<a href="#" class="btn btn-close close-dialog" title="닫기"><span class="icn"></span><span class="lbl">닫기</span></a>
+		<h3>가결제일 등록</h3>
+	</div>
+	<div class="content">
+		<div class="dialog-text">
+			<p>김지수님은<br> 약정된 납부일을 기준으로 롯데캐피탈에서 지정하는 계좌이체일 또는 가결제일인 <strong><em>00일, 00일</em></strong>에 회사에서 청구하는 금액을 자동이체 계좌로 신청한 은행에서 출금하여 납부할 것을 동의하시겠습니까?</p>
+		</div>
+		<div class="form">
+			<div class="field radio t">
+				<div class="input r">
+					<div class="ui-irc c">
+						<label>
+							<input type="radio" autocomplete="off" name="radio_01">
+							<div class="t">
+								<div class="c"><span class="icn"></span></div>
+								<div class="c">
+									<span class="lbl">네, 동의합니다</span>
+								</div>
+							</div>
+						</label>
+					</div>
+					<div class="ui-irc c">
+						<label>
+							<input type="radio" autocomplete="off" name="radio_01">
+							<div class="t">
+								<div class="c"><span class="icn"></span></div>
+								<div class="c">
+									<span class="lbl">아니오</span>
+								</div>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn-bar">
+			<a href="#" class="btn btn-contained"><span class="lbl">확인</span><span class="icn"></span></a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

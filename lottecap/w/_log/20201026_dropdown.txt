@@ -1,0 +1,243 @@
+44 results - 31 files
+
+w\html\about\company_02_2.html:
+  112                                                      <div class="c c-dropdown">
+  113:                                                         <div class="dropdown ui-dropdown" title="항목선택">
+  114                                                              <a href="#" class="output"><span class="val">전체</span></a>
+
+  215                                                      <div class="c c-dropdown">
+  216:                                                         <div class="dropdown ui-dropdown" title="항목선택">
+  217                                                              <a href="#" class="output"><span class="val">전체</span></a>
+
+  318                                                      <div class="c c-dropdown">
+  319:                                                         <div class="dropdown ui-dropdown" title="항목선택">
+  320                                                              <a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\about\contribute_02_1.html:
+  64                              <div class="c c-dropdown">
+  65:                                 <div class="dropdown ui-dropdown" title="연도선택">
+  66  									<a href="#" class="output"><span class="val">연도</span></a>
+
+  77                              <div class="c c-dropdown">
+  78:                                 <div class="dropdown ui-dropdown" title="항목선택">
+  79  									<a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\about\financial_03_1.html:
+  64                              <div class="c c-dropdown">
+  65:                                 <div class="dropdown ui-dropdown" title="항목선택">
+  66                                      <a href="#" class="output"><span class="val">전체</span></a>
+
+  77                              <div class="c c-dropdown">
+  78:                                 <div class="dropdown ui-dropdown" title="항목선택">
+  79                                      <a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\about\pr_01_1.html:
+  126  													<div class="c c-dropdown">
+  127: 														<div class="dropdown ui-dropdown" title="항목선택">
+  128  															<a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\cc\complaint_03_03.html:
+  64                                  <div class="c c-dropdown">
+  65:                                     <div class="dropdown ui-dropdown" title="항목선택">
+  66                                          <a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\cc\complaint_03_04.html:
+  64                                  <div class="c c-dropdown">
+  65:                                     <div class="dropdown ui-dropdown" title="항목선택">
+  66                                          <a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\cc\complaint_03.html:
+  64                                  <div class="c c-dropdown">
+  65:                                     <div class="dropdown ui-dropdown" title="항목선택">
+  66                                          <a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\cc\complaint_05_01.html:
+  64                                  <div class="c c-dropdown">
+  65:                                     <div class="dropdown ui-dropdown" title="항목선택">
+  66                                          <a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\cc\complaint_05_02.html:
+  64                                  <div class="c c-dropdown">
+  65:                                     <div class="dropdown ui-dropdown" title="항목선택">
+  66                                          <a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\cc\counsel_02_nolist.html:
+  221                                                  <div class="c c-dropdown">
+  222:                                                     <div class="dropdown ui-dropdown" title="항목선택">
+  223                                                          <a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\cc\counsel_02.html:
+  226                                                  <div class="c c-dropdown">
+  227:                                                     <div class="dropdown ui-dropdown" title="항목선택">
+  228                                                          <a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\cc\faq_01.html:
+  81                                  <div class="c c-dropdown">
+  82:                                     <div class="dropdown ui-dropdown" title="항목선택">
+  83                                          <a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\common\dialog_03.html:
+  361                      <div class="tool-bar">
+  362:                         <div class="dropdown ui-dropdown term-ver selected" title="버전선택">
+  363                              <a href="#" class="output"><span class="val" title="2019년 8월 12일">2019년 8월 12일</span></a>
+
+w\html\common\doc_01_01.html:
+   81                                      <div class="set-accordion" style="display: block;">
+   82:                                         <div class="dropdown ui-dropdown" title="선택">
+   83                                              <a href="#" class="output"><span class="val">근로소득자용(직장인 및 일용근로자)</span></a>
+
+  103                                      <div class="set-accordion" style="display: block;">
+  104:                                         <!-- <div class="dropdown ui-dropdown" title="선택">
+  105                                              <a href="#" class="output"><span class="val">부가가치세과세표준증명</span></a>
+
+w\html\common\doc_01_02_02.html:
+  61                              <div class="c q1">
+  62:                                <div class="field dropdown ui-dropdown bank" title="은행선택">
+  63                                    <a href="#" class="output"><span class="val">급여통장 선택</span></a>
+
+w\html\example\dropdown_01.html:
+  130  										<div class="c q1">
+  131: 											<div class="dropdown ui-dropdown" title="조회년도선택">
+  132  												<a href="#" class="output"><span class="val">2020</span></a>
+
+  149  										<div class="c q2">
+  150: 											<div class="dropdown ui-dropdown itm-name" title="상품선택">
+  151  												<a href="#" class="output"><span class="val">신용대출</span></a>
+
+w\html\my\acc_00_empty.html:
+  83                                      <div class="c tar">
+  84:                                         <div class="dropdown ui-dropdown" title="대출카테고리선택">
+  85                                              <a href="#" class="output"><span class="val">전체대출</span></a>
+
+w\html\my\acc_00.html:
+  83                                      <div class="c tar">
+  84:                                         <div class="dropdown ui-dropdown" title="대출카테고리선택">
+  85                                              <a href="#" class="output"><span class="val">전체대출</span></a>
+
+w\html\my\acc_01_01.html:
+  67 				<div class="c q1">
+  68:  				   <div class="field dropdown ui-dropdown bank" title="은행선택">
+  69     				      <a href="#" class="output"><span class="val">하나은행</span></a>
+
+w\html\my\acc_02_02_01.html:
+  100			             <div class="c q1">
+  101:                                            <div class="field dropdown ui-dropdown bank" title="은행선택">
+  102                                                <a href="#" class="output"><span class="val">출금은행 선택</span></a>
+
+w\html\my\acc_05_02_01.html:
+  100			             <div class="c q1">
+  101:                                            <div class="field dropdown ui-dropdown bank" title="은행선택">
+  102                                                <a href="#" class="output"><span class="val">출금은행 선택</span></a>
+
+w\html\my\acc_06_02_01.html:
+  100			             <div class="c q1">
+  101:                                            <div class="field dropdown ui-dropdown bank" title="은행선택">
+  102                                                <a href="#" class="output"><span class="val">출금은행 선택</span></a>        
+
+w\html\my\acc_09_01.html:
+  106                                  <div class="c q1">
+  107:                                     <div class="dropdown ui-dropdown" title="선택">
+  108                                          <a href="#" class="output"><span class="val">최신순</span></a>
+
+  117                                  <div class="c q2">
+  118:                                     <div class="dropdown ui-dropdown" title="선택">
+  119                                          <a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\my\acc_09_02.html:
+  117                                  <div class="c q1">
+  118:                                     <div class="dropdown ui-dropdown" title="선택">
+  119                                          <a href="#" class="output"><span class="val">최신순</span></a>
+
+  128                                  <div class="c q2">
+  129:                                     <div class="dropdown ui-dropdown" title="선택">
+  130                                          <a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\my\acc_10.html:
+  54                      <div class="tool-bar">
+  55:                         <div class="dropdown ui-dropdown itm-name" title="상품선택">
+  56                              <a href="#" class="output"><span class="val">신용대출</span></a>
+
+w\html\ntfc\event_01.html:
+  63  								<div class="c c-dropdown">
+  64: 									<div class="dropdown ui-dropdown" title="항목선택">
+  65  										<a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\ntfc\notice_01_01.html:
+  63  								<div class="c c-dropdown">
+  64: 									<div class="dropdown ui-dropdown" title="항목선택">
+  65  										<a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\ntfc\notice_01.html:
+  63  								<div class="c c-dropdown">
+  64: 									<div class="dropdown ui-dropdown" title="항목선택">
+  65  										<a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\portal\portal_02_01.html:
+  66                                  <div class="c c-dropdown">
+  67:                                     <div class="dropdown ui-dropdown" title="항목선택">
+  68                                          <a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\portal\portal_05.html:
+  64                                  <div class="c c-dropdown">
+  65:                                     <div class="dropdown ui-dropdown" title="항목선택">
+  66                                          <a href="#" class="output"><span class="val">전체</span></a>
+
+w\html\portal\portal_06_01.html:
+  68                                      <div class="c">
+  69:                                         <div class="dropdown ui-dropdown" title="내용변경일자">
+  70                                              <a href="#" class="output"><span class="val">2019년 9월 23일</span></a>
+
+w\html\portal\portal_07_01.html:
+  62  								<div class="c">
+  63: 									<div class="dropdown ui-dropdown" title="문서">
+  64                                          <a href="#" class="output"><span class="val">여신거래기본약관</span></a>
+
+  83                                      <div class="c">
+  84:                                         <div class="dropdown ui-dropdown" title="버전">
+  85                                              <a href="#" class="output"><span class="val">2019년 8월 12일</span></a>
+
+w\html\portal\portal_07_02_03.html:
+  62  								<div class="c">
+  63: 									<div class="dropdown ui-dropdown" title="문서">
+  64  										<a href="#" class="output"><span class="val">근저당권설정계약서</span></a>
+
+  86                                      <div class="c">
+  87:                                         <div class="dropdown ui-dropdown" title="버전">
+  88  											<a href="#" class="output"><span class="val">2019년 08월 12일</span></a>
+
+w\html\portal\portal_07_02.html:
+  62  								<div class="c">
+  63: 									<div class="dropdown ui-dropdown" title="문서">
+  64                                          <a href="#" class="output"><span class="val">여신거래약정서(기업용)</span></a>
+
+  86                                      <div class="c">
+  87:                                         <div class="dropdown ui-dropdown" title="버전">
+  88                                              <a href="#" class="output"><span class="val">2020년 03월 01일</span></a>
+
+w\html\portal\portal_07_03.html:
+  62  								<div class="c">
+  63: 									<div class="dropdown ui-dropdown" title="문서">
+  64                                          <a href="#" class="output"><span class="val">신용대출약관</span></a>
+
+  92                                      <div class="c">
+  93:                                         <div class="dropdown ui-dropdown" title="버전">
+  94                                              <a href="#" class="output"><span class="val">2019년 08월 12일</span></a>
+
+w\html\retail\apply_14_02.html:
+   92                                      <div class="set-accordion" style="display: block;">
+   93:                                         <div class="dropdown ui-dropdown" title="선택">
+   94                                              <a href="#" class="output"><span class="val">근로소득자용(직장인 및 일용근로자)</span></a>
+
+  114                                      <div class="set-accordion" style="display: block;">
+  115:                                         <!-- <div class="dropdown ui-dropdown" title="선택">
+  116                                              <a href="#" class="output"><span class="val">부가가치세과세표준증명</span></a>
+
+w\html\retail\new_12.html:
+  111 				<div class="c q1">
+  112:				   <div class="field dropdown ui-dropdown bank" title="은행선택">
+  113			                  <a href="#" class="output"><span class="val">하나은행</span></a>
+
+w\html\retail\new_12_readonly.html:
+  111 				<div class="c q1">
+  112:				   <div class="field dropdown ui-dropdown bank readonly" title="은행선택">
+  113			                  <a href="#" class="output"><span class="val">하나은행</span></a>

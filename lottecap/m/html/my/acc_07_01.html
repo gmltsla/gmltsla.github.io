@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/device.css">
+<script type="text/javascript" src="../../../m/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../m/scripts/common.js"></script>
+<script type="text/javascript" src="../../../m/scripts/default.js"></script>
+</head>
+<body>
+<div class="container my">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+                            <div class="c q1">
+                                <a href="#" class="btn btn-back">
+                                    <span class="icn"></span>
+                                    <span class="lbl">뒤로</span>
+                                </a>
+                            </div>
+							<div class="c q2"></div>
+							<div class="c q3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div class="section">
+			<div class="content">
+				<div class="title-bar">
+					<h2>대출철회시<br> 안내사항을 확인해주세요</h2>
+				</div>
+				<div class="dd-lst">
+					<ul>
+						<li>
+							<p class="bl-dd"><span class="bl">1.</span> 대출계약철회 신청은 전금융사 1개월에 1회만 가능하며, 해당사 1년에 2회만 가능합니다.</p>
+						</li>
+						<li>
+							<p class="bl-dd"><span class="bl">2.</span> 대출계약 철회시 취소는 불가합니다.</p>
+						</li>
+						<li>
+							<p class="bl-dd"><span class="bl">3.</span> 해당 대출과 관련된 대출정보는 5영업일 이내 삭제 됩니다.</p>
+						</li>
+						<li>
+							<p class="bl-dd"><span class="bl">4.</span> 당일 철회 신청 후 미입금시에는 자동 취소되오니 유의하기 바랍니다.</p>
+						</li>
+						<li>
+							<p class="bl-dd"><span class="bl">5.</span> 가상계좌입금은 22시까지만 가능합니다.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="btn-bar botm-fix">
+					<a href="#dialog_01" class="btn btn-contained run-dialog"><span class="lbl">확인했습니다</span><span class="icn"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="dialog_01" class="dialog" title="대출철회 신청">
+	<div class="title-bar">
+		<h3>
+			<span class="icn doc"></span>
+			<span class="lbl">대출철회 신청</span>
+		</h3>
+	</div>
+	<div class="content">
+		<div class="desc">
+			<p>대출철회를 하기위해 신청 절차가 필요합니다. 신청을 하시겠습니까?</p>
+		</div>
+		<div class="field radio">
+			<div class="input t">
+				<div class="r">
+					<div class="ui-irc c">
+						<label>
+							<input type="radio" autocomplete="off" name="radio_yorn_01">
+							<div class="t">
+								<div class="c"><span class="icn"></span></div>
+								<div class="c">
+									<span class="lbl">네, 신청할게요</span>
+								</div>
+							</div>
+						</label>
+					</div>
+					<div class="ui-irc c">
+						<label>
+							<input type="radio" autocomplete="off" name="radio_yorn_01">
+							<div class="t">
+								<div class="c"><span class="icn"></span></div>
+								<div class="c">
+									<span class="lbl">아니오</span>
+								</div>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn-bar">
+			<a href="#" class="btn btn-contained close-dialog"><span class="icn"></span><span class="lbl">확인</span></a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

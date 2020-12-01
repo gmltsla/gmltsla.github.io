@@ -1,0 +1,25 @@
+제목: 약관예제
+대상: 1파일
+/w/html/common/overlay_02_01.html
+
+제목: 약관컨텐츠(통합)
+대상: 1파일
+/w/html/terms/terms.html
+
+제목: 마이페이지 전체계좌목록 (김상호)
+내용: 운용리스 카드 추가
+대상: 1페이지
+/m/html/my/acc_00.html (207-232)
+
+제목: 체크박스 그룹 (김상호)
+내용: 독점 선택 기능 추가
+대상: 1페이지
+/m/html/auto/lease_01_06.html (261-318)
+
+제목: 홈카드 (김상호)
+내용: 실행단계 오토 및 리스 마크업 수정
+대상: 4페이지
+/m/html/homecard/ra_10_30.html (오토 실행 div.shortcut --> a.shortcut)
+/m/html/homecard/ra_21_30.html (오토 실행 div.shortcut --> a.shortcut)
+/m/html/homecard/ra_31_30.html (오토 실행 div.shortcut --> a.shortcut)
+/m/html/homecard/ra_31_30_30.html (오토 실행 div.shortcut --> a.shortcut, 리스 실행 span.icn.rang 삭제)

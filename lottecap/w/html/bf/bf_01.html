@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/device.css">
+<script type="text/javascript" src="../../../w/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="../../../w/scripts/common.js"></script>
+<script type="text/javascript" src="../../../w/scripts/default.js"></script>
+<script type="text/javascript" src="../../../w/scripts/device.js"></script>
+</head>
+
+<body>
+<div class="container bf ui-split">
+    <div class="header common"></div>
+    <div id="main" class="main" tabindex="-1">
+        <div class="section">
+            <div class="content">
+				<div class="sub-tit">
+					<div class="location t">
+						<div class="r">
+							<div class="c">
+								<a href="#" class="btn"><span class="lbl">1depth</span><span class="icn rang"></span></a><a href="#" class="btn"><span class="lbl">2depth</span><span class="icn rang"></span></a><a href="#" class="btn"><span class="lbl">3depth</span><span class="icn rang"></span></a><a href="#" class="btn current"><span class="lbl">4depth</span><span class="icn rang"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="title-bar">
+						<h2 class="title">기업금융에 대해<br> 알아보세요</h2>
+                        <p class="desc">기업금융 상품정보를 확인하실 수 있습니다.</p>
+					</div>
+					<div class="visual"></div>
+				</div>
+				<div class="sub-cont">
+                    <div class="introduce title-bar mo-only"><!-- .introduce.title-bar: 상품소개 모바일 타이틀 -->
+                        <h2 class="title">기업금융</h2>
+                        <p class="desc">일반리스에 대해 알아보세요</p>
+                    </div>
+                    <div class="ui-txt">
+                        <div class="ui-tab t1">
+                            <div class="tab-grp">
+                                <ul class="tabs tab-btns">
+                                    <li class="tab tab-btn current"><span class="lbl tab-lbl">할인어음</span></li>
+                                    <li class="tab tab-btn"><span class="lbl tab-lbl">팩토링금융</span></li>
+                                    <li class="tab tab-btn"><span class="lbl tab-lbl">운영자금대출</span></li>
+                                    <li class="tab tab-btn"><span class="lbl tab-lbl">PF대출</span></li>
+                                    <li class="tab tab-btn"><span class="lbl tab-lbl">사모사채인수</span></li>
+                                </ul>
+                            </div>
+                            <div class="tab-grp">
+                                <div class="tabs tab-cnts">
+                                    <!-- tab01 : 할인어음  -->
+                                    <div class="tab tab-cnt current">
+                                        <h4 class="tab-cnt-title">할인어음</h4>
+                                        <div class="subtitle-bar">
+                                            <h3>할인어음</h3>
+                                        </div>
+                                        <div class="h3">
+                                            <p>당사가 선정한 우량기업이 발행 또는 배서한 어음을 당사가 할인하여 드리는 금융서비스입니다.</p>
+                                        </div>
+                                        <div class="subtitle-bar">
+                                            <h3>할인어음 프로세스</h3>
+                                        </div>
+                                        <div class="schema-box">
+                                            <img src="../../../w/images/contents/vis_bf1.png" alt="">
+                                            <div class="desc-txt">
+                                                <ol>
+                                                    <li>발행인은 고객사에 어음발행을 한다.</li>
+                                                    <li>고객사는 롯데캐피탈에 할인의뢰(배서)를 한다.</li>
+                                                    <li>롯데캐피탈은 고객사에 대출실행을 한다.</li>
+                                                    <li>발행인은 롯데캐피탈에 할인의뢰(배서)를 한다.</li>
+                                                    <li>롯데캐피탈은 발행인에 대출실행을 한다.</li>
+                                                    <li>발행인은 은행(발행인당좌계좌)에 어음금 입금을 한다.</li>
+                                                    <li>은행(발행인당좌계좌)은 롯데캐피탈에 어음금 지급을 한다.</li>
+                                                </ol>
+                                            </div>
+                                            <div class="num-label">
+                                                <div class="t">
+                                                    <div class="r">
+                                                        <div class="c"><span>1</span>어음발행</div>
+                                                        <div class="c"><span>2</span>할인의뢰(배서)</div>
+                                                    </div>
+                                                    <div class="r">
+                                                        <div class="c"><span>3</span>대출실행</div>
+                                                        <div class="c"><span>4</span>어음금 입금</div>
+                                                    </div>
+                                                    <div class="r">
+                                                        <div class="c"><span>5</span>어음금 지급</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="subtitle-bar">
+                                            <h3>신청안내</h3>
+                                        </div>
+                                        <div class="data-grd t2 tac-all">
+                                            <table>
+                                                <caption>할인어음 신청안내</caption>
+                                                <colgroup>
+                                                    <col width="50%">
+                                                    <col width="50%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">담당팀</th>
+                                                        <th scope="col">전화번호</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Corporate영업1팀</td>
+                                                        <td>02-3451-0211</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업2팀</td>
+                                                        <td>02-3451-0048</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업3팀</td>
+                                                        <td>02-3451-0052</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업4팀</td>
+                                                        <td>02-3451-0245</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab02 : 팩토링금융 -->
+                                    <div class="tab tab-cnt">
+                                        <h4 class="tab-cnt-title">팩토링금융</h4>
+                                        <div class="subtitle-bar">
+                                            <h3>팩토링금융</h3>
+                                        </div>
+                                        <div class="h3">
+                                            <p>기업의 각종 매출채권(어음채권 포함)을 당사가 매입하고 기업에 자금을 지불하는 금융서비스입니다. </p>
+                                        </div>
+                                        <div class="subtitle-bar">
+                                            <h3>팩토링금융 프로세스</h3>
+                                        </div>
+                                        <div class="schema-box">
+                                            <img src="../../../w/images/contents/vis_bf2.png" alt="">
+                                            <div class="desc-txt">
+                                                <ol>
+                                                    <li>거래기업은 고객(차주)사에 매출채권발행을 한다.</li>
+                                                    <li>고객(차주)사는 롯데캐피탈에 매출채권양도를 한다.</li>
+                                                    <li>거래기업은 롯데캐피탈에 채권양도 승락을 한다.</li>
+                                                    <li>롯데캐피탈은 고객(차주)사에 대출실행을 한다.</li>
+                                                    <li>거래기업은 롯데캐피탈에 채권대금입금을 한다.</li>
+                                                </ol>
+                                            </div>
+                                            <div class="num-label">
+                                                <div class="t">
+                                                    <div class="r">
+                                                        <div class="c"><span>1</span>매출채권발행</div>
+                                                        <div class="c"><span>2</span>매출채권양도</div>
+                                                    </div>
+                                                    <div class="r">
+                                                        <div class="c"><span>3</span>채권양도 승락</div>
+                                                        <div class="c"><span>4</span>대출실행</div>
+                                                    </div>
+                                                    <div class="r">
+                                                        <div class="c"><span>5</span>채권대금입금</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="subtitle-bar">
+                                            <h3>신청안내</h3>
+                                        </div>
+                                        <div class="data-grd t2 tac-all">
+                                            <table>
+                                                <caption>팩토링금융 신청안내</caption>
+                                                <colgroup>
+                                                    <col width="50%">
+                                                    <col width="50%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">담당팀</th>
+                                                        <th scope="col">전화번호</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Corporate영업1팀</td>
+                                                        <td>02-3451-0211</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업2팀</td>
+                                                        <td>02-3451-0048</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업3팀</td>
+                                                        <td>02-3451-0052</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업4팀</td>
+                                                        <td>02-3451-0245</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab03 : 운영자금대출 -->
+                                    <div class="tab tab-cnt">
+                                        <h4 class="tab-cnt-title">운영자금대출</h4>
+                                        <div class="subtitle-bar">
+                                            <h3>운영자금대출</h3>
+                                        </div>
+                                        <div class="h3">
+                                            <p>
+                                                기업의 신용도를 바탕으로 기업운영에 소요되는 자금을 일정한 한도 내에서 지원해주는 금융서비스입니다.
+                                                일반적인 운영자금 이외에 증권사와 연계한 ABS/ABL 형식의 대출 등 다양한 대출상품이 준비되어 있습니다.
+                                            </p>
+                                        </div>
+                                        <div class="subtitle-bar">
+                                            <h3>운영자금대출 프로세스</h3>
+                                        </div>
+                                        <div class="schema-box">
+                                            <img src="../../../w/images/contents/vis_bf3.png" alt="">
+                                            <div class="desc-txt">
+                                                <ol>
+                                                    <li>고객(자산보유사)에서 롯데캐피탈로 대출 신청을 한다.</li>
+                                                    <li>롯데캐피탈은 고객(자산보유사)의 대출심사를 한다.</li>
+                                                    <li>롯데캐피탈은 고객(자산보유사)에 대출을 실행한다.</li>
+                                                    <li>고객(자산보유사)는 롯데캐피탈에 원리금을 상환한다.</li>
+                                                </ol>
+                                            </div>
+                                            <div class="num-label">
+                                                <div class="t">
+                                                    <div class="r">
+                                                        <div class="c"><span>1</span>대출신청</div>
+                                                        <div class="c"><span>2</span>대출심사</div>
+                                                    </div>
+                                                    <div class="r">
+                                                        <div class="c"><span>3</span>대출실행</div>
+                                                        <div class="c"><span>4</span>원리금 상환</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="subtitle-bar">
+                                            <h3>신청안내</h3>
+                                        </div>
+                                        <div class="data-grd t2 tac-all">
+                                            <table>
+                                                <caption>운영자금대출 신청안내</caption>
+                                                <colgroup>
+                                                    <col width="50%">
+                                                    <col width="50%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">담당팀</th>
+                                                        <th scope="col">전화번호</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Corporate영업1팀</td>
+                                                        <td>02-3451-0211</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업2팀</td>
+                                                        <td>02-3451-0048</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업3팀</td>
+                                                        <td>02-3451-0052</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업4팀</td>
+                                                        <td>02-3451-0245</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab04 : PF대출 -->
+                                    <div class="tab tab-cnt">
+                                        <h4 class="tab-cnt-title">PF대출</h4>
+                                        <div class="subtitle-bar">
+                                            <h3>PF대출</h3>
+                                        </div>
+                                        <div class="h3">
+                                            <p>부동산 개발사업, 사회간접자본(SOC)사업 등 특정 상업의 사업성과 장래 현금 흐름을 감안하여 자금을 지원하며, 사업주와 독립된 프로젝트로부터 발생한 현금흐름을 상환재원으로 하는 금융상품입니다.</p>
+                                        </div>
+                                        <div class="subtitle-bar">
+                                            <h3>PF대출 프로세스</h3>
+                                        </div>
+                                        <div class="schema-box">
+                                            <img src="../../../w/images/contents/vis_bf4.png" alt="">
+                                            <div class="desc-txt">
+                                                <ol>
+                                                    <li>시행사(고객)와 시공사는 공사도급 계약한다. </li>
+                                                    <li>시행사(고객)와 롯데캐피탈은 대출 계약한다.</li>
+                                                    <li>시행사(고객)은 신탁회사에 사업지 신탁한다.</li>
+                                                    <li>신탁회사와 롯데캐피탈은 수익권 설정한다.</li>
+                                                    <li>시공사는 롯데캐피탈에 신용보강한다.</li>
+                                                    <li>시행사(고객)과 투자자(수분양자)는 분양 계약한다.</li>
+                                                </ol>
+                                            </div>
+                                            <div class="num-label">
+                                                <div class="t">
+                                                    <div class="r">
+                                                        <div class="c"><span>1</span>공사도급 계약</div>
+                                                        <div class="c"><span>2</span>대출 계약</div>
+                                                    </div>
+                                                    <div class="r">
+                                                        <div class="c"><span>3</span>사업지 신탁</div>
+                                                        <div class="c"><span>4</span>수익권 설정</div>
+                                                    </div>
+                                                    <div class="r">
+                                                        <div class="c"><span>5</span>신용보강</div>
+                                                        <div class="c"><span>6</span>분양 계약</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="subtitle-bar">
+                                            <h3>신청안내</h3>
+                                        </div>
+                                        <div class="data-grd t2 tac-all">
+                                            <table>
+                                                <caption>PF대출 신청안내</caption>
+                                                <colgroup>
+                                                    <col width="50%">
+                                                    <col width="50%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">담당팀</th>
+                                                        <th scope="col">전화번호</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Corporate영업1팀</td>
+                                                        <td>02-3451-0211</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업2팀</td>
+                                                        <td>02-3451-0048</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업3팀</td>
+                                                        <td>02-3451-0052</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업4팀</td>
+                                                        <td>02-3451-0245</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab05 : 사모사채인수 -->
+                                    <div class="tab tab-cnt">
+                                        <h4 class="tab-cnt-title">사모사채인수</h4>
+                                        <div class="subtitle-bar">
+                                            <h3>사모사채인수</h3>
+                                        </div>
+                                        <div class="h3">
+                                            <p>기업의 자금조달을 목적으로 유가증권(사채권)을 공개모집 절차 없이 발행한 유가증권(사채권)을 인수하는 금융서비스입니다.</p>
+                                        </div>
+                                        <div class="subtitle-bar">
+                                            <h3>사모사채인수 프로세스</h3>
+                                        </div>
+                                        <div class="schema-box">
+                                            <img src="../../../w/images/contents/vis_bf5.png" alt="">
+                                            <div class="desc-txt">
+                                                <ol>
+                                                    <li>고객(차주)사는 롯데캐피탈에 사채권 인수 신청한다.</li>
+                                                    <li>롯데캐피탈은 고객(차주)사에 사채권 인수 약정한다.</li>
+                                                    <li>고객(차주)사는 롯데캐피탈에 사채권 발행 및 인수 의뢰한다.</li>
+                                                    <li>롯데캐피탈은 고객(차주)사에 사채권 인수 및 인수대금 지급한다.</li>
+                                                    <li>고객(차주)사는 롯데캐피탈에 사채이자 지급한다.</li>
+                                                    <li>고객(차주)사는 롯데캐피탈에 사채원금 상환한다.</li>
+                                                </ol>
+                                            </div>
+                                            <div class="num-label">
+                                                <div class="t">
+                                                    <div class="r">
+                                                        <div class="c"><span>1</span>사채권 인수 신청</div>
+                                                        <div class="c"><span>2</span>사채권 인수 약정</div>
+                                                    </div>
+                                                    <div class="r">
+                                                        <div class="c"><span>3</span>사채권 발행 및 인수 의뢰</div>
+                                                        <div class="c"><span>4</span>사채권 인수 및 인수대금 지급</div>
+                                                    </div>
+                                                    <div class="r">
+                                                        <div class="c"><span>5</span>사채이자 지급</div>
+                                                        <div class="c"><span>6</span>사채원금 상환</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="subtitle-bar">
+                                            <h3>신청안내</h3>
+                                        </div>
+                                        <div class="data-grd t2 tac-all">
+                                            <table>
+                                                <caption>사모사채인수 신청안내</caption>
+                                                <colgroup>
+                                                    <col width="50%">
+                                                    <col width="50%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">담당팀</th>
+                                                        <th scope="col">전화번호</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Corporate영업1팀</td>
+                                                        <td>02-3451-0211</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업2팀</td>
+                                                        <td>02-3451-0048</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업3팀</td>
+                                                        <td>02-3451-0052</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate영업4팀</td>
+                                                        <td>02-3451-0245</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div><!-- //content -->
+        </div><!-- //section -->
+    </div><!-- //main -->
+    <div class="footer common"></div><!-- //footer -->
+</div><!-- //container -->
+</body>
+</html>

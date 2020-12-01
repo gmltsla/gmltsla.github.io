@@ -1,0 +1,18 @@
+제목: 리테일 홈카드 이어서 진행하는 경우 (김상호)
+내용: 마크업 수정 (class="done")
+대상: 4페이지
+/m/html/homecard/ra_22_10.html (76, 81)
+/m/html/homecard/ra_24_10.html (76, 81)
+/m/html/homecard/ra_25_10.html (76, 81)
+/m/html/homecard/r_all.html (141, 146, 211, 216, 250, 255, 289, 294)
+
+제목: 자동차금융 > 상품소개 (김상호)
+내용: 문구 수정
+대상: 2페이지
+/m/html/auto/about_01.html (192-203)
+/m/html/auto/about_02.html (60, 117-136, 148-158)
+
+제목: 마이페이지 > 중도상환 > 일부중도상환 (김상호)
+내용: 페이지 추가
+대상: 1페이지
+/m/html/my/acc_02_01_02.html

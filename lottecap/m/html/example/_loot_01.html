@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/device.css">
+<script type="text/javascript" src="../../../m/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../m/scripts/common.js"></script>
+<script type="text/javascript" src="../../../m/scripts/default.js"></script>
+<style type="text/css">
+	.ui-lootbox{position:relative;width:800px;height:800px;margin:0 auto;}
+	.ui-lootbox .treasure{position:absolute;left:200px;bottom:200px;width:400px;height:100px;text-align:center;opacity:0;transform:scale(0);transition:all .4s;}
+	.ui-lootbox .treasure .icn{width:60px;height:60px;background:url("../../../m/images/temp/lootbox_coin.png") no-repeat;background-size:cover;}
+	.ui-lootbox .treasure .lbl{font-size:60px;font-weight:bold;}
+	.ui-lootbox .ca{position:absolute;left:200px;bottom:0;width:400px;height:400px;background:#fff;outline:1px solid #0ff;}
+	.ui-lootbox .ca.q1{width:400px;height:400px;}
+	.ui-lootbox .ca.q2{width:500px;height:625px;}
+	.ui-lootbox .ca img{display:block;width:100%;			display:none;}
+	.ui-lootbox .effect{display:none;position:absolute;left:100px;bottom:0;width:600px;height:400px;opacity:0;transition:opacity 4s;}
+	.ui-lootbox .effect img{display:block;width:100%;}
+
+	.ui-lootbox .ca.q2{display:none;}
+	.ui-lootbox.revealed .treasure{bottom:650px;opacity:1;transform:scale(1);}
+	.ui-lootbox.revealed .ca.q2{display:block;}
+	.ui-lootbox.revealed .treasure .lbl{
+		animation-name: glow;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+	.ui-lootbox:hover .ca.q1{
+		animation-name: shake;
+		animation-duration: .5s;
+		animation-iteration-count: infinite;
+	}
+	.ui-lootbox:hover .effect{opacity:1;}
+
+	@keyframes shake {
+		0%  { transform: translate(1px, 1px) rotate(0deg); }
+		10% { transform: translate(-1px, -2px) rotate(-1deg); }
+		20% { transform: translate(-3px, 0px) rotate(1deg); }
+		30% { transform: translate(3px, 2px) rotate(0deg); }
+		40% { transform: translate(1px, -1px) rotate(1deg); }
+		50% { transform: translate(-1px, 2px) rotate(-1deg); }
+		60% { transform: translate(-3px, 1px) rotate(0deg); }
+		70% { transform: translate(3px, 1px) rotate(-1deg); }
+		80% { transform: translate(-1px, -1px) rotate(1deg); }
+		90% { transform: translate(1px, 2px) rotate(0deg); }
+		100%{ transform: translate(1px, -2px) rotate(-1deg); }
+	}
+	@keyframes glow {
+		0%  {text-shadow: 0 0 10px #fff, 0 0 20px #fff;}
+		100%{text-shadow: 0 0 10px #000, 0 0 20px #6a8bb8;}
+	}
+
+	.particles{position:absolute;left:380px;bottom:100px;width:40px;height:40px;font-size:0;background:#eee;}
+	.particle,
+	.particle .icn{display:inline-block;vertical-align:middle;}
+	.particle{width:40px;height:40px;text-align:center;outline:1px solid #000;}
+	.particle .icn{width:20px;height:20px;text-align:center;background:#000;opacity:.25;}
+
+	.particle{animation:curve-x-axis;animation-duration:2s;}
+	.particle .icn{animation-name:curve-y-axis;animation-duration:2s;}
+
+@keyframes curve-x-axis {
+    0%  {opacity:1;transform:translateX(0);animation-timing-function:ease-in;}
+    50% {opacity:1;transform:translateX(-100px);animation-timing-function:ease-out;}
+    100%{opacity:0;transform:translateX(-200px);}
+}
+@keyframes curve-y-axis {
+    0%  {transform:translateY(0);animation-timing-function:ease-out;}
+    50% {transform:translateY(-200px);animation-timing-function:ease-in;}
+    100%{transform:translateY(-100px);}
+}
+</style>
+<script type="text/javascript">
+$(function() {
+	$(".ui-lootbox").each(function () {
+		var $ui = $(this);
+		$(".ca.q1", $ui).on("click", function() {
+			$ui.addClass("revealed");
+		});
+	});
+})
+</script>
+
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="btn btn-back">
+									<span class="icn"></span>
+									<span class="lbl">뒤로</span>
+								</a>
+							</div>
+							<div class="c q2"></div>
+							<div class="c q3">
+								<a href="#" class="btn btn-send">
+									<span class="icn"></span>
+									<span class="lbl">보내기</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div class="section">
+			<div class="content">
+				<div class="ui-lootbox">
+					<div class="ca q1"><img src="../../../m/images/temp/lootbox_closed.png"></div>
+					<div class="ca q2"><img src="../../../m/images/temp/lootbox_opened.png"></div>
+					<div class="effect"><img src="../../../m/images/temp/lootbox_effect.png"></div>
+					<div class="particles">
+						<span class="particle q1"><span class="icn"></span>
+					</div>
+					<div class="treasure"><span class="icn"></span><span class="lbl"><em>1,000</em> 포인트</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="section">
+			<div class="content">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

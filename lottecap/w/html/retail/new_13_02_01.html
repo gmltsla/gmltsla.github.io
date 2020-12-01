@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/device.css">
+<script type="text/javascript" src="../../../w/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="../../../w/scripts/common.js"></script>
+<script type="text/javascript" src="../../../w/scripts/default.js"></script>
+<script type="text/javascript" src="../../../w/scripts/device.js"></script>
+</head>
+
+<body>
+<div class="container retail ui-sheet has-stepper">
+    <div class="header common"></div>
+    <div id="main" class="main" tabindex="-1">
+        <div class="section">
+            <div class="content">
+                <div class="ui-stepper">
+                    <ol>
+                        <li class="q1">
+                            <div class="stepper"><span class="num">1</span><span class="lbl">대출정보</span></div>
+                        </li>
+                        <li class="q2">
+                            <div class="stepper"><span class="num">2</span><span class="lbl">결제정보</span></div>
+                        </li>
+                        <li class="q3 current">
+                            <div class="stepper"><span class="num">3</span><span class="lbl">약관동의</span></div>
+                        </li>
+                        <li class="q4">
+                            <div class="stepper"><span class="num">4</span><span class="lbl">신청정보확인</span></div>
+                        </li>
+                        <li class="q5">
+                            <div class="stepper"><span class="num">5</span><span class="lbl">본인인증</span></div>
+                        </li>
+                    </ol>
+                    <a href="#" class="handle stepper-over"></a>
+                </div>
+            </div>
+            <div class="sheet retail new">
+                <div class="content">
+                    <div class="scroll">
+                        <div class="title-bar">
+                            <h2>안전하고 투명한 대출신청을 위해<br> 본인신청을 확인해주세요</h2>
+                        </div>
+                        <dl class="desc-lst">
+                            <dt>제 1조</dt>
+                            <dd>본인은 본 대출 신청과 관련하여 귀사의 직원, 대출상담사 또는 제 3자로 부터  수수료, 선수금, 예치금, 보증금, 수고비 등 어떠한 명목으로도 금전을 요구받은 적이 없으며 추후에도 <strong>지급의사 없음</strong>을 알려드립니다.</dd>
+                        </dl>
+                        <div class="ui-term">
+                            <div class="ui-irc">
+                                <div class="t">
+                                    <div class="c"></div>
+                                    <div class="c tar">
+                                        <label>
+                                            <input type="checkbox" autocomplete="off">
+                                            <div class="t">
+                                                <div class="c"><span class="icn check"></span></div>
+                                                <div class="c">
+                                                    <p class="lbl">확인</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <dl class="desc-lst">
+                            <dt>제 2조</dt>
+                            <dd>본인은 대출심사에 관한 모든 사항(대출 가부의 결정, 대출한도, 금리)등은 귀사가 결정하는 것임을 <strong>확인</strong>하였습니다.</dd>
+                        </dl>
+                        <div class="ui-term">
+                            <div class="ui-irc">
+                                <div class="t">
+                                    <div class="c"></div>
+                                    <div class="c tar">
+                                        <label>
+                                            <input type="checkbox" autocomplete="off">
+                                            <div class="t">
+                                                <div class="c"><span class="icn check"></span></div>
+                                                <div class="c">
+                                                    <p class="lbl">확인</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <dl class="desc-lst">
+                            <dt>제 3조</dt>
+                            <dd>본인은 본 대출신청과 관련하여 지연배상금, 중도상환수수료, 금리인하요구권, 대출계약철회권 등 사항에 대해 <strong>확인</strong>하였습니다.</dd>
+                        </dl>
+                        <div class="tip-lst">
+                            <p class="tip t2"><span class="icn"></span> 금리인하요구권 : 신용평가등급 상승 등 신용상태 개선이 나타났다고 인정되는 경우 여신전문 금융회사에 금리인하를 요구할 수 있는 권리</p>
+                        </div>
+                        <div class="ui-term">
+                            <div class="ui-irc">
+                                <div class="t">
+                                    <div class="c"></div>
+                                    <div class="c tar">
+                                        <label>
+                                            <input type="checkbox" autocomplete="off">
+                                            <div class="t">
+                                                <div class="c"><span class="icn check"></span></div>
+                                                <div class="c">
+                                                    <p class="lbl">확인</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <dl class="desc-lst">
+                            <dt>제 4조</dt>
+                            <dd>본인은 본인의 소득재산, 부채상황, 신용 및 변제계획 등을 고려하여 적합한 <strong>대출상품</strong>을 선택하였으며, 대출이 필요한 자금의 범위를 <strong>초과하지 않도록</strong> 하였습니다.</dd>
+                        </dl>
+                        <div class="ui-term">
+                            <div class="ui-irc">
+                                <div class="t">
+                                    <div class="c"></div>
+                                    <div class="c tar">
+                                        <label>
+                                            <input type="checkbox" autocomplete="off">
+                                            <div class="t">
+                                                <div class="c"><span class="icn check"></span></div>
+                                                <div class="c">
+                                                    <p class="lbl">확인</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <dl class="desc-lst">
+                            <dt>제 5조</dt>
+                            <dd>본인은 대출 신청에 관한 중요한 재용에 대하여 확인하였으며, 대출 신청을 위해<br> 제출 및 작성한 서류 일체는 대출 거절시에도 <strong>반환 되지 않음</strong>을 확인합니다.</dd>
+                        </dl>
+                        <div class="ui-term">
+                            <div class="ui-irc">
+                                <div class="t">
+                                    <div class="c"></div>
+                                    <div class="c tar">
+                                        <label>
+                                            <input type="checkbox" autocomplete="off">
+                                            <div class="t">
+                                                <div class="c"><span class="icn check"></span></div>
+                                                <div class="c">
+                                                    <p class="lbl">확인</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <dl class="desc-lst">
+                            <dt>제 6조</dt>
+                            <dd>본인은 대출 사실만으로 신용점수가 하락할 수 있다는 사실과 은행 등에서의 대출보다 신용점수가 더 큰 폭으로 하락 할 수 있다는 사실을 <strong>설명 듣고 확인</strong>하였습니다.</dd>
+                        </dl>
+                        <div class="ui-term">
+                            <div class="ui-irc">
+                                <div class="t">
+                                    <div class="c"></div>
+                                    <div class="c tar">
+                                        <label>
+                                            <input type="checkbox" autocomplete="off">
+                                            <div class="t">
+                                                <div class="c"><span class="icn check"></span></div>
+                                                <div class="c">
+                                                    <p class="lbl">확인</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-bar tar mt100">
+                            <a href="#" class="btn btn-proc run-next"><span class="lbl">다음</span><span class="icn rarr"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- //section -->
+    </div><!-- //main -->
+    <div class="footer common"></div><!-- //footer -->
+</div><!-- //container -->
+</body>
+</html>

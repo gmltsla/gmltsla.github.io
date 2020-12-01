@@ -1,0 +1,32 @@
+제목: 메인 (김정희)
+내용: 모바일앱 다운로드 배너에 대체텍스트 추가
+대상: 3페이지
+/w/html/index/index_login_mw.html(419-420)
+/w/html/index/index_login_pcw.html(193-194)
+/w/html/index/index_logout.html(582-583)
+
+제목: 기업금융 > 상품소개 (김정희)
+내용: 프로세스 이미지에 alt값 삭제, 대체텍스트 추가(.desc-txt)
+대상: 1페이지
+/w/html/bf/bf_01.html(88-99, 167-176, 247-255, 320-330, 399-409)
+
+제목: 컨텐츠 블록 제목 개선 (김정희)
+내용: <p class="sbj">을 <h3 class="sbj">로 수정
+대상: 17페이지
+/w/html/about/communicate_03_2_1.html(70)
+/w/html/about/contribute_02_2.html(70)
+/w/html/about/financial_03_2.html(70)
+/w/html/about/pr_01_2.html(68)
+/w/html/cc/complaint_04_01.html(70)
+/w/html/cc/complaint_04_02.html(70)
+/w/html/cc/complaint_04_03.html(70)
+/w/html/cc/complaint_04.html(70)
+/w/html/cc/complaint_05_03.html(70)
+/w/html/cc/complaint_05_04.html(70)
+/w/html/cc/counsel_02_02_01.html(70)
+/w/html/cc/faq_02.html(79)
+/w/html/ntfc/event_02.html(68)
+/w/html/ntfc/event_03.html(65)
+/w/html/ntfc/notice_02.html(68)
+/w/html/portal/portal_02_01_01.html(70)
+/w/html/portal/portal_05_01.html(70)

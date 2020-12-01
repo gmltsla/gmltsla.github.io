@@ -1,0 +1,22 @@
+제목: 신용대출 선택약관 (김상호)
+내용: 누락항목 추가 및 일부 항목 앵글아이콘(>) 제거
+대상: 1페이지
+/m/html/retail/new_13_02.html (85-562)
+
+제목: 자동차금융 선택약관 (김상호)
+내용: OR 조건 및 복수선택 기능 적용
+대상: 1페이지
+/m/html/auto/lease_01_06.html (61-320)
+
+제목: 자동차금융 홈카드 (김상호)
+내용: 차종 정보 마크업 수정 (<span.lbl>현대 제네시스 G70</span> --> <span.lbl.q1~q3> 3개로 분리)
+대상: 9페이지
+/m/html/homecard/ra_10_21.html
+/m/html/homecard/ra_10_22.html
+/m/html/homecard/ra_10_23.html
+/m/html/homecard/ra_10_24.html
+/m/html/homecard/ra_10_25.html
+/m/html/homecard/ra_10_26.html
+/m/html/homecard/ra_10_27.html
+/m/html/homecard/ra_10_28.html
+/m/html/homecard/ra_31_21.html

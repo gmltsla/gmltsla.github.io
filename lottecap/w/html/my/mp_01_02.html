@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/device.css">
+<script type="text/javascript" src="../../../w/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="../../../w/scripts/common.js"></script>
+<script type="text/javascript" src="../../../w/scripts/default.js"></script>
+<script type="text/javascript" src="../../../w/scripts/device.js"></script>
+</head>
+
+<body>
+<div class="container my ui-split">
+    <div class="header common"></div>
+    <div id="main" class="main" tabindex="-1">
+        <div class="section">
+            <div class="content my-info">
+                <div class="sub-tit">
+                    <div class="location t">
+                        <div class="r">
+                            <div class="c">
+                                <a href="#" class="btn"><span class="lbl">1depth</span><span class="icn rang"></span></a><a href="#" class="btn"><span class="lbl">2depth</span><span class="icn rang"></span></a><a href="#" class="btn"><span class="lbl">3depth</span><span class="icn rang"></span></a><a href="#" class="btn current"><span class="lbl">4depth</span><span class="icn rang"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-bar">
+                        <h2 class="title">김롯데님,<br> 변경할 회원정보를<br> 수정해주세요.</h2>
+                        <p class="desc">롯데캐피탈 마이페이지에서는 고객님의<br> 회원정보를 확인하거나 수정하실 수<br> 있습니다.</p>
+                    </div>
+                    <div class="visual"></div>
+                </div>
+                <div class="sub-cont">
+                    <div class="title-bar mo-only">
+                        <h2>내정보변경</h2>
+                    </div>
+                    <div class="info-grd">
+                        <div class="title-bar">
+                            <h4>본사정보</h4>
+                        </div>
+                        <div class="content">
+                            <div class="field user-name">
+                                <label class="lbl">이름<sup class="ess" aria-label="필수">*</sup></label>
+                                <div class="input"><span class="val">롯데캐피탈</span></div>
+                            </div>
+                            <div class="field user-name">
+                                <label class="lbl">고객구분<sup class="ess" aria-label="필수">*</sup></label>
+                                <div class="input"><span class="val">법인사업자</span></div>
+                            </div>
+                            <div class="field to-phone">
+                                <div class="t">
+                                    <div class="c q1"><label class="lbl">담당자 휴대폰번호<sup class="ess" aria-label="필수">*</sup></label></div>
+                                    <div class="c q2"><a href="#" class="btn btn-txt"><span class="lbl">변경</span><span class="icn rang"></span></a></div>
+                                </div>
+                                <div class="input"><span class="val">010-****-8249</span></div>
+                            </div>
+                            <div class="field email">
+                                <div class="t">
+                                    <div class="c q1"><label class="lbl">이메일주소<sup class="ess" aria-label="필수">*</sup></label></div>
+                                    <div class="c q2"></div>
+                                </div>
+                                <div class="input"><input type="text" class="db" value="lotte@lotte.net"></div>
+                                <div class="tip-lst">
+                                    <p class="tip t2"><span class="icn"></span>본 메일로 전자계산서가 발행되며(발급대상 상품에 한함), 기발행 계산서는 국세청 홈텍스(www.hometax.go.kr)에서도 확인 가능합니다.</p>
+                                </div>
+                            </div>
+                            <div class="field to-addr">
+                                <div class="t">
+                                    <div class="c q1"><label class="lbl">본사주소<sup class="ess" aria-label="필수">*</sup></label></div>
+                                    <div class="c q2"><a href="#" class="btn btn-txt"><span class="lbl">주소검색</span><span class="icn rang"></span></a></div>
+                                </div>
+                                <div class="input"><span class="val">14452 서울시 강남구 테헤란로 20길</span></div>
+                            </div>
+                            <div class="field to-phone">
+                                <div class="t">
+                                    <div class="c q1"><label class="lbl">본사 전화번호<sup class="ess" aria-label="필수">*</sup></label></div>
+                                    <!-- <div class="c q2"><a href="#" class="btn btn-txt"><span class="lbl">변경</span><span class="icn rang"></span></a></div> -->
+                                </div>
+                                <div class="input"><span class="val">02-1234-5678</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-grd">
+                        <div class="title-bar">
+                            <h4>기타사업장</h4>
+                        </div>
+                        <div class="content">
+                            <div class="field phone">
+                                <div class="t">
+                                    <div class="c q1"><label class="lbl">사업장 전화번호<sup class="ess" aria-label="필수">*</sup></label></div>
+                                    <div class="c q2"></div>
+                                </div>
+                                <div class="input"><input type="text" class="db" value="02-1234-5678"></div>
+                            </div>
+                            <div class="field addr">
+                                <div class="t">
+                                    <div class="c q1"><label class="lbl">사업장 주소</label></div>
+                                    <div class="c q2"><a href="#" class="btn btn-txt"><span class="lbl">주소검색</span><span class="icn rang"></span></a></div>
+                                </div>
+                                <div class="input"><span class="val">14452 서울시 강남구 테헤란로 20길</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-bar botm-fix gradient mt40">
+                        <a href="#" class="btn btn-contained"><span class="lbl">확인</span><span class="icn"></span></a>
+                    </div>
+                </div>
+            </div><!-- //content -->
+        </div><!-- //section -->
+    </div><!-- //main -->
+    <div class="footer common"></div><!-- //footer -->
+</div><!-- //container -->
+</body>
+</html>

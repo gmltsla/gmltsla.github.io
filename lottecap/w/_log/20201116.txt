@@ -1,0 +1,29 @@
+제목: 신용대출 > 대출신청 > 신청정보확인 (김상호)
+내용: 계좌번호 추가
+대상: 3페이지
+/w/html/my/new_14.html (126)
+/w/html/my/apply_14.html (113)
+/w/html/my/contract_14.html (113)
+
+제목: 신용대출 > 상품소개 (김상호)
+내용: 안내문 영역 수정
+대상: 1페이지
+/w/html/retail/about_01.html (157-167, 258-268, 359-369)
+
+제목: 신용대출 > 상품소개 (김상호)
+내용: 항목 순서 수정
+대상: 1페이지
+/w/html/retail/about_01.html (302-317)
+
+제목: 신용대출 오타수정 (김상호)
+내용: 금웅직장이 --> 금융기관이
+대상: 4페이지
+/w/html/retail/add_11.html (233)
+/w/html/retail/apply_14.html (222)
+/w/html/retail/contract_14.html (222)
+/w/html/retail/new_14.html (267)
+
+제목: 회사소개 > 채용정보 (김진주)
+내용: 탭인덱스 마크업 일관성을 위한 수정
+대상: 1페이지
+/w/html/about/recruit_1.html (64-66)

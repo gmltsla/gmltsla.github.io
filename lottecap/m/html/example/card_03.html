@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/device.css">
+<script type="text/javascript" src="../../../m/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../m/scripts/common.js"></script>
+<script type="text/javascript" src="../../../m/scripts/default.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="btn btn-back">
+									<span class="icn"></span>
+									<span class="lbl">뒤로</span>
+								</a>
+							</div>
+							<div class="c q2"></div>
+							<div class="c q3">
+								<a href="#" class="btn btn-send">
+									<span class="icn"></span>
+									<span class="lbl">보내기</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div class="section">
+			<div class="content">
+				<div class="ui-example">
+					<div class="title-bar">
+						<div class="t">
+							<dl>
+								<dt>
+									<h2>Card</h2>
+									<span class="desc">Description</span>
+								</dt>
+								<dd></dd>
+							</dl>
+						</div>
+					</div>
+					<div class="content">
+						<div class="example">
+							<div class="title-bar">
+								<h3>Card </h3>
+								<p class="desc">대출/리스 내역카드</p>
+							</div>
+							<div class="content">
+								<!-- .ui.card //-->
+								<div class="ui-card">
+									<div class="card">
+										<div class="content">
+											<div class="shortcut"><!-- .shortcut: 항목 바로가기 -->
+												<p class="cat">오토리스</p>
+												<p class="sbj prd-name">아이오닉 하이브리드 아이오닉 하이브리드 아이오닉 하이브리드 아이오닉 하이브리드</p>
+												<p class="desc">현대자동차</p>
+												<span class="icn rang"></span>
+											</div>
+											<hr>
+											<div class="repay-lst"><!-- .repay-lst: 대출현황정보 -->
+												<div class="t">
+													<div class="r">
+														<div class="c dt"><span class="lbl">16회차 납부 예정</span></div>
+														<div class="c dd"><span class="price"><span class="val">375,000</span><span class="crc">원</span></span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// .ui.card -->
+							</div>
+						</div>
+						<div class="example">
+							<div class="title-bar">
+								<h3>Card </h3>
+								<p class="desc">리스 실적카드</p>
+							</div>
+							<div class="content">
+								<!-- .ui.card //-->
+								<div class="ui-card">
+									<div class="card">
+										<div class="content">
+											<div class="shortcut">
+												<p class="sbj">AG실적</p>
+												<span class="icn rang"></span>
+											</div>
+											<div class="repay-lst">
+												<ul class="t">
+													<li class="r">
+														<div class="c dt"><span class="lbl"><span class="val">김지수</span><span class="info-chips">2건</span></span></div>
+														<div class="c dd">
+															<p class="price"><span class="val">80,000,000</span><span class="crc">원</span></p>
+															<p class="desc">CLATUU ALPH</p>
+														</div>
+													</li>
+													<li class="r">
+														<div class="c dt"><span class="lbl"><span class="val">김지수</span><span class="info-chips">2건</span></span></div>
+														<div class="c dd">
+															<p class="price"><span class="val">20,000,000</span><span class="crc">원</span></p>
+															<p class="desc">LOGICS TECH M274</p>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// .ui.card -->
+								<div class="mt30"></div>
+								<!-- .ui.card //-->
+								<div class="ui-card">
+									<div class="card">
+										<div class="content">
+											<div class="shortcut">
+												<p class="sbj">AG실적</p>
+												<span class="icn rang"></span>
+											</div>
+											<div class="repay-lst">
+												<ul class="t">
+													<li class="r">
+														<div class="c dt"><span class="lbl"><span class="val">김지수</span><span class="info-chips">2건</span></span></div>
+														<div class="c dd">
+															<p class="price"><span class="val">80,000,000</span><span class="crc">원</span></p>
+														</div>
+													</li>
+													<li class="r">
+														<div class="c dt"><span class="lbl"><span class="val">김지수</span><span class="info-chips">2건</span></span></div>
+														<div class="c dd">
+															<p class="price"><span class="val">20,000,000</span><span class="crc">원</span></p>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// .ui.card -->
+								<div class="mt30"></div>
+								<!-- .ui.card //-->
+								<div class="ui-card">
+									<div class="card">
+										<div class="content">
+											<div class="shortcut">
+												<p class="sbj">고객서류 제출</p>
+												<span class="icn rang"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// .ui.card -->
+							</div>
+						</div>
+						<div class="example">
+							<div class="title-bar">
+								<h3>Card </h3>
+								<p class="desc">리스 실적카드 상세</p>
+							</div>
+							<div class="content">
+								<!-- .ui.card //-->
+								<div class="ui-card">
+									<div class="card">
+										<div class="content">
+											<div class="shortcut">
+												<p class="cat">CLATUU ALPHA 1</p>
+												<p class="sbj mt12">12,000,000원<span class="side">천이백만원</span></p>
+												<p class="desc">원금 662,695 + 이자 738,326</p>
+											</div>
+											<hr>
+											<div class="repay-lst">
+												<div class="t">
+													<div class="r">
+														<div class="c dt"><span class="lbl">대출일자/기간</span></div>
+														<div class="c dd"><span class="value">2019.02.11/24개월</span></div>
+													</div>
+													<div class="r">
+														<div class="c dt"><span class="lbl">잔여대출금</span></div>
+														<div class="c dd"><span class="value">8,540,000원</span></div>
+													</div>
+													<div class="r">
+														<div class="c dt"><span class="lbl">연체여부</span></div>
+														<div class="c dd"><span class="value">있음</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// .ui.card -->
+								<div class="mt30"></div>
+								<!-- .ui.card //-->
+								<div class="ui-card">
+									<div class="card">
+										<div class="content">
+											<div class="shortcut">
+												<p class="cat"><span class="lbl">김지수</span><span class="info-chips">심사중</span></p>
+												<p class="sbj mt12">12,000,000원<span class="side">천이백만원</span></p>
+												<p class="desc">원금 662,695 + 이자 738,326</p>
+											</div>
+											<hr>
+											<div class="repay-lst">
+												<div class="t">
+													<div class="r">
+														<div class="c dt"><span class="lbl">대출일자/기간</span></div>
+														<div class="c dd"><span class="value">2019.02.11/24개월</span></div>
+													</div>
+													<div class="r">
+														<div class="c dt"><span class="lbl">잔여대출금</span></div>
+														<div class="c dd"><span class="value">8,540,000원</span></div>
+													</div>
+													<div class="r">
+														<div class="c dt"><span class="lbl">연체여부</span></div>
+														<div class="c dd"><span class="value">있음</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// .ui.card -->
+							</div>
+						</div>
+						<div class="example">
+							<div class="title-bar">
+								<h3>Card </h3>
+								<p class="desc">전체 대출현황 카드</p>
+							</div>
+							<div class="content">
+								<!-- .ui.card //-->
+								<div class="ui-card">
+									<div class="card">
+										<div class="content">
+											<div class="shortcut">
+												<p class="sbj">신용대출</p>
+												<p class="desc">19.10.15 ~ 20.10.15</p>
+											</div>
+											<div class="etc-lst">
+												<div class="unt">
+													<span class="val monthly-pay">매달 <em>25일</em> 납부</span>
+													<span class="val price">70,000,000원</span>
+													<span class="val pay-status nega">연체중</span><!-- .pay-status: 연체상태 기본(클래스 없음) .posi(파랑) .nega(빨강) -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// .ui.card -->
+								<div class="mt30"></div>
+								<!-- .ui.card //-->
+								<div class="ui-card">
+									<div class="card">
+										<div class="content">
+											<div class="shortcut">
+												<p class="desc">오토리스</p>
+												<p class="sbj">G70 2.0 어드밴스드</p>
+											</div>
+											<div class="etc-lst">
+												<div class="unt">
+													<span class="val duration">19.10.15 ~ 20.10.15</span>
+												</div>
+												<div class="unt">
+													<span class="val monthly-pay">매달 <em>25일</em> 납부</span>
+													<span class="val price">70,000,000원</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// .ui.card -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="section">
+			<div class="content"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

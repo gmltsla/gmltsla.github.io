@@ -1,0 +1,8 @@
+제목: 자동차금융 약관 수정 (김상호)
+내용: 약관 목록 마크업
+대상: 3페이지
+/m/html/auto/lease_01_06.html (64-337)
+/m/html/auto/lease_02_01.html (61-335)
+/m/html/auto/lease_11_01.html (61-334)
+
+

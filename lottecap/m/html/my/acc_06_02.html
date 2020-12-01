@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/device.css">
+<script type="text/javascript" src="../../../m/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../m/scripts/common.js"></script>
+<script type="text/javascript" src="../../../m/scripts/default.js"></script>
+</head>
+<body>
+<div class="container my ui-sheet has-stepper">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="btn btn-back">
+									<span class="icn"></span>
+									<span class="lbl">뒤로</span>
+								</a>
+								<a href="#" class="btn btn-close-sheet">
+									<span class="icn"></span>
+									<span class="lbl">닫기</span>
+								</a>
+							</div>
+							<div class="c q2"></div>
+							<div class="c q3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div class="section">
+			<div class="content">
+				<div class="ui-stepper">
+					<ol>
+						<li class="q1">
+							<div class="stepper"><span class="num">1</span><span class="lbl">미납금 결제정보</span></div>
+						</li>
+						<li class="q2 current">
+							<div class="stepper"><span class="num">2</span><span class="lbl">신청정보확인</span></div>
+						</li>
+						<li class="q3">
+							<div class="stepper"><span class="num">3</span><span class="lbl">본인인증</span></div>
+						</li>
+					</ol>
+					<span class="handle stepper-over"></span>
+				</div>
+			</div>
+			<div class="sheet">
+				<div class="content">
+					<div class="scroll">
+						<div class="title-bar">
+							<div class="t">
+								<div class="r">
+									<div class="c">
+										<h2>김지수님의 미납금 결제<br>신청정보입니다</h2>
+									</div>
+									<div class="c tar"><a href="#" class="btn btn-txt"><span class="lbl">상환스케줄</span><span class="icn rang"></span></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="res-lst">
+							<ul>
+								<li>
+									<div class="res total">
+										<div class="c">
+											<dl>
+												<dt><span class="lgd">총 미납금결제정보</span></dt>
+												<dd>
+													<p class="val">864,000원</p>
+													<div class="desc">
+														<p>원금 348,000<br> + 이자 2,000<br> + 연체이자 12,540</p>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="c"></div>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="res">
+										<div class="c">
+											<dl>
+												<dt><span class="lgd">결제신청금액</span></dt>
+												<dd>
+													<p class="val">764,000원</p>
+												</dd>
+											</dl>
+										</div>
+										<div class="c"><span class="icn rang"></span></div>
+									</a>
+								</li>
+								<li>
+									<div class="res">
+										<div class="c">
+											<dl>
+												<dt><span class="lgd">L.POINT</span></dt>
+												<dd>
+													<p class="val">0P</p>
+												</dd>
+											</dl>
+										</div>
+										<div class="c"></div>
+									</div>
+								</li>
+								<li>
+									<div class="res">
+										<div class="c">
+											<dl>
+												<dt><span class="lgd">미납금잔여금액</span></dt>
+												<dd>
+													<p class="val">0원</p>
+												</dd>
+											</dl>
+										</div>
+										<div class="c"></div>
+									</div>
+								</li>
+								<li>
+									<div class="res">
+										<div class="c">
+											<dl>
+												<dt><span class="lgd">결제일</span></dt>
+												<dd>
+													<p class="val">2020.10.29</p>
+												</dd>
+											</dl>
+										</div>
+										<div class="c"></div>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="res">
+										<div class="c">
+											<dl>
+												<dt><span class="lgd">결제방식</span></dt>
+												<dd>
+													<p class="val"><span class="bnc bank"><span class="icn"><img src="../../../m/images/bank/004.png" alt="KB"></span><span class="lbl">국민</span><span class="val">312-910118-12345</span></span></p>
+												</dd>
+											</dl>
+										</div>
+										<div class="c"><span class="icn rang"></span></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="btn-bar">
+						<a href="#" class="btn btn-contained"><span class="lbl">결제 진행하기</span><span class="icn"></span></a>
+					</div>
+				</div>
+				<span class="handle sheet-over"></span>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="section">
+			<div class="content"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
