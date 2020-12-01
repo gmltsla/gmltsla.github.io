@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/device.css">
+<script type="text/javascript" src="../../../w/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="../../../w/scripts/common.js"></script>
+<script type="text/javascript" src="../../../w/scripts/default.js"></script>
+<script type="text/javascript" src="../../../w/scripts/device.js"></script>
+
+<script>
+    $(window).load(function() {
+        var $container = $(".container");
+        var h = $("> .header", $container).height() + $("> .main > .section.q1 > .content", $container).height();
+        var $bg = $("> .bg", $container);
+        $bg.height(h);
+	});
+</script>
+<style>
+    .swiper-container {width:100%; height:100%; padding:20px 0 100px 0;border:1px solid royalblue;}
+    .ui-carousel.type-a .swiper-container .swiper-slide {display:flex; justify-content:center; align-items:center; width:60%; height:300px; padding:55px 45px 33px; text-align:center; font-size:18px; background:#fff; border-radius:16px;  box-shadow: 0 30px 30px -24px rgba(0, 0, 0, .25);  transition:all 0.3s cubic-bezier(0, 0.93, 0.04, 1.19);}
+    .ui-carousel.type-a .swiper-container .swiper-pagination{position:absolute; left:0; bottom:50px; width:100%; text-align:center; white-space:nowrap; border: 1px solid red;}
+    .ui-carousel.type-a .swiper-container .swiper-pagination .swiper-pagination-bullet{width:30px; height:5px; line-height:normal; vertical-align:middle; font-size:0; margin:6px; padding:0; border-radius:0; background:#fff; opacity:1; transition:background-color .3s;}
+    .ui-carousel.type-a .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {background:#e62423; box-shadow: 0 3px 5px 0 rgba(230, 36, 35, .24);}
+    .ui-carousel.type-a .swiper-container .swiper-pagination {z-index:2;}
+    .ui-carousel.type-b .swiper-container .swiper-slide {display:flex; justify-content:center; align-items:center; width:35%; height:300px; padding:55px 45px 33px; text-align:center; font-size:18px; background:#fff; border-radius:16px; box-shadow: 0 30px 30px -24px rgba(0, 0, 0, .25);  transition:all 0.3s cubic-bezier(0, 0.93, 0.04, 1.19);}
+    .ui-carousel.type-b .swiper-container .swiper-pagination{position:absolute; left:0; bottom:50px; width:100%; text-align:center; white-space:nowrap; border: 1px solid red;}
+    .ui-carousel.type-b .swiper-container .swiper-pagination .swiper-pagination-bullet{width:30px; height:5px; line-height:normal; vertical-align:middle; font-size:0; margin:6px; padding:0; border-radius:0; background:#fff; opacity:1; transition:background-color .3s;}
+    .ui-carousel.type-b .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {background:#e62423; box-shadow: 0 3px 5px 0 rgba(230, 36, 35, .24);}
+    .ui-carousel.type-b .swiper-container .swiper-pagination {z-index:2;}
+</style>
+</head>
+
+<body>
+<div class="container index">
+	<div class="index-bg"></div>
+	<div class="header common"></div><!-- .common: 공통 요소 AJAX 로드 (/w/html/common/common.html) -->
+
+	<div id="main" class="main home" tabindex="-1">
+		<div class="section q1">
+			<div class="content">
+				<div class="msg">
+					<h2>롯데캐피탈에 오신 것을 환영합니다</h2>
+					<div class="desc">
+						<p>관심있는 상품을 확인해보세요</p>
+					</div>
+				</div>
+
+				<div class="ui-tab service-tab">
+                    <!-- 탭버튼 -->
+                    <ul class="tabs tab-btns">
+                        <li class="tab tab-btn q1"><a href="#" class="btn"><span class="icn"></span><span class="lbl">개인고객</span></a></li>
+                        <li class="tab tab-btn q2"><a href="#" class="btn"><span class="icn"></span><span class="lbl">기업고객</span></a></li>
+                    </ul>
+                    <!-- 카드슬라이드 -->
+                    <ul class="tabs tab-cnts">
+                        <li class="tab tab-cnt q1">
+                            <h4 class="tab-cnt-title">개인고객</h4>
+                            <div class="service-list ui-carousel">
+                                <div class="swiper-container col-3 loop speed-300 ">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide q1">
+                                            <div class="service">
+                                                <a href="#">
+                                                    <span class="tit">신규대출1</span>
+                                                    <p class="target">신용대출이<br>처음이신가요?</p>
+                                                    <div class="desc">
+                                                        <p>직업에 따라 알맞은 대출조건을<br>추천해드릴 수 있어요</p>
+                                                    </div>
+                                                    <div class="imge-area q1"></div>
+                                                </a>
+                                            </div>
+                                            <div class="overlay">
+                                                <div>
+                                                    확대된 영역입니다
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide q2">
+                                            <div class="service">
+                                                <a href="#">
+                                                    <span class="tit">오토리스2</span>
+                                                    <p class="target">원하는 차를 합리적으로<br>타고싶으신가요?</p>
+                                                    <div class="desc">
+                                                        <p>다양한 혜택과 함께 원하는 자동차를<br>탈 수 있는 좋은 기회를 드려요.</p>
+                                                    </div>
+                                                    <div class="imge-area q2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="overlay">
+                                                <div>
+                                                    확대된 영역입니다
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide q3">
+                                            <div class="service">
+                                                <a href="#">
+                                                    <span class="tit">자동차할부3</span>
+                                                    <p class="target">내자동차를<br>소유하고 싶으신가요?</p>
+                                                    <div class="desc">
+                                                        <p>큰 지출없이 자동차를<br>구매하실 수 있어요.</p>
+                                                    </div>
+                                                    <div class="imge-area q3"></div>
+                                                </a>
+                                            </div>
+                                            <div class="overlay">
+                                                <div>
+                                                    확대된 영역입니다
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide q4">
+                                            <div class="service">
+                                                <a href="#" class="link-box">
+                                                    <span class="tit">신규대출4</span>
+                                                    <p class="target">신용대출이<br>처음이신가요?</p>
+                                                    <div class="desc">
+                                                        <p>직업에 따라 알맞은 대출조건을<br>추천해드릴 수 있어요</p>
+                                                    </div>
+                                                    <div class="imge-area q1"></div>
+                                                </a>
+                                            </div>
+                                            <div class="overlay">
+                                                <div>
+                                                    확대된 영역입니다
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide q5">
+                                            <div class="service">
+                                                <a href="#">
+                                                    <span class="tit">오토리스5</span>
+                                                    <p class="target">원하는 차를 합리적으로<br>타고싶으신가요?</p>
+                                                    <div class="desc">
+                                                        <p>다양한 혜택과 함께 원하는 자동차를<br>탈 수 있는 좋은 기회를 드려요.</p>
+                                                    </div>
+                                                    <div class="imge-area q2"></div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide q6">
+                                            <div class="service">
+                                                <a href="#">
+                                                    <span class="tit">자동차할부6</span>
+                                                    <p class="target">내자동차를<br>소유하고 싶으신가요?</p>
+                                                    <div class="desc">
+                                                        <p>큰 지출없이 자동차를<br>구매하실 수 있어요.</p>
+                                                    </div>
+                                                    <div class="imge-area q3"></div>
+                                                </a>
+                                            </div>
+                                            <div class="overlay">
+                                                <div>
+                                                    확대된 영역입니다
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide q7">
+                                            <div class="service">
+                                                <a href="#" class="link-box">
+                                                    <span class="tit">신규대출7</span>
+                                                    <p class="target">신용대출이<br>처음이신가요?</p>
+                                                    <div class="desc">
+                                                        <p>직업에 따라 알맞은 대출조건을<br>추천해드릴 수 있어요</p>
+                                                    </div>
+                                                    <div class="imge-area q1"></div>
+                                                </a>
+                                            </div>
+                                            <div class="overlay">
+                                                <div>
+                                                    확대된 영역입니다
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide q8">
+                                            <div class="service">
+                                                <a href="#">
+                                                    <span class="tit">오토리스8</span>
+                                                    <p class="target">원하는 차를 합리적으로<br>타고싶으신가요?</p>
+                                                    <div class="desc">
+                                                        <p>다양한 혜택과 함께 원하는 자동차를<br>탈 수 있는 좋은 기회를 드려요.</p>
+                                                    </div>
+                                                    <div class="imge-area q2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="overlay">
+                                                <div>
+                                                    확대된 영역입니다
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide q9">
+                                            <div class="service">
+                                                <a href="#">
+                                                    <span class="tit">자동차할부9</span>
+                                                    <p class="target">내자동차를<br>소유하고 싶으신가요?</p>
+                                                    <div class="desc">
+                                                        <p>큰 지출없이 자동차를<br>구매하실 수 있어요.</p>
+                                                    </div>
+                                                    <div class="imge-area q3"></div>
+                                                </a>
+                                            </div>
+                                            <div class="overlay">
+                                                <div>
+                                                    확대된 영역입니다
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-navigation"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+				<!-- 0.1 + 1 + 0.1 -->
+				<div class="ui-carousel type-a">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">Slide 1</div>
+							<div class="swiper-slide">Slide 2</div>
+							<div class="swiper-slide">Slide 3</div>
+							<div class="swiper-slide">Slide 4</div>
+							<div class="swiper-slide">Slide 5</div>
+							<div class="swiper-slide">Slide 6</div>
+							<div class="swiper-slide">Slide 7</div>
+							<div class="swiper-slide">Slide 8</div>
+							<div class="swiper-slide">Slide 9</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<!-- 1 + 1 + 0.3 -->
+				<div class="ui-carousel type-b">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">Slide 1</div>
+							<div class="swiper-slide">Slide 2</div>
+							<div class="swiper-slide">Slide 3</div>
+							<div class="swiper-slide">Slide 4</div>
+							<div class="swiper-slide">Slide 5</div>
+							<div class="swiper-slide">Slide 6</div>
+							<div class="swiper-slide">Slide 7</div>
+							<div class="swiper-slide">Slide 8</div>
+							<div class="swiper-slide">Slide 9</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- //container -->
+</body>
+</html>

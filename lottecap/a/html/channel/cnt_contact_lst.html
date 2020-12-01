@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈 관리자</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="/a/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/swiper-6.2.0.min.css">
+<link type="text/css" rel="stylesheet" href="/a/styles/admin.css">
+<script type="text/javascript" src="/a/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="/a/plugins/swiper-6.2.0.min.js"></script>
+<script type="text/javascript" src="/a/scripts/admin.js"></script>
+</head>
+<body>
+<div class="container admin"><!-- .container.admin: 관리자 -->
+	<div class="header common"><!-- ajax load: common.html --></div>
+	<div class="nav common"><!-- ajax load: common.html --></div>
+	<div id="main" class="main">
+		<div class="section q1">
+			<div class="content">
+				<div class="title-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c">
+								<h2>담당자연락처</h2>
+							</div>
+							<div class="c"></div>
+						</div>
+					</div>
+				</div>
+				<div class="tool-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c"></div>
+							<div class="c">
+								<div class="field">
+									<select>
+										<option selected>기업금융</option>
+									</select>
+								</div>
+								<div class="field">
+									<select>
+										<option selected>할인어음</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="data-grd manager-lst"><!-- .manager-lst: 관리자 목록 -->
+					<table>
+						<colgroup>
+							<col width="30%">
+							<col>
+							<col width="30%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>담당팀</th>
+								<th>전화번호</th>
+								<th>수정</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Corporate 영업 1팀</td>
+								<td>02-3451-0211</td>
+								<td><button type="button" class="btn btn-edt"><span class="icn"></span><span class="lbl">수정</span></button></td>
+							</tr>
+							<tr>
+								<td>Corporate 영업 2팀</td>
+								<td>02-3451-0048</td>
+								<td><button type="button" class="btn btn-edt"><span class="icn"></span><span class="lbl">수정</span></button></td>
+							</tr>
+							<tr>
+								<td>Corporate 영업 3팀</td>
+								<td>02-3456-0052</td>
+								<td><button type="button" class="btn btn-edt"><span class="icn"></span><span class="lbl">수정</span></button></td>
+							</tr>
+							<tr>
+								<td>Corporate 영업 4팀</td>
+								<td>02-3456-0245</td>
+								<td><button type="button" class="btn btn-edt"><span class="icn"></span><span class="lbl">수정</span></button></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="field db"><input type="text" class="db" placeholder="팀명 입력"></div>
+								</td>
+								<td>
+									<div class="field db"><input type="text" placeholder="전화번호 입력"></div>
+								</td>
+								<td><button type="button" class="btn btn-sav"><span class="icn"></span><span class="lbl">저장</span></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btn-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c"></div>
+							<div class="c"><button type="button" class="btn btn-proc btn-wrt"><span class="icn"></span><span class="lbl">추가</span></button></div>
+						</div>
+					</div>
+				</div>
+				<div class="pagination">
+					<div class="align">
+						<div class="direction">
+							<a href="#" class="d first disabled"><span class="icn"></span><span class="lbl">처음</span></a>
+							<a href="#" class="d prev disabled"><span class="icn"></span><span class="lbl">이전</span></a>
+						</div>
+						<div class="fraction">
+							<span class="d current"><span class="icn"></span><span class="lbl">1</span></span>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">2</span></a>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">3</span></a>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">4</span></a>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">5</span></a>
+						</div>
+						<div class="direction">
+							<a href="#" class="d next"><span class="icn"></span><span class="lbl">다음</span></a>
+							<a href="#" class="d last"><span class="icn"></span><span class="lbl">끝</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer common"><!-- ajax load: common.html --></div>
+</div>
+</body>
+</html>

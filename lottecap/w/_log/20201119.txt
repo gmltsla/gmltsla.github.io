@@ -1,0 +1,5 @@
+제목: 자동차금융 > 상품소개 (김상호)
+내용: 문구 수정
+대상: 2페이지
+/w/html/auto/about_01.html (60)
+/w/html/auto/about_02.html (60)

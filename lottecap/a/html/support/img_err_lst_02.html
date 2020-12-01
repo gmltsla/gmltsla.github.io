@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈 관리자</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="/a/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/swiper-6.2.0.min.css">
+<link type="text/css" rel="stylesheet" href="/a/styles/admin.css">
+<script type="text/javascript" src="/a/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="/a/plugins/swiper-6.2.0.min.js"></script>
+<script type="text/javascript" src="/a/scripts/admin.js"></script>
+</head>
+<body>
+<div class="container admin"><!-- .container.admin: 관리자 -->
+	<div class="header common"><!-- ajax load: common.html --></div>
+	<div class="nav common"><!-- ajax load: common.html --></div>
+	<div id="main" class="main">
+		<div class="section q1">
+			<div class="content">
+				<div class="title-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c">
+								<h2>이미지전송오류재처리</h2>
+							</div>
+							<div class="c"></div>
+						</div>
+					</div>
+				</div>
+				<div class="note-lst">
+					<ul>
+						<li>
+							<p class="bl-md">이미지 재전송은 직접 영업지원 운영환경(lcss.lottecap.com) 쉘로 진입하여 처리해야 합니다.</p>
+						</li>
+						<li>
+							<p class="bl-md">아래의 목록은 오류에 대한 공지만을 수행하며, 운영환경 쉘에서 정상처리 종료 후 아래의 [완료버튼]을 눌러주시기 바랍니다.</p>
+						</li>
+						<li>
+							<p class="bl-md">영업지원 운영환경(/wwwroot/lcss.war/bin/) 경로에서 [복사] 버튼을 통해 복사된 쉘을 실행해주시면 됩니다.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="tool-bar prop-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c">
+								<table>
+									<colgroup>
+										<col class="th">
+										<col class="td p40">
+										<col class="th">
+										<col class="td">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">고객번호</th>
+											<td>
+												<div class="field"><input type="text" class="db"></div>
+											</td>
+											<th scope="row">처리상태</th>
+											<td>
+												<div class="field">
+													<label class="irc"><input type="checkbox" autocomplete="off"><span class="lbl">처리완료건</span></label>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="c"><button type="submit" class="btn btn-filter"><span class="icn"></span><span class="lbl">조회</span></button></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="data-grd img-err-lst"><!-- .img-err-lst: 이미지 오류 목록 -->
+					<table>
+						<colgroup>
+							<col width="5%">
+							<col width="5%">
+							<col width="8%">
+							<col width="10%">
+							<col width="10%">
+							<col>
+							<col width="15%">
+							<col width="8%">
+							<col width="8%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>
+									<label class="irc"><input type="checkbox" autocomplete="off" class="g g-01 ga-01"></label><!-- g: 체크박스그룹 --><!-- g-01: 체크박스그룹01 --><!-- .ga-01: 그룹01전체버튼 -->
+								</th>
+								<th>번호</th>
+								<th>처리상태</th>
+								<th>발생일시</th>
+								<th>고객번호</th>
+								<th>이미지키</th>
+								<th>에러내용</th>
+								<th>스크립트복사</th>
+								<th>개개처리</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><label class="irc"><input type="checkbox" autocomplete="off" class="g g-01"></label></td>
+								<td>100</td>
+								<td>오류상태</td>
+								<td>2020-12-12 12:12:12</td>
+								<td>A1234567890</td>
+								<td>
+									<div class="key">010908000000000MB20200813165651960010908000000000MB20200813165651960</div>
+								</td>
+								<td>사진 전송 실패</td>
+								<td><button type="button" class="btn btn-cpy"><span class="icn"></span><span class="lbl">복사</span></button></td>
+								<td><button type="button" class="btn btn-fin"><span class="icn"></span><span class="lbl">완료</span></button></td>
+							</tr>
+							<tr>
+								<td><label class="irc"><input type="checkbox" autocomplete="off" class="g g-01"></label></td>
+								<td>99</td>
+								<td>오류상태</td>
+								<td>2020-12-12 12:12:12</td>
+								<td>A1234567890</td>
+								<td>
+									<div class="key">010908000000000MB20200813165651960</div>
+								</td>
+								<td>사진 전송 실패</td>
+								<td><button type="button" class="btn btn-cpy"><span class="icn"></span><span class="lbl">복사</span></button></td>
+								<td><button type="button" class="btn btn-res"><span class="icn"></span><span class="lbl">재처리</span></button></td>
+							</tr>
+							<tr>
+								<td><label class="irc"><input type="checkbox" autocomplete="off" class="g g-01"></label></td>
+								<td>98</td>
+								<td>오류상태</td>
+								<td>2020-12-12 12:12:12</td>
+								<td>A1234567890</td>
+								<td>
+									<div class="key">010908000000000MB20200813165651960</div>
+								</td>
+								<td>사진 전송 실패</td>
+								<td><button type="button" class="btn btn-cpy"><span class="icn"></span><span class="lbl">복사</span></button></td>
+								<td><button type="button" class="btn btn-res"><span class="icn"></span><span class="lbl">재처리</span></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="pagination">
+					<div class="align">
+						<div class="direction">
+							<a href="#" class="d first disabled"><span class="icn"></span><span class="lbl">처음</span></a>
+							<a href="#" class="d prev disabled"><span class="icn"></span><span class="lbl">이전</span></a>
+						</div>
+						<div class="fraction">
+							<span class="d current"><span class="icn"></span><span class="lbl">1</span></span>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">2</span></a>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">3</span></a>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">4</span></a>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">5</span></a>
+						</div>
+						<div class="direction">
+							<a href="#" class="d next"><span class="icn"></span><span class="lbl">다음</span></a>
+							<a href="#" class="d last"><span class="icn"></span><span class="lbl">끝</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer common"><!-- ajax load: common.html --></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/device.css">
+<script type="text/javascript" src="../../../w/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="../../../w/scripts/common.js"></script>
+<script type="text/javascript" src="../../../w/scripts/default.js"></script>
+<script type="text/javascript" src="../../../w/scripts/device.js"></script>
+<script type="text/javascript">
+$(document).on("ready", function () {
+	var $uiForm = $(".ui-form").uiForm(); // 인스턴스 생성
+	$uiForm.init();
+
+	$(".btn-search-drop-on").on("click", function (e) {
+		e.preventDefault();
+		var $field = $(this).parents(".field");
+		var $input = $("> .input", $field);
+		var $outpost = $(".suggest-lst", $field);
+		if ($outpost.length > 0) $outpost.remove();
+
+		// 추천검색어 드랍다운 생성
+		var html = [], h = -1;
+
+		html[++h] = "<div class=\"suggest-lst\">";
+		html[++h] = "<div class=\"nano\">";
+		html[++h] = "<ul class=\"nano-content\">";
+		if ($field.hasClass("search-job")) {
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><dl><dt><span class=\"icn\"></span><span class=\"lbl\"><em>롯데</em>캐피탈</span></dt><dd><p>서울특별시 강남구 테헤란로 142</p></dd></dl></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><dl><dt><span class=\"icn\"></span><span class=\"lbl\"><em>롯데</em>마트</span></dt><dd><p>서울특별시 강남구 테헤란로 142</p></dd></dl></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><dl><dt><span class=\"icn\"></span><span class=\"lbl\"><em>롯데</em>백화점</span></dt><dd><p>서울특별시 강남구 테헤란로 142</p></dd></dl></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><dl><dt><span class=\"icn\"></span><span class=\"lbl\"><em>롯데</em>정보통신</span></dt><dd><p>서울특별시 강남구 테헤란로 142</p></dd></dl></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><dl><dt><span class=\"icn\"></span><span class=\"lbl\"><em>롯데</em>제과</span></dt><dd><p>서울특별시 강남구 테헤란로 142</p></dd></dl></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><dl><dt><span class=\"icn\"></span><span class=\"lbl\"><em>롯데</em>리아</span></dt><dd><p>서울특별시 강남구 테헤란로 142</p></dd></dl></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><dl><dt><span class=\"icn\"></span><span class=\"lbl\"><em>롯데</em>월드</span></dt><dd><p>서울특별시 강남구 테헤란로 142</p></dd></dl></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><dl><dt><span class=\"icn\"></span><span class=\"lbl\"><em>롯데</em>시네마</span></dt><dd><p>서울특별시 강남구 테헤란로 142</p></dd></dl></a></li>";
+		} else if ($field.hasClass("search-addr")) {
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 11길</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 11길 10</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 11길 11</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 12길</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 12길 12</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 13길 10</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 13길 11</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 13길 12</span></a></li>";
+		} else if ($field.hasClass("email-address")) {
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>naver</em>.com</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>hanmail</em>.net</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>gmail</em>.com</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>nate</em>.com</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>dreamwiz</em>.com</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>empal</em>.com</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>freechal</em>.com</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>hanafos</em>.com</span></a></li>";
+			html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>hotmail</em>.com</span></a></li>";
+		} else {
+		}
+		html[++h] = "</ul>";
+		html[++h] = "</div>";
+		html[++h] = "</div>";
+		var $af = $(html.join("")).appendTo($input);
+		$field.searchDrop("on");
+		$(".nano", $af).nanoScroller();
+
+		$(".suggest", $af).on("click", function (e) {
+			e.preventDefault();
+			var val = $(".lbl", $(this)).html().replace(/<.*?>/g, "");
+			var $target = $("input", $input);
+			if ($field.hasClass("email-address")) $target = $("input.email-provider", $input);
+			$target.val(val);
+			$field.searchDrop("off");
+		});
+	});
+	$(".btn-search-drop-off").on("click", function (e) {
+		e.preventDefault();
+		var $field = $(this).parents(".field");
+		$field.searchDrop("off");
+	});
+});
+</script>
+</head>
+<body>
+<div class="container ui-sheet has-stepper">
+    <div class="header common"></div>
+    <div id="main" class="main" tabindex="-1">
+        <div class="section">
+            <div class="content">
+                <div class="ui-stepper">
+                    <ol>
+                        <li class="q1">
+                            <div class="stepper"><span class="num">1</span><span class="lbl">대출정보</span></div>
+                        </li>
+                        <li class="q2 current">
+                            <div class="stepper"><span class="num">2</span><span class="lbl">결제정보</span></div>
+                        </li>
+                        <li class="q3">
+                            <div class="stepper"><span class="num">3</span><span class="lbl">약관동의</span></div>
+                        </li>
+                        <li class="q4">
+                            <div class="stepper"><span class="num">4</span><span class="lbl">신청정보확인</span></div>
+                        </li>
+                        <li class="q5">
+                            <div class="stepper"><span class="num">5</span><span class="lbl">본인인증</span></div>
+                        </li>
+                    </ol>
+                    <a href="#" class="handle stepper-over"></a>
+                </div>
+            </div>
+            <div class="sheet retail new">
+				<div class="content">
+					<div class="form">
+						<div class="field search search-job">
+							<label class="lbl">직장명을 입력해주세요 <a href="#" class="btn-search-drop-on">ON</a> <a href="#" class="btn-search-drop-off">OFF</a> </label>
+							<div class="input"><input type="text" class="db" placeholder="직장명"><span class="btn btn-input-clear"><span class="icn"></span><span class="lbl">삭제</span></span></div>
+							<div class="btn-bar tar">
+								<a href="#" class="btn btn-next run-next"><span class="lbl">다음</span><span class="icn rarr"></span></a>
+							</div>
+						</div>
+						<div class="field search search-addr">
+							<label class="lbl">자택 주소를 입력해주세요 <a href="#" class="btn-search-drop-on">ON</a> <a href="#" class="btn-search-drop-off">OFF</a> </label>
+							<div class="input"><input type="text" class="db" placeholder="도로명주소, 지번주소"><span class="btn btn-input-clear" tabindex="0"><span class="icn"></span><span class="lbl">삭제</span></span></div>
+							<div class="btn-bar tar">
+								<a href="#" class="btn btn-next run-next"><span class="lbl">다음</span><span class="icn rarr"></span></a>
+							</div>
+						</div>
+
+						<div class="field search search-addr on-ready"><!-- .field.search.on-ready: 검색버튼 활성화 상태 -->
+							<label class="lbl">상세주소를 입력해주세요</label>
+							<div class="input">
+								<div class="t">
+									<div class="c"><input type="text" class="db" placeholder="동, 호수, 층"><span class="btn btn-input-clear"><span class="icn"></span><span class="lbl">삭제</span></span></div>
+									<div class="c"><a href="#" class="btn btn-search-submit"><span class="icn mag"></span><span class="lbl">검색</span></a></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="field search search-addr">
+							<label class="lbl">상세주소를 입력해주세요 <a href="#" class="btn-search-drop-on">ON</a> <a href="#" class="btn-search-drop-off">OFF</a> </label>
+							<div class="input">
+								<div class="t">
+									<div class="c"><input type="text" class="db" placeholder="동, 호수, 층"><span class="btn btn-input-clear"><span class="icn"></span><span class="lbl">삭제</span></span></div>
+									<div class="c"><a href="#" class="btn btn-search-submit"><span class="icn mag"></span><span class="lbl">검색</span></a></div>
+								</div>
+							</div>
+							<div class="tool-bar mt0">
+								<div class="t">
+									<div class="r">
+										<div class="c tal">
+											<div class="field checkbox">
+												<div class="input">
+													<div class="ui-irc">
+														<label>
+															<input type="radio" autocomplete="off" name="radio_addr_01">
+															<div class="t">
+																<div class="c"><span class="icn"></span></div>
+																<div class="c">
+																	<span class="lbl">표준화 주소 확인</span>
+																	<div class="addr-lst">
+																		<ul>
+																			<li>
+																				<p>17936 경기도 평택시 안중읍 안현로서3길 58 (BJ빌딩)</p>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="r">
+										<div class="c tal">
+											<div class="field checkbox">
+												<div class="input">
+													<div class="ui-irc">
+														<label>
+															<input type="radio" autocomplete="off" name="radio_addr_01">
+															<div class="t">
+																<div class="c"><span class="icn"></span></div>
+																<div class="c">
+																	<span class="lbl">지번 주소 확인</span>
+																	<div class="addr-lst">
+																		<ul>
+																			<li>
+																				<p>17936 경기도 평택시 안중읍 안중리 256-49 BJ빌딩</p>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="c"></div>
+									</div>
+								</div>
+							</div>
+							<div class="btn-bar tar">
+								<a href="#" class="btn btn-next run-next"><span class="lbl">다음</span><span class="icn rarr"></span></a>
+							</div>
+						</div>
+						<div class="field search email-address">
+							<label class="lbl">이메일 주소를 입력해주세요 <a href="#" class="btn-search-drop-on">ON</a> <a href="#" class="btn-search-drop-off">OFF</a> </label>
+							<div class="input">
+								<div class="t">
+									<div class="c q1"><input type="text" class="email-id" placeholder="아이디"></div>
+									<div class="c q2">@</div>
+									<div class="c q3"><input type="text" class="email-provider" placeholder="주소입력"></div>
+								</div>
+							</div>
+							<div class="btn-bar tar">
+								<a href="#" class="btn btn-next run-next"><span class="lbl">다음</span><span class="icn rarr"></span></a>
+							</div>
+						</div>
+						<div class="field select">
+							<label class="lbl">자금용도를 선택하세요</label>
+							<div class="input">
+								<div class="options">
+									<ul>
+										<li><a href="#" class="option"><span class="lbl">가계자금</span><span class="icn"></span><span class="val">가계자금</span></a></li>
+										<li><a href="#" class="option selected"><span class="lbl">주택구입/신축</span><span class="icn"></span><span class="val">주택구입/신축</span></a></li>
+										<li><a href="#" class="option"><span class="lbl">학자금</span><span class="icn"></span><span class="val">학자금</span></a></li>
+										<li><a href="#" class="option"><span class="lbl">대출상환</span><span class="icn"></span><span class="val">대출상환</span></a></li>
+										<li><a href="#" class="option"><span class="lbl">사업자금</span><span class="icn"></span><span class="val">사업자금</span></a></li>
+										<li><a href="#" class="option"><span class="lbl">결혼자금</span><span class="icn"></span><span class="val">결혼자금</span></a></li>
+										<li><a href="#" class="option"><span class="lbl">기타</span><span class="icn"></span><span class="val">기타</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="btn-bar tar">
+								<a href="#" class="btn btn-next run-next"><span class="lbl">다음</span><span class="icn rarr"></span></a>
+							</div>
+						</div>
+					</div><!-- //form -->
+				</div><!-- //content  -->
+				<span class="handle sheet-over"></span>
+			</div>
+        </div><!-- //section -->
+    </div><!-- //main -->
+    <div class="footer common"></div><!-- //footer -->
+</div><!-- //container -->
+</body>
+</html>

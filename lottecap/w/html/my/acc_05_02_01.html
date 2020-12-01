@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/device.css">
+<script type="text/javascript" src="../../../w/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="../../../w/scripts/common.js"></script>
+<script type="text/javascript" src="../../../w/scripts/default.js"></script>
+<script type="text/javascript" src="../../../w/scripts/device.js"></script>
+</head>
+
+<body>
+<div class="container my ui-sheet has-stepper">
+    <div class="header common"></div>
+    <div id="main" class="main" tabindex="-1">
+        <div class="section">
+            <div class="content">
+                <div class="ui-stepper">
+                    <ol>
+                        <li class="q1">
+                            <div class="stepper"><span class="num">1</span><span class="lbl">선결제정보</span></div>
+                        </li>
+                        <li class="q2 current">
+                            <div class="stepper"><span class="num">2</span><span class="lbl">신청정보 확인</span></div>
+                        </li>
+                        <li class="q3">
+                            <div class="stepper"><span class="num">3</span><span class="lbl">본인인증</span></div>
+                        </li>
+                    </ol>
+                    <a href="#" class="handle stepper-over"></a>
+                </div>
+            </div>
+            <div class="sheet">
+                <div class="content">
+                    <div class="scroll">
+                        <div class="btns">
+                            <a href="#" class="btn btn-back-page">
+                                <span class="icn"></span>
+                                <span class="lbl">이전으로</span>
+                            </a>
+                        </div>
+						<div class="title-bar">
+							<h2>금액 결제방식을 선택해주세요</h2>
+						</div>
+						<div class="form">
+							<div class="field radio dtl">
+								<label class="lbl"></label>
+								<div class="input">
+									<div class="ui-irc checked">
+										<label>
+											<input type="radio" autocomplete="off" name="radio_payway_01" checked="checked">
+											<div class="t">
+												<div class="c"><span class="icn"></span></div>
+												<div class="c">
+													<span class="lbl"><strong>자동이체계좌</strong></span>
+												</div>
+											</div>
+										</label>
+										<div class="res">
+											<p class="bank"><span class="icn"><img src="../../../m/images/bank/004.png"></span><span class="lbl">국민</span><span class="val">370-910118-97407</span></p>
+										</div>
+                                    </div>
+
+									<div class="ui-irc">
+										<label>
+											<input type="radio" autocomplete="off" name="radio_payway_01">
+											<div class="t">
+												<div class="c"><span class="icn"></span></div>
+												<div class="c"><span class="lbl"><strong>본인명의 다른계좌</strong></span></div>
+											</div>
+										</label>
+                                        <div class="res">
+											<div class="field fieldset bank-and-acc">
+                                                <div class="t">
+                                                    <div class="c q1">
+                                                        <div class="field dropdown ui-dropdown bank" title="은행선택">
+                                                            <a href="#" class="output"><span class="val">출금은행 선택</span></a>
+                                                            <div class="input">
+                                                                <ul class="options">
+                                                                    <li class="option selected"><span class="pic"><img src="../../../w/images/bank/005.png" alt=""></span><span class="lbl">KEB하나은행</span><span class="val">KEB하나은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/054.png" alt=""></span><span class="lbl">HSBC</span><span class="val">HSBC</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/023.png" alt=""></span><span class="lbl">SC제일은행</span><span class="val">SC제일은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/039.png" alt=""></span><span class="lbl">경남은행</span><span class="val">경남은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/034.png" alt=""></span><span class="lbl">광주은행</span><span class="val">광주은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/004.png" alt=""></span><span class="lbl">국민은행</span><span class="val">국민은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/011.png" alt=""></span><span class="lbl">농협은행</span><span class="val">농협은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/003.png" alt=""></span><span class="lbl">기업은행</span><span class="val">기업은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/032.png" alt=""></span><span class="lbl">부산은행</span><span class="val">부산은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/031.png" alt=""></span><span class="lbl">대구은행</span><span class="val">대구은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/002.png" alt=""></span><span class="lbl">산업은행</span><span class="val">산업은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/050.png" alt=""></span><span class="lbl">상호저축은행</span><span class="val">상호저축은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/007.png" alt=""></span><span class="lbl">수협은행</span><span class="val">수협은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/045.png" alt=""></span><span class="lbl">새마을금고</span><span class="val">새마을금고</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/088.png" alt=""></span><span class="lbl">신한은행</span><span class="val">신한은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/048.png" alt=""></span><span class="lbl">신협은행</span><span class="val">신협은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/020.png" alt=""></span><span class="lbl">우리은행</span><span class="val">우리은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/071.png" alt=""></span><span class="lbl">우체국</span><span class="val">우체국</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/037.png" alt=""></span><span class="lbl">전북은행</span><span class="val">전북은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/035.png" alt=""></span><span class="lbl">제주은행</span><span class="val">제주은행</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/090.png" alt=""></span><span class="lbl">카카오뱅크</span><span class="val">카카오뱅크</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/089.png" alt=""></span><span class="lbl">케이뱅크</span><span class="val">케이뱅크</span></li>
+                                                                    <li class="option"><span class="pic"><img src="../../../w/images/bank/027.png" alt=""></span><span class="lbl">한국시티</span><span class="val">한국시티</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c q2">
+                                                        <div class="field bank-acc">
+                                                            <div class="input"><input type="tel" class="db" placeholder="결제 계좌번호" value=""><span class="icn status"></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="note payway mt50">
+							<h5>가상계좌</h5>
+							<p class="bank"><span class="icn"><img src="../../../m/images/bank/004.png"></span><span class="lbl">국민</span> <span class="val">370-910118-97407</span></p>
+							<div class="inline-tip"><span class="icn"></span><span class="lbl">가상계좌로 입금은 11pm까지 가능합니다.</span></div>
+						</div>
+                    </div>
+                    <div class="btn-bar">
+						<a href="#" class="btn btn-contained"><span class="lbl">결제방식 변경하기</span><span class="icn"></span></a>
+					</div>
+                </div>
+            </div>
+        </div><!-- //section -->
+    </div><!-- //main -->
+    <div class="footer common"></div><!-- //footer -->
+</div><!-- //container -->
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/device.css">
+<script type="text/javascript" src="../../../w/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="../../../w/scripts/common.js"></script>
+<script type="text/javascript" src="../../../w/scripts/default.js"></script>
+<style>
+	h2.header-type{display:block;position:relative;text-align:center;font-size:24px;color:#888;padding:40px;}
+	header{display:block;position:relative;margin:0 auto;border:2px solid #ccc;}
+	header.t1,
+	header.t3{width:1200px;}
+	header.t2,
+	header.t4{width:1000px;}
+
+header > .section{}
+header .menu-bar{}
+header .menu-bar > .t{width:100%;}
+header .menu-bar > .t > .r{}
+header .menu-bar > .t > .r > .c{vertical-align:middle;white-space:nowrap;}
+header .menu-bar > .t > .r > .c.q1,
+header .menu-bar > .t > .r > .c.q3{width:1%;}
+header .menu-bar > .t > .r > .c.q2{text-align:center;}
+header .menu-bar > .t > .r > .c.q3{text-align:right;}
+
+header .logo{display:inline-block;width:136px;height:40px;vertical-align:middle;background:url("../../w/images/logo-lotte-full.png") no-repeat;background-size:136px 40px;}
+header .direct-menu li{display:inline-block; margin:0 16px;}
+header .direct-menu li:first-child{margin-left:0;}
+header .direct-menu li:last-child{margin-right:0;}
+header .direct-menu li a{display:block;line-height:normal;font-size:17px;font-weight:bold;color:#000;margin:-2px 0 0 0;}
+
+
+header .menu-bar > .t{}
+header .menu-bar > .t > .r{}
+header .menu-bar > .t > .r > .c{}
+
+
+	header .shortcut-bar{font-size:0;}
+	header .shortcut-bar > ul,
+	header .shortcut-bar > ul > li{display:inline-block;vertical-align:middle;}
+	header .shortcut-bar > ul{position:relative;padding:0 5px;}
+	header .shortcut-bar .btn{width:auto;height:auto;padding:6px;}
+	header .shortcut-bar .btn .icn{display:none;}
+	header .shortcut-bar .icn,
+	header .shortcut-bar .lbl{width:auto;height:auto;font-size:13px;}
+	header .shortcut-bar > ul.q1:after{display:block;position:absolute;right:0;top:10px;bottom:10px;width:1px;font-size:0;background:#000;content:"";opacity:.15;}
+	header .shortcut-bar > ul.q1 .btn .lbl{color:#999;}
+	header .shortcut-bar > ul.q3{padding-right:0;}
+	header .shortcut-bar > ul.q3 .btn{}
+	header .shortcut-bar > ul.q3 .btn .lbl{color:#333;}
+	header .shortcut-bar .btn.btn-search .icn,
+	header .shortcut-bar .btn.btn-menu .icn{display:inline-block;width:32px; height:32px;background:url("../../w/images/common/icns_64_01.png") no-repeat; background-size:400px 100px;}
+	header .shortcut-bar .btn.btn-search .lbl,
+	header .shortcut-bar .btn.btn-menu .lbl{display:none;}
+	header .shortcut-bar .btn.btn-search .icn{background-position:-250px 0;}
+	header .shortcut-bar .btn.btn-menu .icn{background-position:-100px 0;}
+
+	header .shortcut-bar .user-status{display:inline-block;vertical-align:middle;}
+	header .shortcut-bar .user-status .lbl,
+	header .shortcut-bar .user-status .val,
+	header .shortcut-bar .user-status .btn{font-size:13px;color:#2b4ca6;}
+	header .shortcut-bar .user-status .user-name{font-weight:bold;}
+	header .shortcut-bar .user-status .lbl + .val{margin-left:12px;}
+	header .shortcut-bar .user-status .timer{}
+	header .shortcut-bar .user-status .btn-postpone{margin:0 0 0 12px;padding:2px 4px;background:#e8e4f4;}
+	header .shortcut-bar .user-status .btn-postpone .icn{display:none;}
+	header .shortcut-bar .user-status .btn-postpone .lbl{font-weight:bold;color:#2b4ca6;}
+
+
+
+/* header.t1 .menu-bar > .t > .r > .c.q1,
+header.t1 .menu-bar > .t > .r > .c.q3{width:420px;}
+
+header.t2 .menu-bar > .t > .r > .c.q1,
+header.t2 .menu-bar > .t > .r > .c.q3{width:225px;}
+
+header.t3 .menu-bar > .t > .r > .c.q1,
+header.t3 .menu-bar > .t > .r > .c.q3{width:400px;} */
+
+
+
+
+header.t2 .shortcut-bar > ul.q1{display:none;}
+
+
+main{display:block;position:relative;width:1000px;height:100px;margin:0 auto;background: #a9a9a9;}
+
+
+
+</style>
+
+
+</head>
+
+<body>
+<div class="container index">
+	<div class="index-bg"></div>
+	<!-- 로그인전 1600 //-->
+	<h2 class="header-type">로그인전 1600</h2>
+    <header class="t1">
+        <div class="section">
+            <div class="menu-bar">
+                <div class="t">
+                    <div class="r">
+                        <div class="c q1">
+                            <a href="#" class="logo" title="롯데캐피탈"></a>
+                        </div>
+                        <div class="c q2">
+                            <ul class="direct-menu">
+                                <li><a href="#" class="q1"><span class="icn"></span><span class="lbl">신용대출</span></a></li>
+                                <li><a href="#" class="q2"><span class="icn"></span><span class="lbl">자동차금융</span></a></li>
+                                <li><a href="#" class="q3"><span class="icn"></span><span class="lbl">기업금융</span></a></li>
+                                <li><a href="#" class="q4"><span class="icn"></span><span class="lbl">리스/할부금융</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="c q3">
+							<div class="shortcut-bar">
+								<ul class="q1">
+									<li><a href="#" class="btn portal"><span class="icn"></span><span class="lbl">금융소비자보호포털</span></a></li>
+									<li><a href="#" class="btn customer"><span class="icn"></span><span class="lbl">고객센터</span></a></li>
+								</ul>
+								<ul class="q3">
+									<li><a href="#" class="btn btn-auth"><span class="icn"></span><span class="lbl">공인인증센터</span></a></li>
+									<li><a href="#" class="btn btn-login"><span class="icn"></span><span class="lbl">로그인</span></a></li>
+									<li><a href="#" class="btn btn-search"><span class="icn"></span><span class="lbl">검색</span></a></li>
+									<li><a href="#" class="btn btn-menu"><span class="icn"></span><span class="lbl">전체메뉴</span></a></li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</header>
+	<main></main>
+	<!-- 로그인전 1000 //-->
+	<h2 class="header-type">로그인전 1000</h2>
+	<header class="t2">
+		<div class="section">
+			<div class="menu-bar">
+				<div class="t">
+					<div class="r">
+						<div class="c q1">
+							<a href="#" class="logo" title="롯데캐피탈"></a>
+						</div>
+						<div class="c q2">
+							<ul class="direct-menu">
+								<li><a href="#" class="q1"><span class="icn"></span><span class="lbl">신용대출</span></a></li>
+								<li><a href="#" class="q2"><span class="icn"></span><span class="lbl">자동차금융</span></a></li>
+								<li><a href="#" class="q3"><span class="icn"></span><span class="lbl">기업금융</span></a></li>
+								<li><a href="#" class="q4"><span class="icn"></span><span class="lbl">리스/할부금융</span></a></li>
+							</ul>
+						</div>
+						<div class="c q3">
+							<div class="shortcut-bar">
+								<ul class="q1">
+									<li><a href="#" class="btn portal"><span class="icn"></span><span class="lbl">금융소비자보호포털</span></a></li>
+									<li><a href="#" class="btn customer"><span class="icn"></span><span class="lbl">고객센터</span></a></li>
+								</ul>
+								<ul class="q3">
+									<li><a href="#" class="btn btn-auth"><span class="icn"></span><span class="lbl">공인인증센터</span></a></li>
+									<li><a href="#" class="btn btn-login"><span class="icn"></span><span class="lbl">로그인</span></a></li>
+									<li><a href="#" class="btn btn-search"><span class="icn"></span><span class="lbl">검색</span></a></li>
+									<li><a href="#" class="btn btn-menu"><span class="icn"></span><span class="lbl">전체메뉴</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main></main>
+	<!-- 로그인후 1600 //-->
+	<h2 class="header-type">로그인후 1600</h2>
+	<header class="t3">
+		<div class="section">
+			<div class="menu-bar">
+				<div class="t">
+					<div class="r">
+						<div class="c q1">
+							<a href="#" class="logo" title="롯데캐피탈"></a>
+						</div>
+						<div class="c q2">
+							<ul class="direct-menu">
+								<li><a href="#" class="q1"><span class="icn"></span><span class="lbl">신용대출</span></a></li>
+								<li><a href="#" class="q2"><span class="icn"></span><span class="lbl">자동차금융</span></a></li>
+								<li><a href="#" class="q3"><span class="icn"></span><span class="lbl">기업금융</span></a></li>
+								<li><a href="#" class="q4"><span class="icn"></span><span class="lbl">리스/할부금융</span></a></li>
+							</ul>
+						</div>
+						<div class="c q3">
+							<div class="shortcut-bar">
+								<ul class="q2">
+									<li>
+										<div class="user-status">
+											<span class="lbl user-name">김롯데님</span>
+											<span class="val timer">09:54</span>
+											<a href="#" class="btn btn-postpone"><span class="icn"></span><span class="lbl">연장</span></a>
+										</div>
+									</li>
+								</ul>
+								<ul class="q3">
+									<li><a href="#" class="btn btn-auth"><span class="icn"></span><span class="lbl">공인인증센터</span></a></li>
+									<li><a href="#" class="btn btn-login"><span class="icn"></span><span class="lbl">로그인</span></a></li>
+									<li><a href="#" class="btn btn-search"><span class="icn"></span><span class="lbl">검색</span></a></li>
+									<li><a href="#" class="btn btn-menu"><span class="icn"></span><span class="lbl">전체메뉴</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main></main>
+	<!-- 로그인후 1000 //-->
+	<h2 class="header-type">로그인후 1000</h2>
+	<header class="t4">
+		<div class="section">
+			<div class="menu-bar">
+				<div class="t">
+					<div class="r">
+						<div class="c q1">
+							<a href="#" class="logo" title="롯데캐피탈"></a>
+						</div>
+						<div class="c q2">
+							<ul class="direct-menu">
+								<li><a href="#" class="q1"><span class="icn"></span><span class="lbl">신용대출</span></a></li>
+								<li><a href="#" class="q2"><span class="icn"></span><span class="lbl">자동차금융</span></a></li>
+								<li><a href="#" class="q3"><span class="icn"></span><span class="lbl">기업금융</span></a></li>
+								<li><a href="#" class="q4"><span class="icn"></span><span class="lbl">리스/할부금융</span></a></li>
+							</ul>
+						</div>
+						<div class="c q3">
+							<div class="shortcut-bar">
+								<ul class="q2">
+									<li>
+										<div class="user-status"><span class="lbl user-name">김롯데님</span><span class="val timer">09:54</span><a href="#" class="btn btn-postpone"><span class="icn"></span><span class="lbl">연장</span></a></div>
+									</li>
+								</ul>
+								<ul class="q3">
+									<li><a href="#" class="btn btn-auth"><span class="icn"></span><span class="lbl">공인인증센터</span></a></li>
+									<li><a href="#" class="btn btn-login"><span class="icn"></span><span class="lbl">로그인</span></a></li>
+									<li><a href="#" class="btn btn-search"><span class="icn"></span><span class="lbl">검색</span></a></li>
+									<li><a href="#" class="btn btn-menu"><span class="icn"></span><span class="lbl">전체메뉴</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,467 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+
+
+
+
+
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.min.css?v=20200908174736">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.theme.min.css?v=20200908174736">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/swiper-5.4.2.min.css?v=20200908174736">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css?v=20200908174736">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css?v=20200908174736">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/device.css?v=20200908174736">
+
+<script type="text/javascript" src="../../../m/plugins/jquery-1.12.4.min.js?v=20200908174736"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-migrate-1.4.1.min.js?v=20200908174736"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-ui-1.12.1.min.js?v=20200908174736"></script>
+<script type="text/javascript" src="../../../m/plugins/hammer-2.0.8.min.js?v=20200908174736"></script>
+<script type="text/javascript" src="../../../m/plugins/swiper-5.4.2.min.js?v=20200908174736"></script>
+<script type="text/javascript" src="../../../m/scripts/common.js?v=20200908174736"></script>
+<script type="text/javascript" src="../../../m/scripts/default.js?v=20200908174736"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 개발 Scope -->
+	<script type="text/javascript" src="/res/package.js?v=20200908174736"></script>
+	<script type="text/javascript" src="/res/util.js?v=20200908174736"></script>
+	<script type="text/javascript" src="/res/cmm.message.js?v=20200908174736"></script>
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="/res/pc/solution.js?v=20200908174736"></script>
+
+	<!-- ####################### 라온시큐어 모듈 ######################## -->
+
+
+<script type="text/javascript">var TNK_SR = '83acdde6f596adeb78ff5dcb6e9a11a3';</script> <!-- 키보드보안 암호화 라이브러리 적용 시작 -->
+
+
+<!-- TouchEnNx Start-->
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/cmn/json2.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/cmn/TouchEnNx.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/cmn/TouchEnNx_exproto.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/cmn/TouchEnNx_install.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/cmn/TouchEnNx_daemon.js'></script>
+<!-- TouchEnNx End-->
+
+<!-- TouchEn nxKey Start -->
+<!-- í¤ë³´ëë³´ì ì ì©ì ì£¼ì í´ì  íì-->
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/nxKey/js/nxkey_config.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/nxKey/js/TouchEnNxKey_Interface.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/nxKey/js/TouchEnNxKey.js'></script>
+
+<!-- TouchEn nxKey End -->
+
+<!-- TouchEn nxcr Start -->
+<!--
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/nxCR/js/nxcr_config.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/nxCR/js/NXCertRelay_Interface.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/nxCR/js/NXCertRelay.js'></script>
+-->
+<!-- TouchEn nxcr End -->
+
+<!-- TouchEn nxfw Start -->
+
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/nxFw/js/nxfw_config.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/nxFw/js/TouchEnNxFirewall_Interface.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/nxFw/js/TouchEnNxFirewall.js'></script>
+
+<!-- TouchEn nxfw End -->
+<!--
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/nxWeb/js/nxweb_config.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/nxWeb/js/TouchEnNxWeb_Interface.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/nxWeb/js/TouchEnNxWeb.js'></script>
+ -->
+<!-- ksbiz start -->
+<!--
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/ksbiz/js/ksbiz_config.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/ksbiz/js/ksbiz_Interface.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/ksbiz/js/ksbiz_extend.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/ksbiz/js/ksbiz_internal.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/ksbiz/js/ksbiz.js'></script>
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/ksbiz/cxsign/xwckit.js'></script>
+-->
+<!-- ksbiz End -->
+
+<!--
+<link rel='stylesheet' type='text/css' charset='utf-8' href='/raonsecure/transkey/transkey.css'</link>
+<script type='text/javascript' charset='utf-8' src='/raonsecure/transkey/transkey.js'></script>
+-->
+<!-- TouchEnNx Start-->
+<script type='text/javascript' charset='utf-8' src='/TouchEn/raonnx/cmn/TouchEnNx_loader.js'></script>
+<!-- TouchEnNx End--> <!-- 라온키보드보안 로드 -->
+	<!-- 라온가상키패드 로드 -->
+	<script type="text/javascript" src="/TouchEn/transkey/transkey.js?v=20200908174736""></script>
+	<link rel="stylesheet" type="text/css" href="/TouchEn/transkey/transkey.css?v=20200908174736"" />
+
+	<script type="text/javascript" src="/res/pc/raonsecure_dev.js?v=20200908174736"></script>
+
+	<!-- ####################### 위즈베라 공인인증서 모듈 ######################## -->
+
+
+<script type="text/javascript">
+//<![CDATA[
+    var _SITE_SystemMode = "real"; //"real", "test"
+    var _SITE_SystemLang = "KOR"; //"KOR", "ENG", "CHN", "JPN"
+    var _SITE_SiteName = "delfino";     //"pc", "mobile", "tablet"
+    var _SITE_ModuleType = ""; //"", "G2", "G3", "G4"
+//]]>
+</script>
+
+
+
+<!-- <script src="/wizvera/delfino/jquery/jquery-1.6.4.min.js" charset="utf-8"></script> -->
+
+<script src="/wizvera/delfino/delfino_config.js?200908_1747" charset="utf-8"></script>
+<script src="/wizvera/delfino/delfino_internal.min.js?200908_1747" charset="utf-8"></script>
+<script src="/wizvera/delfino/delfino.js?200908_1747" charset="utf-8"></script>
+<script src="/wizvera/delfino/delfino_site.js?200908_1747" charset="utf-8"></script>
+
+
+<!--
+<script src="/wizvera/certgate/certgate_config.js?200908_1747" charset="utf-8"></script>
+<script src="/wizvera/certgate/certgate_common.js?200908_1747" charset="utf-8"></script>
+<script src="/wizvera/certgate/certgate.js?200908_1747" charset="utf-8"></script>
+-->
+
+
+	<!-- PC 메뉴-->
+	<script type="text/javascript" src="/res/pc/menu.js?v=20200908174736"></script>
+
+	<script type="text/javascript" src="/res/pc/pc.message.js?v=20200908174736"></script>
+
+	<script type="text/javascript">
+		LOGIN_URL  = "/me/lg/MELG00100";
+	</script>
+
+
+
+
+<script type="text/javascript">
+<!--
+
+
+
+//-->
+</script>
+
+<script type="text/javascript">
+<!--
+
+//-->
+</script>
+
+
+<title>클립리포트샘플</title>
+<style type="text/css">
+.ui-viewer{}
+.ui-viewer > div + div{margin-top:20px;}
+.ui-viewer .tool-bar{}
+.ui-viewer .tool-bar > .t{}
+.ui-viewer .tool-bar > .t > .r{}
+.ui-viewer .tool-bar > .t > .r > .c{vertical-align:middle;}
+.ui-viewer .tool-bar > .t > .r > .c.td-select{}
+.ui-viewer .tool-bar > .t > .r > .c.td-btn{width:1px;padding:0 0 0 20px;}
+.ui-viewer .tool-bar select{display:block;width:100%;height:40px;font-size:16px;padding:0 10px;border:1px solid #ccc;border-radius:8px;}
+.ui-viewer .tool-bar .btn-submit{height:40px;padding:0 20px;border-radius:8px;background:#a9a9a9;}
+.ui-viewer .tool-bar .btn-submit .lbl{color:#fff;}
+.ui-viewer .pane{}
+.ui-viewer .pane > .t,
+.ui-viewer .pane > .t > .c{display:block;}
+.ui-viewer .pane > .t > .c + .c{margin-top:20px;}
+.ui-viewer .pane .form{}
+.ui-viewer .pane .form .field{}
+.ui-viewer .pane .form .field .input{border:0;}
+.ui-viewer .pane .form .field textarea{display:block;width:100%;height:25vh;font-size:12px;padding:10px;border:1px solid #ccc;border-radius:8px;background:#f3f3f3;}
+.ui-viewer .pane .viewer{display:block;width:100%;border:1px solid #ccc;border-radius:8px;}
+.ui-viewer .pane .viewer .temp{padding:20px;}
+
+@media all and (min-width:568px){
+	.ui-viewer .pane > .t{display:table;width:100%;}
+	.ui-viewer .pane > .t > .c{display:table-cell;vertical-align:top;}
+	.ui-viewer .pane > .t > .c.q1{width:35%;}
+	.ui-viewer .pane > .t > .c.q2{padding:0 0 0 20px;}
+	.ui-viewer .pane .form .field textarea,
+	.ui-viewer .pane .viewer{display:block;width:100%;min-height:50vh;}
+}
+</style>
+
+<!-- for clip report : start -->
+<link rel="stylesheet" type="text/css" href="/report/css/clipreport.css">
+<link rel="stylesheet" type="text/css" href="/report/css/UserConfig.css">
+<link rel="stylesheet" type="text/css" href="/report/css/font.css">
+<!-- //for clip report : end -->
+
+</head>
+<body>
+<div class="container">
+
+
+
+
+<div class="header">
+	<div class="section">
+		<div class="content">
+			<div class="menu-bar">
+				<div class="t">
+					<div class="r">
+						<div id="header1" class="c q1"></div>
+						<div id="header2" class="c q2"></div>
+						<div id="header3" class="c q3"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div id="main" class="main">
+		<div class="section">
+			<div class="content">
+				<div class="ui-viewer">
+					<div class="tool-bar">
+						<div class="t">
+							<div class="r">
+								<div class="c td-select">
+									<select id="report_list">
+									</select>
+								</div>
+								<div class="c td-btn">
+									<a href="javascript:void(0)" class="btn btn-submit" id="btn_submit"><span class="icn"></span><span class="lbl">버튼</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pane">
+						<div class="t">
+							<div class="c q1">
+								<div class="form">
+									<div class="field">
+										<div class="input">
+											<textarea id="json_data" value=""></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="c q2">
+								<div class="viewer" id="report_area" style="position:relative;">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="section">
+			<div class="content">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- script area : start -->
+<!-- for clip report : start -->
+<script type='text/javascript' src='/report/js/clipreport.js'></script>
+<script type='text/javascript' src='/report/js/UserConfig.js'></script>
+<script type='text/javascript'>
+<!-- //for clip report : end -->
+
+var gr = null;
+
+//[리포트 뷰어 호출 함수 샘플]
+// target_id = 리포트 뷰어를 노출할 html 영역 id
+// reportId = 리포트 서식 파일명 (확장자 제외, 서식 파일이 여러개 일 경우 array로 전달)
+// contParam = 리포트에 전달할 데이터 json 문자열
+//
+//TODO: 변환서버에서 서식파일을 업무별 경로 구분을 할 경우 업무구분용 파라메터 추가 필요
+function reportView(target_id, reportId, contParam) {
+
+	//createJSPReport() 호출 시 URL 전달을 위한 URL 세팅
+	//var urlPath = document.location.protocol + "//" + document.location.host;
+	var reportPath = "/report/ClipTo.jsp",
+		userJsp = "/report/ReportTo.jsp";
+
+	//리포트 서식파일 & 매핑 데이터
+	var reportData = {
+		//리포트 서식 파일명 (확장자 제외)
+		reportId : reportId,
+		//레포트 데어터 (json 문자열)
+		contParam : contParam
+	}
+
+	//post data 생성
+	var postData = $.param(reportData, true);
+
+	//클립소프트 함수 호출 (필수)
+	//  reportPath = 고정값(ClipTo.jsp)
+	//  userJsp = 고정값(ReportTo.jsp)
+	//  postData = 변환서버에 전달할 파라메터
+    var report = createJSPReport(reportPath, userJsp, postData, document.getElementById(target_id));
+	gr = report;
+
+    //리포트 뷰어에 기본 PDF 저장 옵션 (옵션)
+    //분할 저장 선택, 분할 페이지 수 , 문서 암호, 문자를 이미지로 표현, 원본 이미지 사용, 하이퍼링크 제거
+    report.setDefaultSavePDFOption(true, 1, "test123", false, false, false);
+
+    //리포트 크기 조절 (옵션)
+    report.setDefaultRatio("PageWidth");
+
+    //메뉴 숨기기 (옵션)
+    //report.setVisibleMenu(false);
+
+    //인쇄버튼 클릭시 PDF인쇄방식으로 바로 실행 (옵션)
+    //report.setStartPrintButtonEvent(function(){
+	//	report.printView(); return false; 	//!중요: return 값이 true | false 따라 뷰어의 기본동작이 활성화
+	//});
+
+    //리포트 뷰잉
+    report.view();
+}
+
+
+//테스트 페이지용 세팅 : start
+function init(){
+	//서식파일 목록
+	var reportList = [
+		{id : 'RPT_DI_010', title : '금융거래확인서'},
+		{id : 'RPT_DI_020', title : '계약확인서'},
+		{id : 'RPT_DI_030', title : '개시통보서(운용)'},
+		{id : 'RPT_DI_031', title : '개시통보서(금융)'},
+		{id : 'RPT_DI_040', title : '리스보증금영수증'},
+		{id : 'RPT_DI_050', title : '부채증명서'},
+		{id : 'RPT_DI_060', title : '채무확인서'},
+		{id : 'RPT_DI_070', title : '청구서(자동차리스)'},
+		{id : 'RPT_DI_071', title : '청구서(리스금융)'},
+		{id : 'RPT_DI_080', title : '해지확인서'},
+		{id : 'RPT_DI_090', title : '핵심설명서(할부)'},
+		{id : 'RPT_DI_091', title : '핵심설명서(론)'},
+		{id : 'RPT_DI_092', title : '핵심설명서(리스)'},
+		{id : 'RPT_DI_100', title : '개시(승계)통보서(운용)'},
+		{id : 'RPT_DI_101', title : '개시(승계)통보서(금융)'},
+		{id : 'RPT_DI_110', title : '거래내역서'},
+		{id : 'RPT_DI_120', title : '결제완납확인서'},
+		{id : 'RPT_DI_130', title : '계산서'},
+		{id : 'RPT_DI_140', title : '대출거래내역확인서'},
+		{id : 'RPT_DI_141', title : '대출거래내역확인서(운용)'},
+		{id : 'RPT_DI_150', title : '대출금상환확인서(리테일)'},
+		{id : 'RPT_DI_151', title : '대출금상환확인서(할부,론)'},
+		{id : 'RPT_DI_160', title : '중도상환예상내역'}
+	];
+
+	reportList.forEach(function(item,idx){
+		$('#report_list').append($('<option>').attr('value', item.id).text([item.id,item.title].join(':')));
+	});
+}
+
+function submitExample(target_id){
+
+	//서식파일명
+	var target_id = 'report_area',
+		reportId = $('#report_list').val(),
+		contParam = "",
+		$json_data = $('#json_data')
+		;
+
+	try{
+		if( $json_data.val().length > 0 ) contParam = JSON.stringify( JSON.parse($json_data.val()) );
+	} catch(e){
+		alert('json 문자열이 올바르지 않은거 같아요.');
+		return;
+	}
+
+	//리포트 뷰어 호출
+	reportView(target_id, reportId, contParam);
+}
+
+$(document).ready(function(){
+	//초기 세팅
+	init();
+
+	//이벤트 등록 : 서류목록 셀렉트 시 json 데이터 로드
+	$('#report_list').on('change', function(e){
+		var $json_data = $('#json_data'),
+			dataUrl = '/test/data/' + $(this).val() + '.json';
+
+		$json_data.val('');
+		$.getJSON(dataUrl, function(data){
+			$('#json_data').val( JSON.stringify(data, null, 4) );
+		});
+	});
+
+	//이벤트 등록 : 확인버튼
+	$('#btn_submit').on('click', function(){
+		submitExample('report_area');
+	});
+
+	$('#report_list').trigger('change');
+});
+// 테스트 페이지용 세팅 : end
+
+</script>
+<!-- //script area : end -->
+
+
+</body>
+</html>

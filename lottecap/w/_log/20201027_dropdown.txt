@@ -1,0 +1,17 @@
+제목: 드랍다운 접근성 추가 (김상호)
+내용: <div.output> 엘리먼트를 <a>로 수정
+대상: 13파일
+/w/html/about/communicate_02_2.html (165, 201)
+/w/html/common/doc_01_02_02.html (63)
+/w/html/my/acc_01_01.html (69)
+/w/html/my/acc_02_02_01.html (102)
+/w/html/my/acc_05_02_01.html (102)
+/w/html/my/acc_06_02_01.html (102)
+/w/html/my/card_05_01.html (61)
+/w/html/my/insr_01.html (64)
+/w/html/my/mp_06.html (74)
+/w/html/my/penalty_01.html (64)
+/w/html/retail/calc_01.html (91, 105)
+/w/html/retail/new_12.html (110)
+/w/html/retail/new_12_readonly.html (113)
+

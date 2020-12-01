@@ -1,0 +1,18 @@
+제목: 알림 롯데캡론카드안내 (김정희)
+내용: 상품설명에 신청방법 > 이용방법으로 수정
+대상: 1페이지
+/w/html/ntfc/ntfc_04.html (111)
+
+제목: 메인페이지 이벤트영역 (김상호)
+내용: 이벤트 슬라이드 마크업 수정
+대상: 3페이지
+/w/html/index/index_logout.html (604-646)
+/w/html/index/index_login_mw.html (441-486)
+/w/html/index/index_login_pcw.html (215-260)
+
+제목: 알림 (김상호)
+내용: 각종 약관 컨텐츠 내용 예문 교체
+대상: 3페이지
+/m/html/ntfc/term_usage_01.html
+/m/html/ntfc/term_privacy_01.html
+/m/html/ntfc/term_right_01.html

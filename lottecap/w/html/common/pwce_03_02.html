@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/device.css">
+<script type="text/javascript" src="../../../w/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="../../../w/scripts/common.js"></script>
+<script type="text/javascript" src="../../../w/scripts/default.js"></script>
+<script type="text/javascript" src="../../../w/scripts/device.js"></script>
+</head>
+
+<body>
+<div class="container ui-split">
+    <div class="header common"></div>
+    <div id="main" class="main" tabindex="-1">
+        <div class="section">
+            <div class="content">
+                <div class="sub-tit">
+                    <div class="location t">
+                        <div class="r">
+                            <div class="c">
+                                <a href="#" class="btn"><span class="lbl">1depth</span><span class="icn rang"></span></a><a href="#" class="btn"><span class="lbl">2depth</span><span class="icn rang"></span></a><a href="#" class="btn"><span class="lbl">3depth</span><span class="icn rang"></span></a><a href="#" class="btn current"><span class="lbl">4depth</span><span class="icn rang"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-bar">
+                        <h2 class="title">공인인증서 내보내기</h2>
+                        <div class="desc"><p>공인인증서가 지정된 PC에 별도의 연결장치 없이 공인인증서를 고객님의 스마트폰으로 전송 할 수 있습니다.</p></div>
+                    </div>
+                    <div class="visual"></div>
+                </div>
+                <div class="sub-cont certify">
+                    <div class="btn-bar half">
+                        <a href="#dialog_01" class="btn btn-uncontained run-dialog run-modal"><span class="lbl">타기관 공인인증서 등록 모달</span><span class="icn rang"></span></a>
+                        <a href="#dialog_02" class="btn btn-uncontained run-dialog run-modal"><span class="lbl">공인인증서 내보내기 모달</span><span class="icn rang"></span></a>
+                    </div>
+                </div>
+            </div><!-- //content -->
+        </div><!-- //section -->
+    </div><!-- //main -->
+    <div class="footer common"></div><!-- //footer -->
+</div><!-- //container -->
+
+
+<!-- 타기관 공인인증서 등록 모달 -->
+<div id="dialog_01" class="dialog dialog-agree dialog-multi " title="타이틀01">
+	<!-- 재직/소득서류제출 -->
+	<div class="title-bar">
+        <h3>타기관 공인인증서를 등록해 주세요</h3>
+        <a href="#" class="btn btn-close close-dialog"><span class="icn"></span><span class="lbl">닫기</span></a>
+	</div>
+	<div class="content">
+        <div class="field radio member-chk">
+            <label class="lbl"></label>
+            <div class="input">
+                <div class="ui-irc">
+                    <label>
+                        <input type="radio" autocomplete="off" name="radio_item_01">
+                        <div class="t">
+                            <div class="c"><span class="icn"></span></div>
+                            <div class="c">
+                                <span class="lbl">개인</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <div class="ui-irc">
+                    <label>
+                        <input type="radio" autocomplete="off" name="radio_item_01">
+                        <div class="t">
+                            <div class="c"><span class="icn"></span></div>
+                            <div class="c">
+                                <span class="lbl">기업</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="field user-id">
+            <div class="input"><input type="text" class="db" placeholder="아이디 입력"><span class="btn btn-input-clear" tabindex="0"><span class="icn"></span><span class="lbl">삭제</span></span></div>
+        </div>
+        <div class="field user-pw">
+            <div class="input">
+                <input type="text" class="db" placeholder="비밀번호 입력">
+                <!-- <a href="#" class="btn btn-pw-out"><span class="icn"></span><span class="lbl">비밀번호 노출 여부</span></a> -->
+                <a href="#" class="btn btn-keypad"><span class="icn"></span><span class="lbl">가상키보드</span></a>
+            </div>
+        </div>
+        <div class="tip">
+            <p class="tip t2"><span class="icn"></span> 이용자 아이디와 비밀번호를 입력하세요.</p>
+            <p class="tip t2"><span class="icn"></span> 확인 버튼 클릭 후 사용하실 인증서를 선택하시고 비밀번호를 입력하세요.</p>
+        </div>
+        <div class="btn-bar">
+            <a href="#" class="btn btn-contained"><span class="lbl">확인</span><span class="icn"></span></a>
+        </div>
+    </div>
+</div>
+
+
+<!-- 공인인증서 내보내기 모달 -->
+<div id="dialog_02" class="dialog dialog-certify" title="타이틀01">
+	<div class="title-bar">
+        <h3>공인인증서 내보내기</h3>
+        <span class="info-chips">pc → 스마트폰</span>
+        <a href="#" class="btn btn-close close-dialog"><span class="icn"></span><span class="lbl">닫기</span></a>
+	</div>
+	<div class="content">
+        <div class="field user-code">
+            <div class="input">
+                <input type="text" class="db" value="1234-5678">
+            </div>
+        </div>
+        <div class="desc">
+            <ul>
+                <li>스마트폰에 아래에 표시된 인증번호 8자리를 입력해주세요.</li>
+                <li>‘확인’ 버튼을 눌러 주세요.</li>
+            </ul>
+        </div>
+        <div class="btn-bar">
+            <a href="#" class="btn btn-contained"><span class="lbl">확인</span><span class="icn"></span></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

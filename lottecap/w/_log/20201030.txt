@@ -1,0 +1,29 @@
+제목: 입력폼 현행화 (김상호)
+내용: 직장명, 주소, 이메일 등 입력폼에서 돋보기 버튼 삭제 / 상세주소에는 적용
+대상: 6페이지
+/w/html/auto/lease_01_07.html (120-126)
+/w/html/cc/read_request_01.html (107-179)
+/w/html/common/doc_01_02_01.html (154-226)
+/w/html/member/join_company_02.html (87-169)
+/w/html/retail/new_03_02.html (77-83)
+/w/html/retail/new_12.html (194-269, 301-400)
+
+제목: 신용대출 전자약정서 재직/소득서류제출 동의 (김상호)
+내용: 페이지 추가 (툴팁UI 포함)
+대상: 1페이지
+/w/html/retail/contract_14_01.html
+
+제목: 신용대출 대출신청 본인인증 신분증제출하기 (김정희)
+내용: 문구 수정(최대 3장 > 최대 1장), 내용 삭제(.docu-lst에 li 2개에서 1개로 수정)
+대상: 1페이지
+/w/html/retail/new_15.html(76, 127-150(삭제))
+
+제목: 신용대출 > 신분증사진제출 (김진주)
+내용: 마크업수정(태그 추가) 
+대상: 1페이지
+/w/html/retail/apply_15_06.html (66-73)
+
+제목: 고객센터 (김정희)
+내용: 게이트 페이지 신규 추가
+대상: 1페이지
+/w/html/cc/cc_menu.html

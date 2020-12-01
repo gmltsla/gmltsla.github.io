@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈 관리자</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="/a/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/swiper-6.2.0.min.css">
+<link type="text/css" rel="stylesheet" href="/a/styles/admin.css">
+<script type="text/javascript" src="/a/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="/a/plugins/swiper-6.2.0.min.js"></script>
+<script type="text/javascript" src="/a/scripts/admin.js"></script>
+</head>
+<body>
+<div class="container admin"><!-- .container.admin: 관리자 -->
+	<div class="header common"><!-- ajax load: common.html --></div>
+	<div class="nav common"><!-- ajax load: common.html --></div>
+	<div id="main" class="main">
+		<div class="section q1">
+			<div class="content">
+				<div class="title-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c">
+								<h2>판매중단상품</h2>
+							</div>
+							<div class="c"></div>
+						</div>
+					</div>
+				</div>
+				<div class="ui-cnt">
+					<div class="subtitle-bar">
+						<h3>상품정보</h3>
+					</div>
+					<div class="tbl-dtl">
+						<table>
+							<colgroup>
+								<col class="th">
+								<col class="td">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">구분</th>
+									<td>
+										<div class="field">
+											<select>
+												<option selected>개인신용대출</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">상품명</th>
+									<td>
+										<div class="field db"><input type="text" class="db" value="인터넷즉시대출"></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">내용</th>
+									<td>
+										<div class="field db"><input type="text" class="db" value="상품통합 및 즉시대출로 상품명 변경"></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">중단일자</th>
+									<td>
+										<div class="field"><input type="text" class="datepicker" value="2020.12.12"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="btn-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c"></div>
+							<div class="c">
+								<button type="button" class="btn btn-proc btn-sav"><span class="icn"></span><span class="lbl">저장</span></button>
+								<button type="button" class="btn btn-proc btn-rst"><span class="icn"></span><span class="lbl">취소</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer common"><!-- ajax load: common.html --></div>
+</div>
+</body>
+</html>

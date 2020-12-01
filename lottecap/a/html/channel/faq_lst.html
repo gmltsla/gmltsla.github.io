@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈 관리자</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="/a/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/swiper-6.2.0.min.css">
+<link type="text/css" rel="stylesheet" href="/a/styles/admin.css">
+<script type="text/javascript" src="/a/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="/a/plugins/swiper-6.2.0.min.js"></script>
+<script type="text/javascript" src="/a/scripts/admin.js"></script>
+</head>
+<body>
+<div class="container admin"><!-- .container.admin: 관리자 -->
+	<div class="header common"><!-- ajax load: common.html --></div>
+	<div class="nav common"><!-- ajax load: common.html --></div>
+	<div id="main" class="main">
+		<div class="section q1">
+			<div class="content">
+				<div class="title-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c">
+								<h2>FAQ</h2>
+							</div>
+							<div class="c"></div>
+						</div>
+					</div>
+				</div>
+				<div class="tool-bar bbs-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c">
+								<div class="field">
+									<select>
+										<option selected>대출관련</option>
+									</select>
+								</div>
+								<span class="sum">총 <em>100</em>건의 FAQ가 있습니다.</span>
+							</div>
+							<div class="c">
+								<div class="field">
+									<select>
+										<option selected>전체</option>
+									</select>
+								</div>
+								<div class="field">
+									<input type="text" placeholder="검색어">
+									<button type="button" class="btn btn-search" title="검색"><span class="icn"></span><span class="lbl">검색</span></button>
+								</div>
+								<div class="field">
+									<select>
+										<option selected>10건</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="data-grd bbs-lst"><!-- .bbs-lst: 게시판 목록 -->
+					<table>
+						<colgroup>
+							<col width="10%">
+							<col width="15%">
+							<col width="">
+							<col width="10%">
+							<col width="10%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>번호</th>
+								<th>구분</th>
+								<th>제목</th>
+								<th>등록일</th>
+								<th>조회수</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>100</td>
+								<td>신용대출</td>
+								<td><a href="#" class="sbj">신용대출의 중도상환수수료 면제조건은 어떻게 되나요?</a></td>
+								<td>2020.12.12</td>
+								<td>1,000</td>
+							</tr>
+							<tr>
+								<td>99</td>
+								<td>론카드관련</td>
+								<td><a href="#" class="sbj">중도상환수수료 면제사유를 알고 싶습니다.</a></td>
+								<td>2020.12.12</td>
+								<td>1,000</td>
+							</tr>
+							<tr>
+								<td>98</td>
+								<td>홈페이지이용</td>
+								<td><a href="#" class="sbj">롯데캐피탈 대출서류를 받으러 신용정보사 직원이 오나요?</a></td>
+								<td>2020.12.12</td>
+								<td>1,000</td>
+							</tr>
+							<tr>
+								<td>97</td>
+								<td>계좌관리</td>
+								<td><a href="#" class="sbj">휴대폰 번호를 확인하라는 메세지가 나옵니다</a></td>
+								<td>2020.12.12</td>
+								<td>1,000</td>
+							</tr>
+							<tr>
+								<td>96</td>
+								<td>회사안내</td>
+								<td><a href="#" class="sbj">공인인증서 사용시 VID가 일치하지 않습니다</a></td>
+								<td>2020.12.12</td>
+								<td>1,000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btn-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c"></div>
+							<div class="c"><button type="button" class="btn btn-proc btn-wrt"><span class="icn"></span><span class="lbl">등록</span></button></div>
+						</div>
+					</div>
+				</div>
+				<div class="pagination">
+					<div class="align">
+						<div class="direction">
+							<a href="#" class="d first disabled"><span class="icn"></span><span class="lbl">처음</span></a>
+							<a href="#" class="d prev disabled"><span class="icn"></span><span class="lbl">이전</span></a>
+						</div>
+						<div class="fraction">
+							<span class="d current"><span class="icn"></span><span class="lbl">1</span></span>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">2</span></a>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">3</span></a>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">4</span></a>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">5</span></a>
+						</div>
+						<div class="direction">
+							<a href="#" class="d next"><span class="icn"></span><span class="lbl">다음</span></a>
+							<a href="#" class="d last"><span class="icn"></span><span class="lbl">끝</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer common"><!-- ajax load: common.html --></div>
+</div>
+</body>
+</html>

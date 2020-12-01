@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/device.css">
+<script type="text/javascript" src="../../../m/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../m/scripts/common.js"></script>
+<script type="text/javascript" src="../../../m/scripts/default.js"></script>
+<style>
+
+/* 완료페이지:체크모션 */
+.cm-clear{position:relative; width:56px; height:56px; margin:0 auto 18px; background-color:#f3f8ff; border-radius:50%;}
+.cm-clear .icn-line{display:block; position: absolute; height:5px; background-color:#7B91CA; border-radius:20%;}
+.cm-clear .line-short{top:30px; left:13px; width:12px; transform:rotate(45deg);}
+.cm-clear .line-long{top:26px; left:17px; width:28px; transform:rotate(-45deg);}
+.cm-clear.active .line-short{animation:line-short .75s; animation-timing-function:linear;}
+.cm-clear.active .line-long{animation:line-long .75s; animation-delay:0.1s; animation-timing-function:linear;}
+@keyframes line-short {
+    0%{width:0; left:1px; top:19px;}
+    50%{width:0; left:1px; top:19px;}
+    80%{width:20px;}
+    100%{width:12px;}
+}
+@keyframes line-long {
+    0% {width:0; left:25px; top:30px;}
+    70% {width:0; left:25px; top:30px;}
+	100%{width:28px;}
+}
+
+/* 실패페이지:체크모션 */
+.cm-fail{position:relative; width:56px; height:56px; margin:0 auto 18px; background-color:#FFF6F6; border-radius:50%;}
+.cm-fail .icn-line{display:block; position: absolute; height:5px; background-color:#ED6262;}
+.cm-fail .line-top{top:13px; right:25px; width:5px; height:22px; border-radius:30%;}
+.cm-fail .line-bottom{top:38px; left:25px; width:6px; height:6px; border-radius:50%;}
+.cm-fail.active .line-top{animation:line-top 0.3s;}
+.cm-fail.active .line-bottom{animation:line-bottom 0.3s; animation-delay:0.1s;}
+@keyframes line-top {
+    0% {height:0; right:25px; top:0;}
+    70% {height:7px; right:25px; top:10px;}
+    100%{top:13px;}
+}
+@keyframes line-bottom {
+    0%{height:0; left:25px; top:0px;}
+    50%{height:0; left:25px; top:19px;}
+    80%{height:3px; top:30px;}
+    100%{width:6px; top:38px;}
+}
+.test-bar{position:relative; border:1px solid #0ff;}
+.test-bar .bar{display:block; height:10px;background-color:#7B91CA;}
+.test-bar.q1 .bar{margin:50px 0;}
+.test-bar .bar.q2{width:50px;transform:rotate(-45deg);}
+
+.test-bar .bar.q1{animation:line-short1 .5s;transform-origin: 0 0;}
+.test-bar .bar.q2.t1{animation:line-long1 1s;transform-origin: 0 0;}
+.test-bar .bar.q2.t2{animation:line-long2 1s;transform-origin: 0 0;}
+
+.test-bar.q2{height:200px;}
+.test-bar.q2 .bar{position:absolute;opacity:0.5;}
+.test-bar.q2 .bar.q1{left:0;top:30px;width:20px;transform:rotate(45deg) scale(0, 1);animation-fill-mode:forwards;}
+.test-bar.q2 .bar.q2{left:7px;top:51px;animation:line-long2 1s;animation-delay:.35s;transform:rotate(-45deg) scale(0, 1);animation-fill-mode:forwards;}
+
+@keyframes line-long1 {
+    0%  {width:0;}
+	100%{width:50px;}
+}
+@keyframes line-long2 {
+    0%  {transform:rotate(-45deg) scale(0, 1);}
+	100%{transform:rotate(-45deg) scale(1, 1);}
+}
+@keyframes line-short1 {
+    0%  {transform:rotate(45deg) scale(0, 1);}
+	100%{transform:rotate(45deg) scale(1, 1);}
+}
+
+
+</style>
+
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="btn btn-back">
+									<span class="icn"></span>
+									<span class="lbl">뒤로</span>
+								</a>
+							</div>
+							<div class="c q2"></div>
+							<div class="c q3">
+								<a href="#" class="btn btn-send">
+									<span class="icn"></span>
+									<span class="lbl">보내기</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div class="section">
+			<div class="content">
+
+                <!-- 완료 아이콘 -->
+                <div class="title-bar tac">
+                    <div class="proc-symbol cm cm-clear">
+                        <span class="icn-line line-short"></span>
+                        <span class="icn-line line-long"></span>
+                        <!-- <span class="icn check"></span> -->
+                    </div>
+                    <h2>김지수님<br> 대출 신청이<br> 완료되었습니다</h2>
+                </div>
+
+                <br><br>
+
+                <!-- 실패 아이콘 -->
+                <div class="title-bar tac">
+					<div class="proc-symbol cm cm-fail">
+                        <span class="icn-line line-top"></span>
+                        <span class="icn-line line-bottom"></span>
+						<!-- <span class="icn exc"></span> -->
+					</div>
+					<h2>요청하신 페이지를<br> 찾을 수 없습니다</h2>
+				</div>
+
+				<br><br>
+				<div class="test-bar q1">
+					<span class="bar q2 t1"></span>
+					<span class="bar q2 t2"></span>
+				</div>
+				<div class="test-bar q2">
+					<span class="bar q1"></span>
+					<span class="bar q2 t2"></span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="section">
+			<div class="content">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

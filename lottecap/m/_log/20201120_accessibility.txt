@@ -1,0 +1,6 @@
+제목: 컨텐츠 블록 제목 개선 (김정희)
+내용: <p class="sbj">을 <h3 class="sbj">로 수정
+대상: 3페이지
+/m/html/ntfc/event_02.html(61)
+/m/html/ntfc/event_03.html(64)
+/m/html/ntfc/notice_02.html(62)

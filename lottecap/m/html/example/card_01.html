@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/device.css">
+<script type="text/javascript" src="../../../m/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../m/scripts/common.js"></script>
+<script type="text/javascript" src="../../../m/scripts/default.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="btn btn-back">
+									<span class="icn"></span>
+									<span class="lbl">뒤로</span>
+								</a>
+							</div>
+							<div class="c q2"></div>
+							<div class="c q3">
+								<a href="#" class="btn btn-send">
+									<span class="icn"></span>
+									<span class="lbl">보내기</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div class="section">
+			<div class="content">
+				<div class="ui-example">
+					<div class="title-bar">
+						<div class="t">
+							<dl>
+								<dt>
+									<h2>Card</h2>
+									<span class="desc">Description</span>
+								</dt>
+								<dd></dd>
+							</dl>
+						</div>
+					</div>
+					<div class="content">
+						<div class="example">
+							<div class="title-bar">
+								<h3>Card </h3>
+								<p class="desc">대출 전 메인 홈 카드</p>
+							</div>
+							<div class="content">
+								<!-- .ui.card //-->
+								<div class="ui-card">
+									<div class="card">
+										<div class="content">
+											<div class="title-bar tac">
+												<p>조회까지 딱 한단계!</p>
+												<h3>한도조회 해볼까요?</h3>
+											</div>
+											<div class="digit-lst"><!-- .digit-lst: 한도, 금리 등 항목별 숫자값("?") -->
+												<div class="t">
+													<ul class="r">
+														<li class="c">
+															<div class="lbl">한도</div>
+															<div class="digits">
+																<span class="digit">?</span>
+																<span class="digit">?</span>
+																<span class="digit">?</span>
+																<span class="digit">?</span>
+															</div>
+														</li>
+														<li class="c">
+															<div class="lbl">금리</div>
+															<div class="digits">
+																<span class="digit">?</span>
+																<span class="digit">?</span>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="btn-bar">
+											<a href="#" class="btn btn-contained"><span class="icn"></span><span class="lbl">한도조회 신청하기</span></a>
+										</div>
+									</div>
+								</div>
+								<!--// .ui.card -->
+							</div>
+						</div>
+						<div class="example">
+							<div class="title-bar">
+								<h3>Card </h3>
+								<p class="desc">대출신청 이어서 진행</p>
+							</div>
+							<div class="content">
+								<!-- .ui.card //-->
+								<div class="ui-card">
+									<div class="card">
+										<div class="content">
+											<div class="title-bar tac">
+												<p>김지수님만을 위한</p>
+												<h3>대출조건 추천드려요</h3>
+											</div>
+											<div class="stat-lst"><!-- .stat-lst: 나이, 성별, 직업 등 -->
+												<div class="t">
+													<ul class="r">
+														<li class="c">
+															<p class="lbl">나이</p>
+															<p class="val">26세</p>
+														</li>
+														<li class="c">
+															<p class="lbl">성별</p>
+															<p class="val">남자</p>
+														</li>
+														<li class="c">
+															<p class="lbl">직업</p>
+															<p class="val">직장인</p>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="btn-bar">
+											<a href="#" class="btn btn-contained"><span class="icn"></span><span class="lbl">내게 맞는 대출조건 확인하기</span></a>
+										</div>
+									</div>
+								</div>
+								<!--// .ui.card -->
+							</div>
+						</div>
+						<div class="example">
+							<div class="title-bar">
+								<h3>Card </h3>
+								<p class="desc">대출신청 이어서 진행</p>
+							</div>
+							<div class="content">
+								<!-- .ui.card //-->
+								<div class="ui-card">
+									<div class="card">
+										<div class="content">
+											<div class="title-bar tac">
+												<p>진행중인 대출신청이 있어요</p>
+												<h3>이어서 진행하시겠어요?</h3>
+											</div>
+											<div class="step-lst"><!-- .step-lst: 대출신청 단계 (이어서 진행하는 경우) -->
+												<ul>
+													<li>
+														<span class="icn"></span>
+														<span class="num">1</span>
+														<span class="lbl">대출정보</span>
+													</li>
+													<li>
+														<span class="icn"></span>
+														<span class="num">2</span>
+														<span class="lbl">결제정보</span>
+													</li>
+													<li class="current">
+														<span class="icn"></span>
+														<span class="num">3</span>
+														<span class="lbl">약관동의</span>
+													</li>
+												</ul>
+												<div class="more"><span class="icn"></span></div>
+											</div>
+										</div>
+										<div class="btn-bar">
+											<a href="#" class="btn btn-contained"><span class="icn"></span><span class="lbl">네, 이어서 진행할게요</span></a>
+										</div>
+									</div>
+								</div>
+								<!--// .ui.card -->
+							</div>
+						</div>
+						<div class="example">
+							<div class="title-bar">
+								<h3>Card </h3>
+								<p class="desc">한도조회 시작</p>
+							</div>
+							<div class="content">
+								<!-- .ui.card //-->
+								<div class="ui-card">
+									<div class="card">
+										<div class="content">
+											<div class="title-bar tac">
+												<h3>오늘 날짜 기준 대출조건은?</h3>
+											</div>
+											<div class="msg-box"><!-- .msg-box: 일반 메시지(<p>) -->
+												<p>15일전 한도조회 결과는<br> 한도 3,000만원 / 금리 7.2%네요.</p>
+											</div>
+										</div>
+										<div class="btn-bar">
+											<a href="#" class="btn btn-contained"><span class="icn"></span><span class="lbl">한도조회 시작</span></a>
+										</div>
+									</div>
+								</div>
+								<!--// .ui.card -->
+							</div>
+						</div>
+						<div class="example">
+							<div class="title-bar">
+								<h3>Card </h3>
+								<p class="desc">한도조회 결과</p>
+							</div>
+							<div class="content">
+								<!-- .ui.card //-->
+								<div class="ui-card">
+									<div class="card">
+										<div class="content">
+											<div class="tool-bar tar"><!-- .tool-bar: 상단 툴바 --><!-- .tar: 버튼 우측정렬 -->
+												<a href="#" class="btn btn-inline"><span class="icn"></span><span class="lbl">직장변경</span></a>
+											</div>
+											<div class="title-bar tac">
+												<p>8월 20일에 조회한</p>
+												<h3>한도조회 결과입니다</h3>
+											</div>
+											<div class="stat-lst"><!-- .stat-lst: 나이, 성별, 직업 등과 동일 -->
+												<div class="t">
+													<ul class="r">
+														<li class="c">
+															<p class="lbl">한도</p>
+															<p class="val"><span class="price"><span class="val">1,100</span><span class="crc">만원</span></span></p>
+														</li>
+														<li class="c">
+															<p class="lbl">금리</p>
+															<p class="val"><span class="percent"><span class="val">18.8</span><span class="crc">%</span></span></p>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="btn-bar">
+											<a href="#" class="btn btn-contained"><span class="icn"></span><span class="lbl">더 자세한 대출조건 알아보기</span></a>
+										</div>
+									</div>
+								</div>
+								<!--// .ui.card -->
+							</div>
+						</div>
+						<div class="example">
+							<div class="title-bar">
+								<h3>Card </h3>
+								<p class="desc">상담사 카드</p>
+							</div>
+							<div class="content">
+								<!-- .ui.card //-->
+								<div class="ui-card">
+									<div class="portrait counselor">
+										<div class="pf"></span><img src="../../../m/images/temp/portrait_female.png" alt=""></div>
+									</div>
+									<div class="card counselor">
+										<div class="content">
+											<div class="title-bar tac">
+												<h3>김롯데 상담사입니다</h3>
+												<p class="desc">누적 상담 고객수 123,000명</p>
+												<div class="more"><span class="icn"></span></div>
+												<a href="tel:010-3151-6480" class="phone-num"><span class="icn"></span><span class="lbl">010-3151-6480</span></a>
+											</div>
+											<hr>
+											<div class="about-lst"><!-- .about-lst: 상담정책 등 정보 영역 -->
+												<h4>상담정책</h4>
+												<p>위 상담사는 롯데캐피탈 위수탁계약을 체결하고 여신금융협회에 등록된 대출상담사이며, 어떠한 명목으로도 고객에게 금전을 요구하거나 수취하지 않습니다</p>
+												<div class="contact">
+													<p>상담사정보 확인: <a href="https://www.crefia.or.kr" class="url">www.crefia.or.kr</a></p>
+													<p>여신금융협회 등록번호: 13-01-123412345</p>
+												</div>
+											</div>
+										</div>
+										<div class="btn-bar">
+											<a href="#" class="btn btn-contained"><span class="icn"></span><span class="lbl">상담 시작하기</span></a>
+										</div>
+									</div>
+								</div>
+								<!--// .ui.card -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="section">
+			<div class="content"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
