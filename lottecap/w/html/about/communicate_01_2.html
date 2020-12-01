@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/device.css">
+<script type="text/javascript" src="../../../w/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="../../../w/scripts/common.js"></script>
+<script type="text/javascript" src="../../../w/scripts/default.js"></script>
+<script type="text/javascript" src="../../../w/scripts/device.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(".reception .field textarea").keyup(function (e){
+			var content = $(this).val();
+			var $ct = $(".text-num");
+			$ct.html(content.length + "/300");
+			if (content.length > 300){
+				alert("최대 300자까지 입력 가능합니다.");
+				$(this).val(content.substring(0, 300));
+				$ct.html("(300 / 300)");
+			}
+		});
+	});
+</script>
+</head>
+
+<body>
+<div class="container about ui-split">
+    <div class="header common"></div>
+    <div id="main" class="main" tabindex="-1">
+        <div class="section">
+            <div class="content">
+				<div class="sub-tit">
+					<div class="location t">
+						<div class="r">
+							<div class="c">
+								<a href="#" class="btn"><span class="lbl">1depth</span><span class="icn rang"></span></a><a href="#" class="btn"><span class="lbl">2depth</span><span class="icn rang"></span></a><a href="#" class="btn"><span class="lbl">3depth</span><span class="icn rang"></span></a><a href="#" class="btn current"><span class="lbl">4depth</span><span class="icn rang"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="title-bar">
+						<h2 class="title">청아함 접수를 위한<br> 접수 내용을<br> 입력해주세요</h2>
+                        <p class="desc">롯데캐피탈은 롯데캐피탈 가족분들의 목소리에 귀를 기울입니다.</p>
+					</div>
+					<div class="visual"></div>
+				</div>
+				<div class="sub-cont online-counsel">
+					<div class="title-bar">
+						<h2>일반접수</h2>
+                    </div>
+					<div class="form reception">
+						<div class="field user-id hr-filed">
+							<label class="lbl">아이디</label>
+							<div class="input"><span class="val">43568766</span></div>
+						</div>
+						<div class="field user-pw">
+							<label class="lbl">비밀번호<sup class="ess" aria-label="필수">*</sup></label>
+							<div class="input"><input type="password" class="db" placeholder="영문, 숫자, 특수문자 포함 8 ~ 12자리"></div>
+						</div>
+						<div class="field user-pw">
+							<label class="lbl">비밀번호확인<sup class="ess" aria-label="필수">*</sup></label>
+							<div class="input"><input type="password" class="db" placeholder="비밀번호를 한번 더 입력해주세요"></div>
+						</div>
+						<div class="field user-name">
+							<label class="lbl">신청인<sup class="ess" aria-label="필수">*</sup></label>
+							<div class="input"><input type="text" class="db" placeholder="이름을 입력해주세요"></div>
+						</div>
+						<div class="field to-phone">
+							<label class="lbl">휴대폰번호<sup class="ess" aria-label="필수">*</sup></label>
+							<div class="input"><input type="text" class="db" placeholder="010-1234-5678"></div>
+						</div>
+						<div class="field email">
+							<label class="lbl">이메일주소</label>
+							<div class="input"><input type="text" class="db" placeholder="lotte@lotte.net"></div>
+						</div>
+
+						<div class="subtitle-bar">
+							<div class="t">
+								<div class="r">
+									<div class="c">
+										<h4>접수내용</h4>
+									</div>
+									<div class="c"><a href="#" class="btn btn-reset"><span class="icn"></span><span class="lbl">초기화</span></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="field cl-sbj"><!-- .field.cl-sbj: 상담제목 -->
+                            <label class="lbl">제목<sup class="ess ">*</sup></label>
+                            <div class="input"><input type="text" class="db" value="" placeholder="제목을 입력해주세요"></div>
+                        </div>
+                        <div class="field cl-desc"><!-- .field.cl-desc: 상담내용 -->
+                            <label class="lbl">내용<sup class="ess" aria-label="필수">*</sup></label>
+                            <div class="input">
+                                <textarea class="db" value="" placeholder="내용을 입력해주세요"></textarea>
+                                <p class="text-num">
+                                    <span class="now">0</span>/<span class="all">300</span>
+                                </p>
+                            </div>
+						</div>
+					</div>
+					<div class="tip-lst">
+                        <p class="tip"><span class="icn"></span> <strong>주의사항</strong></p>
+                        <ul>
+                            <li>
+                                <p class="tip bl-middot"><span class="bl"></span> 작성된 내용은 실시간으로 전달되므로 접수 이후 수정, 삭제, 취소가 불가능하오니 주의하십시오.</p>
+                            </li>
+                            <li>
+                                <p class="tip bl-middot"><span class="bl"></span> 음해성 신고나 근거 없는 악의의 비방은 본인은 물론 조직과 상대방에게 심각한 후유증을 가져올 수 있으니 자제해 주시기 바랍니다.</p>
+                            </li>
+                            <li>
+                                <p class="tip bl-middot"><span class="bl"></span> ID/PW는 처리상태 및 답변 조회시 필요하므로 필히 기억해 주시기 바랍니다. (처리상태 및 답변 조회시 ID/PWD 입력오류 5회이상일 경우, 조회가 불가능하오니 주의하여 주시기 바랍니다.)</p>
+                            </li>
+                            <li>
+                                <p class="tip bl-middot"><span class="bl"></span> 성명 및 휴대전화번호, 이메일 주소를 잘못 작성한 경우 처리상태 및 답변조회가 불가할 수 있습니다.</p>
+                            </li>
+                        </ul>
+					</div>
+					<div class="tip-lst">
+                        <p class="tip"><span class="icn"></span> <strong>안내사항</strong></p>
+                        <ul>
+                            <li>
+                                <p class="tip bl-middot"><span class="bl"></span> 온라인 접수를 원하지 않는 경우, 우편·전화·팩스도 가능합니다.</p>
+                            </li>
+                            <li>
+                                <p class="tip bl-middot"><span class="bl"></span> 우편 또는 팩스로 접수하여 답변을 원하시는 경우, 연락처(전화번호, 이메일 등)을 작성하여 주시기 바랍니다.</p>
+							</li>
+							<li>
+                                <p class="tip bl-middot"><span class="bl"></span> <strong>우편&nbsp;</strong><span> 06236, 서울특별시 강남구 테헤란로142, ARC PLACE 8층 준법경영팀</span></p>
+							</li>
+							<li>
+                                <p class="tip bl-middot"><span class="bl"></span> <strong>전화&nbsp;</strong><span> 02-3451-0078, 02-3451-0050</span></p></p>
+							</li>
+							<li>
+                                <p class="tip bl-middot"><span class="bl"></span> <strong>팩스&nbsp;</strong><span> 02-2019-8383</span></p>
+							</li>
+
+                        </ul>
+                    </div>
+					<div class="btn-bar botm-fix gradient mov-pch">
+						<div class="t">
+							<div class="c"><a href="#" class="btn btn-outlined"><span class="lbl">임시저장</span></a></div>
+							<div class="c"><a href="#" class="btn btn-contained"><span class="lbl">제출하기</span><span class="icn"></span></a></div>
+						</div>
+					</div>
+				</div>
+			</div><!-- //content -->
+        </div><!-- //section -->
+    </div><!-- //main -->
+    <div class="footer common"></div><!-- //footer -->
+</div><!-- //container -->
+</body>
+</html>

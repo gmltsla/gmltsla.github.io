@@ -1,0 +1,23 @@
+제목: 재직/소득서류제출 (김상호)
+내용: 힌트 마크업 수정
+대상: 3페이지
+/w/html/common/doc_01_00.html (94-96)
+/w/html/retail/add_02_03.html (94-96)
+/w/html/retail/contract_14_01.html (99-101)
+
+제목: 고객센터 ARS서비스 (김정희)
+내용: 계좌이체 가능시간, ARS이용 수수료 내용 수정, 서비스 구분에 고객센타자동안내 전용 내용 추가
+대상: 1페이지
+/w/html/cc/counsel_01.html (86-98, 142-145)
+
+제목: 고객센터 상담신청 (김정희)
+내용: 개인정보 수집 및 이용 동의 약관 추가
+대상: 3페이지
+/w/html/cc/counsel_02.html (84-105)
+/w/html/cc/counsel_02_modify.html (73-94)
+/w/html/cc/counsel_02_nolist.html (84-105)
+
+제목: 고객센터 상담신청 (김정희)
+내용: 상담신청 파일첨부 주석처리
+대상: 1페이지
+/w/html/cc/counsel_02_nolist.html (190-222)

@@ -1,0 +1,13 @@
+제목: 공통 > 공인인증센터 > 공인인증서 내보내기 (김상호)
+내용: 문구 수정
+대상: 1페이지
+/w/html/common/pwce_03_01.html (59)
+
+제목: 필수입력 수정 (김진주)
+내용: aria-label="필수" 추가
+대상: 1페이지
+/w/html/about/communicate_01_2.html(81,85,89,93,116)
+/w/html/about/communicate_02_2.html(81,85,89,111,145,148,154,159,181,185,191,194,206)
+/w/html/cc/complaint_02.html (76,80,141,145)
+/w/html/my/mp_01_01.html (67,72,79,86,101)
+/w/html/my/mp_01_02.html (67,71,76,83,93,100,114)

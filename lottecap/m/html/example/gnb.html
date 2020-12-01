@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/device.css">
+<script type="text/javascript" src="../../../m/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../m/scripts/common.js"></script>
+<script type="text/javascript" src="../../../m/scripts/default.js"></script>
+<style>
+    /* 전체메뉴 */
+	.gnb{position:fixed; left:105%; top:0; width:100%;height: 100%;background-color:#fff;transition:left .4s ease;box-shadow: 2px 2px 7px 8px rgba(0,0,0,0.03);}
+    .gnb.gnb-on {display:block; position:fixed; top:0; left:0;overflow-y: scroll;}
+
+    .main-menu{padding:54px 32px 32px !important;}
+    /* .main-menu .btn-close{position:fixed; top:0; left:0; width:100%; padding:10px 18px; background-color:#fff; z-index:99;} */
+    .main-menu .btn-close .icn-close{display:block; width:32px; height:32px; background:url(../../../m/images/icn_close.png)no-repeat; background-size:32px 32px;}
+
+    .main-menu .content-inner{overflow-y:auto; scroll-behavior:smooth;}
+    .main-menu .my-info{width:100%;}
+
+    .main-menu .profile .t{display:block; position:relative; padding:18px 0;}
+    .main-menu .profile .c{display:inline-block;}
+    .main-menu .profile .my-photo{width:54px; height:54px; margin-right:12px; background:url(../../../m/images/img_myphoto.png)no-repeat; background-size:54px 54px; vertical-align:text-bottom;}
+    .main-menu .profile .my-name{color:#000; font-size:20px; font-weight:normal;}
+    .main-menu .profile .icn.rang{position:absolute; top:50%; right:0; transform:translate(0,-50%); width:16px; height:16px; background:url(../../../m/images/icn_menu_link.png)no-repeat; background-size:16px 16px;}
+
+    .main-menu .link-box{width:100%; padding:12px 0;}
+    .main-menu .link-box .t{display:block; float:left; width:50%; text-align:center;}
+    .main-menu .link-box:after{display:block; content:''; clear:both;}
+    .main-menu .link-box .t .label{color:#000; font-size:15px; font-weight:normal;}
+    .main-menu .link-box .t .icn{width:32px; height:32px;}
+    .main-menu .link-box .custom-center{border-right:1px solid #ebebeb;}
+    .main-menu .link-box .custom-center .icn{background:url(../../../m/images/icn_menu_customer.png)no-repeat;  background-size:32px 32px;}
+    .main-menu .link-box .certify-center .icn{background:url(../../../m/images/icn_menu_certify.png)no-repeat;  background-size:32px 32px;}
+
+    .main-menu .report .t{display:block; position:relative; height:60px; margin:12px 0; background-color:#f3f8ff; border-radius:12px;}
+    .main-menu .report .c{font-weight:bold;}
+    .main-menu .report .label{position:absolute; top:50%; left:28px; transform:translate(0,-50%); color:#000; font-size:16px;}
+    .main-menu .report .count{position:absolute; top:50%; right:28px; transform:translate(0,-50%); color:#2b4ca6; font-size:14px;}
+    .main-menu .report .count .icn.rang{width:12px; height:12px; background:url(../../../m/images/icn_menu_more_blue.png)no-repeat; background-size:12px 12px; vertical-align:unset;}
+
+    .main-menu .all-menu .list-group{margin-bottom:16px;}
+    .main-menu .all-menu .list-group:last-child{margin-bottom:0;}
+    .main-menu .all-menu .list-group .tit-area{padding:16px 0; margin-bottom:16px; font-size:14px; font-weight:bold; border-bottom:1px solid #4c4c4c;}
+    .main-menu .all-menu .list-group .tit-area h2{display:inline-block; color:#000;}
+    .main-menu .all-menu .list-group .tit-area span{margin-left:4px; color:#6a8bb8;}
+    .main-menu .all-menu .list-group .list-1th a{display:block; padding:11px 0; color:#333; font-size:16px; font-weight:normal;}
+</style>
+
+<script>
+	$(document).ready(function() {
+		$(".run-menu").on("click", function(e) {
+			$(".gnb").addClass("gnb-on")
+		});
+        $(".btn-close").on("click", function(e) {
+			$(".gnb").removeClass("gnb-on")
+		});
+	});
+</script>
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="btn btn-back">
+									<span class="icn"></span>
+									<span class="lbl">뒤로</span>
+								</a>
+							</div>
+							<div class="c q2"></div>
+							<div class="c q3">
+								<a href="#" class="btn btn-send">
+									<span class="icn"></span>
+									<span class="lbl">보내기</span>
+								</a>
+								<a href="#" class="btn btn-menu run-menu">
+									<span class="icn"></span>
+									<span class="lbl">전체메뉴</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div class="section">
+			<div class="content">
+				<div class="title-bar">
+					<h2 class="title">페이지 타이틀</h2>
+				</div>
+				<!-- ... -->
+				<div class="btn-bar botm-fix">
+					<a href="#" class="btn btn-contained"><span class="lbl">네, 한도조회 시작할래요</span><span class="icn"></span></a>
+					<a href="#" class="btn btn-uncontained"><span class="lbl">그냥 한번 둘러볼래요</span><span class="icn rang"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="section">
+			<div class="content"></div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="gnb">
+	<div class="main-menu">
+		<!-- 닫기버튼 영역 상단 고정 -->
+		<div class="btn-close"><a href="#" class="icn icn-close"></a></div>
+
+		<!-- 전체메뉴 스크롤영역 -->
+		<div class="content-inner">
+			<!-- 내정보 -->
+			<div class="my-info">
+				<div class="profile">
+					<a href="#" class="t">
+						<div class="my-photo c"></div>
+						<div class="my-name c">김지수님,<br>안녕하세요.</div>
+						<div class="icn rang c"></div>
+					</a>
+				</div>
+				<div class="link-box">
+					<a href="#" class="custom-center t">
+						<span class="icn c"></span>
+						<span class="label c">고객센터</span>
+					</a>
+					<a href="#" class="certify-center t">
+						<span class="icn c"></span>
+						<span class="label c">인증센터</span>
+					</a>
+				</div>
+				<div class="report">
+					<a href="#" class="t">
+						<span class="label c">전체대출현황</span>
+						<span class="count c">
+							<span class="info">3건<span class="icn rang"></span></span>
+						</span>
+					</a>
+				</div>
+			</div>
+
+			<!-- 메뉴리스트 -->
+			<div class="all-menu">
+				<ul class="list-group">
+					<ul>
+						<li class="tit-area">
+							<h2>개인금융</h2>
+							<span>2건</span>
+						</li>
+					</ul>
+					<li class="list-1th"><a href="#">전체계좌 조회</a></li>
+					<li class="list-1th"><a href="#">거래내역 조회</a></li>
+					<li class="list-1th"><a href="#">상환스케줄 조회</a></li>
+					<li class="list-1th"><a href="#">월납입금 상환</a></li>
+					<li class="list-1th"><a href="#">보관금액 출금</a></li>
+					<li class="list-1th"><a href="#">추가대출</a></li>
+					<li class="list-1th"><a href="#">대출관리</a></li>
+					<li class="list-1th"><a href="#">상품안내</a></li>
+				</ul>
+
+				<ul class="list-group">
+					<ul>
+						<li class="tit-area">
+							<h2>자동차금융</h2>
+							<span>2건</span>
+						</li>
+					</ul>
+					<li class="list-1th"><a href="#">전체계좌 조회</a></li>
+					<li class="list-1th"><a href="#">거래내역 조회</a></li>
+					<li class="list-1th"><a href="#">상환스케줄 조회</a></li>
+					<li class="list-1th"><a href="#">월납입금 상환</a></li>
+					<li class="list-1th"><a href="#">대출관리</a></li>
+					<li class="list-1th"><a href="#">상품안내</a></li>
+				</ul>
+
+				<ul class="list-group">
+					<ul>
+						<li class="tit-area">
+							<h2>기업금융</h2>
+						</li>
+					</ul>
+					<li class="list-1th"><a href="#">상품안내</a></li>
+				</ul>
+
+				<ul class="list-group">
+					<ul>
+						<li class="tit-area">
+							<h2>서류 및 약관동의</h2>
+						</li>
+					</ul>
+					<li class="list-1th"><a href="#">서류발급신청</a></li>
+					<li class="list-1th"><a href="#">서류제출</a></li>
+					<li class="list-1th"><a href="#">재직/소득서류제출서비스 신청동의</a></li>
+					<li class="list-1th"><a href="#">신용조회 동의</a></li>
+					<li class="list-1th"><a href="#">전세자금대출조회동의</a></li>
+				</ul>
+
+				<ul class="list-group">
+					<ul>
+						<li class="tit-area">
+							<h2>소비자 보호안내</h2>
+						</li>
+					</ul>
+						<li class="list-1th"><a href="#">금리인하요구권 안내 및 신청</a></li>
+					<li class="list-1th"><a href="#">대출모집인 수수료율 공시</a></li>
+					<li class="list-1th"><a href="#">고객관리 안내문</a></li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

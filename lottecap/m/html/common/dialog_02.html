@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/device.css">
+<script type="text/javascript" src="../../../m/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../m/scripts/common.js"></script>
+<script type="text/javascript" src="../../../m/scripts/default.js"></script>
+<style>
+	.dialog .scroll{max-height:calc(100vh - 240px);overflow-y:auto;background:#0ff;}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="btn btn-back">
+									<span class="icn"></span>
+									<span class="lbl">뒤로</span>
+								</a>
+							</div>
+							<div class="c q2"></div>
+							<div class="c q3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div class="section">
+			<div class="content">
+				<div class="title-bar">
+					<h2>대화창 공통</h2>
+					<div class="desc">
+						<p></p>
+					</div>
+				</div>
+				<div class="btn-bar pv8">
+					<a href="#dialog_01" class="btn btn-outlined run-dialog"><span class="lbl">재직/소득서류제출</span><span class="icn"></span></a><!-- #dialog_01: 사용할 대화창 아이디 설정 --><!-- .run-dialog: 대화창 실행 -->
+				</div>
+				<div class="btn-bar pv8">
+					<a href="#dialog_02" class="btn btn-outlined run-dialog"><span class="lbl">L.POINT 회원 전용상품</span><span class="icn"></span></a>
+				</div>
+				<div class="btn-bar pv8">
+					<a href="#dialog_03" class="btn btn-outlined run-dialog"><span class="lbl">인지세 확인</span><span class="icn"></span></a>
+				</div>
+				<div class="btn-bar pv8">
+					<a href="#dialog_04" class="btn btn-outlined run-dialog"><span class="lbl">Overflow 확인</span><span class="icn"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="section">
+			<div class="content"></div>
+		</div>
+	</div>
+</div>
+<div id="dialog_01" class="dialog" title="재직/소득서류제출">
+	<div class="title-bar">
+		<h3>
+			<span class="icn doc"></span>
+			<span class="lbl">재직/소득서류제출</span>
+		</h3>
+	</div>
+	<div class="content">
+		<div class="desc">
+			<p>공인인증서를 등록하고 재직/소득서류제출 서비스를 신청하면, 각종 증빙서류를 간편하게 제출하여 <strong>한도를 늘리고 금리를 낮출 수</strong> 있어요!</p>
+		</div>
+		<div class="field radio">
+			<div class="input t">
+				<div class="r">
+					<div class="ui-irc c">
+						<label>
+							<input type="radio" autocomplete="off" name="radio_yorn_01">
+							<div class="t">
+								<div class="c"><span class="icn"></span></div>
+								<div class="c">
+									<span class="lbl">네, 신청할게요</span>
+								</div>
+							</div>
+						</label>
+					</div>
+					<div class="ui-irc c">
+						<label>
+							<input type="radio" autocomplete="off" name="radio_yorn_01">
+							<div class="t">
+								<div class="c"><span class="icn"></span></div>
+								<div class="c">
+									<span class="lbl">아니오</span>
+								</div>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn-bar">
+			<a href="#" class="btn btn-contained close-dialog"><span class="icn"></span><span class="lbl">확인</span></a>
+		</div>
+	</div>
+</div>
+<div id="dialog_02" class="dialog" title="L.POINT 회원 전용상품">
+	<div class="title-bar">
+		<h3>
+			<span class="icn l-point"></span>
+			<span class="lbl">L.POINT 회원 전용상품</span>
+		</h3>
+	</div>
+	<div class="content">
+		<div class="desc">
+			<p>L.POINT 회원이시라면, 전용상품을 함께 조회 할 수 있어요!</p>
+		</div>
+		<div class="field radio">
+			<div class="input t">
+				<div class="r">
+					<div class="ui-irc c">
+						<label>
+							<input type="radio" autocomplete="off" name="radio_yorn_02">
+							<div class="t">
+								<div class="c"><span class="icn"></span></div>
+								<div class="c">
+									<span class="lbl">네, 신청할게요</span>
+								</div>
+							</div>
+						</label>
+					</div>
+					<div class="ui-irc c">
+						<label>
+							<input type="radio" autocomplete="off" name="radio_yorn_02">
+							<div class="t">
+								<div class="c"><span class="icn"></span></div>
+								<div class="c">
+									<span class="lbl">아니오</span>
+								</div>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn-bar">
+			<a href="#" class="btn btn-contained close-dialog"><span class="icn"></span><span class="lbl">확인</span></a>
+		</div>
+	</div>
+</div>
+<div id="dialog_03" class="dialog" title="인지세 확인">
+	<div class="title-bar">
+		<h3>인지세를 확인해주세요</h3>
+	</div>
+	<div class="content">
+		<div class="info">
+			<div class="info-lst">
+				<ul>
+					<li>
+						<dl>
+							<dt><label>인지세</label></dt>
+							<dd><span class="value price"><span class="val">35,000</span><span class="crc">원</span></span></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="desc">
+				<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+			</div>
+			<hr>
+			<div class="info-lst subinfo">
+				<ul>
+					<li>
+						<dl>
+							<dt><label>인지세</label></dt>
+							<dd><span class="value price"><span class="val">35,000</span><span class="crc">원</span></span></dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><label>1억원초과</label></dt>
+							<dd><span class="value price"><span class="val">75,000</span><span class="crc">원</span></span></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="btn-bar">
+			<a href="#" class="btn btn-contained close-dialog"><span class="icn"></span><span class="lbl">확인</span></a>
+		</div>
+	</div>
+</div>
+<div id="dialog_04" class="dialog" title="Overflow">
+	<div class="title-bar">
+		<h3>Overflow를 확인해주세요</h3>
+	</div>
+	<div class="content">
+		<div class="scroll">
+			<div class="info">
+				<div class="info-lst">
+					<ul>
+						<li>
+							<dl>
+								<dt><label>인지세</label></dt>
+								<dd><span class="value price"><span class="val">35,000</span><span class="crc">원</span></span></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="desc">
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+					<p>인지세는 대출금액에 따라 부과되며, 채무자와 금융회사가 각 50%씩 부담하는 금액입니다. 고객 부담금공제 후 대출금액이 송금됩니다.</p>
+				</div>
+				<hr>
+				<div class="info-lst subinfo">
+					<ul>
+						<li>
+							<dl>
+								<dt><label>인지세</label></dt>
+								<dd><span class="value price"><span class="val">35,000</span><span class="crc">원</span></span></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><label>1억원초과</label></dt>
+								<dd><span class="value price"><span class="val">75,000</span><span class="crc">원</span></span></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="btn-bar">
+			<a href="#" class="btn btn-contained close-dialog"><span class="icn"></span><span class="lbl">확인</span></a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

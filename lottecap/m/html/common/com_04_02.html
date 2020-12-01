@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/device.css">
+<script type="text/javascript" src="../../../m/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../m/scripts/common.js"></script>
+<script type="text/javascript" src="../../../m/scripts/default.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="btn btn-back">
+									<span class="icn"></span>
+									<span class="lbl">뒤로</span>
+								</a>
+							</div>
+							<div class="c q2"></div>
+							<div class="c q3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div class="section">
+			<div class="content">
+				<div class="form">
+					<div class="field file">
+						<label class="lbl"></label>
+						<div class="input">
+							<div class="ui-file"><a href="#" class="btn btn-file-add"><span class="icn"></span><span class="lbl">서류추가</span></a></div>
+							<div class="ui-file">
+								<div class="thumb">
+									<a href="#overlay_01" class="fig run-open-overlay"><img src="../../../m/images/temp/ocr_thumb.png" alt="첨부서류"></a>
+									<a href="#" class="btn btn-del"><span class="icn"></span><span class="lbl">삭제</span></a>
+								</div>
+							</div>
+							<div class="ui-file">
+								<div class="thumb">
+									<a href="#" class="fig"><img src="../../../m/images/temp/ocr_thumb.png" alt="첨부서류"></a>
+									<div class="msg">
+										<div class="t">
+											<div class="c">
+												<p>개인정보 보호를 위해 신분증 미리보기 기능은 지원하지 않습니다.</p>
+											</div>
+										</div>
+									</div>
+									<a href="#" class="btn btn-del"><span class="icn"></span><span class="lbl">삭제</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn-bar botm-fix">
+					<div class="guide-text">
+						<p class="tit">서류 제출시 유의사항</p>
+						<div class="tip-lst">
+							<p class="tip"><span class="icn"></span> jpg, jpeg 파일만 업로드해주세요.</p>
+						</div>
+					</div>
+					<a href="#overlay_02" class="btn btn-contained run-open-overlay"><span class="lbl">총 2장 서류제출하기</span><span class="icn"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="overlay_01" class="container overlay ui-viewer">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="btn btn-close-overlay run-close-overlay">
+									<span class="icn"></span>
+									<span class="lbl">닫기</span>
+								</a>
+							</div>
+							<div class="c q2"></div>
+							<div class="c q3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="section">
+			<div class="content">
+				<div class="title-bar">
+					<h2>서류 보기</h2>
+				</div>
+				<div class="subcontent has-carousel">
+					<div class="ui-carousel viewer-carousel">
+						<div class="swiper-container">
+							<h4 class="slide-cnt-title">거래구조 및 취급절차</h4>
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide"><img src="../../../m/images/temp/sample_doc_01.jpg" alt="첨부서류"></li>
+								<li class="swiper-slide"><img src="../../../m/images/temp/sample_doc_02.jpg" alt="첨부서류"></li>
+								<li class="swiper-slide"><img src="../../../m/images/temp/sample_doc_03.jpg" alt="첨부서류"></li>
+								<li class="swiper-slide"><img src="../../../m/images/temp/sample_doc_04.jpg" alt="첨부서류"></li>
+							</ul>
+						</div>
+						<div class="swiper-control">
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="section">
+			<div class="content"></div>
+		</div>
+	</div>
+</div>
+<div id="overlay_02" class="container overlay ocr res">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="btn btn-close-overlay run-close-overlay">
+									<span class="icn"></span>
+									<span class="lbl">닫기</span>
+								</a>
+							</div>
+							<div class="c q2"></div>
+							<div class="c q3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="section">
+			<div class="content">
+				<div class="title-bar">
+					<h2>촬영한 주민등록증을<br> 확인해주세요</h2>
+					<div class="desc">
+						<p>반사, 기울임, 흐릿하게 촬영되었을 경우 재촬영</p>
+					</div>
+				</div>
+				<div class="ui-idfc s3">
+					<div class="fig"><img src="../../../m/images/temp/id_card_br8.png" alt="신분증이미지"></div>
+					<div class="btn-bar tar">
+						<a href="#" class="btn btn-retake"><span class="icn"></span><span class="lbl">다시 촬영하기</span></a>
+					</div>
+				</div>
+				<div class="btn-bar botm-fix">
+					<a href="#" class="btn btn-contained"><span class="lbl">촬영이미지 확인</span><span class="icn"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

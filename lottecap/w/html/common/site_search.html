@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/device.css">
+<script type="text/javascript" src="../../../w/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="../../../w/scripts/common.js"></script>
+<script type="text/javascript" src="../../../w/scripts/default.js"></script>
+<script type="text/javascript" src="../../../w/scripts/device.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(".field.search-site").each(function() {
+            var $field = $(this),
+                $input = $(".input", $field);
+            $(".btn-search-submit", $field).on("click", function (e) {
+                e.preventDefault();
+                var $outpost = $(".suggest-lst", $field);
+                if ($outpost.length > 0) $outpost.remove();
+
+                // 추천검색어 드랍다운 생성
+                var html = [], h = -1;
+                html[++h] = "<div class=\"suggest-lst\">";
+                html[++h] = "<div class=\"nano\">";
+                html[++h] = "<ul class=\"nano-content\">";
+                html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 11길</span></a></li>";
+                html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 11길 10</span></a></li>";
+                html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 11길 11</span></a></li>";
+                html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 12길</span></a></li>";
+                html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 12길 12</span></a></li>";
+                html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 13길 10</span></a></li>";
+                html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 13길 11</span></a></li>";
+                html[++h] = "<li><a href=\"#\" class=\"suggest\"><span class=\"icn\"></span><span class=\"lbl\"><em>도산</em>대로 13길 12</span></a></li>";
+                html[++h] = "</ul>";
+                html[++h] = "</div>";
+                html[++h] = "</div>";
+                var $af = $(html.join("")).appendTo($input);
+                $field.searchDrop("on");
+                $(".nano", $af).nanoScroller();
+
+                $(".suggest", $af).on("click", function (e) {
+                    e.preventDefault();
+                    var val = $(".lbl", $(this)).html().replace(/<.*?>/g, "");
+                    var $target = $("input", $input);
+                    if ($field.hasClass("email-address")) $target = $("input.email-provider", $input);
+                    $target.val(val);
+                    $field.searchDrop("off");
+                });
+            });
+            $(".btn-input-clear", $field).on("click", function (e) {
+                e.preventDefault();
+                $field.searchDrop("off");
+            });
+        });
+    });
+</script>
+</head>
+
+<body>
+<div class="container member ui-split">
+    <div class="header">
+        <div class="section">
+            <div class="menu-bar">
+				<div class="t">
+					<div class="r">
+						<div class="c q1">
+							<a href="#" class="logo" title="롯데캐피탈"></a>
+						</div>
+						<div class="c q2">
+                            <div class="gnb">
+                                <ul>
+                                    <li class="depth1 run-gnb">
+                                        <a href="#" class="q1"><span class="icn"></span><span class="lbl">신용대출</span></a>
+                                        <ul class="depth2">
+                                            <li><a href="#">한도조회</a></li>
+                                            <li><a href="#">신청서작성</a></li>
+                                            <li><a href="#">추가대출 알아보기</a></li>
+                                            <li><a href="#">신용조회동의</a></li>
+                                            <li><a href="#">대출상담신청</a></li>
+                                            <li><a href="#">대출상담조회</a></li>
+                                            <li><a href="#">대출계산기</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth1 run-gnb">
+                                        <a href="#" class="q2"><span class="icn"></span><span class="lbl">자동차금융</span></a>
+                                        <ul class="depth2">
+                                            <li><a href="#">자동차금융 신청하기</a></li>
+                                            <li><a href="#">상품소개</a></li>
+                                            <li><a href="#">에이전시조회</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth1 run-gnb">
+                                        <a href="#" class="q3"><span class="icn"></span><span class="lbl">기업금융</span></a>
+                                        <ul class="depth2">
+                                            <li><a href="#">상품소개</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth1 run-gnb">
+                                        <a href="#" class="q4"><span class="icn"></span><span class="lbl">리스/할부금융</span></a>
+                                        <ul class="depth2">
+                                            <li><a href="#">상품소개</a></li>
+                                            <li><a href="#">리스차량 감가율 안내</a></li>
+                                            <li><a href="#">리스 금융 상담 연락처</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="gnb-bg"></div>
+                            </div>
+						</div>
+						<div class="c q3">
+							<div class="shortcut-bar">
+								<ul class="q1">
+									<li><a href="#" class="btn portal"><span class="icn"></span><span class="lbl">금융소비자보호포털</span></a></li>
+									<li><a href="#" class="btn customer"><span class="icn"></span><span class="lbl">고객센터</span></a></li>
+								</ul>
+								<ul class="q3">
+									<li><a href="#" class="btn btn-auth"><span class="icn"></span><span class="lbl">공인인증센터</span></a></li>
+									<li><a href="#" class="btn btn-login"><span class="icn"></span><span class="lbl">로그인</span></a></li>
+									<li><a href="#" class="btn btn-search run-site-search"><span class="icn"></span><span class="lbl">검색</span></a></li>
+									<li><a href="#" class="btn btn-menu run-site-menu"><span class="icn"></span><span class="lbl">전체메뉴</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="site-menu">
+                <div class="section">
+                    <div class="menu-bar">
+                        <div class="t">
+                            <div class="r">
+                                <div class="c q1">
+                                    <div class="logo"><img src="../../../w/images/logo-lotte-full.png" alt="롯데캐피탈"></div>
+                                </div>
+                                <div class="c q2"></div>
+                                <div class="c q3"><a href="#" class="btn btn-close close-site-menu"><span class="icn"></span><span class="lbl">닫기</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="user-profile">
+                            <a href="#" class="t">
+                                <div class="c q1"><span class="portrait"><img src="../../../w/images/logo-lotte-short.png" alt="롯데캐피탈"></span></div>
+                                <div class="c q2">
+                                    <div class="msg">반갑습니다</div>
+                                    <div class="desc">
+                                        <p>로그인 후 서비스를 이용하세요</p>
+                                    </div>
+                                </div>
+                                <div class="c q3"><span class="icn rang"></span></div>
+                            </a>
+                        </div>
+                        <div class="user-profile">
+                            <a href="#" class="t">
+                                <div class="c q1"><span class="portrait"><img src="../../../w/images/img_myphoto.png" alt="프로필사진"></span></div>
+                                <div class="c q2">
+                                    <div class="msg"><span class="user-name">김지수님</span>,<br> 안녕하세요.</div>
+                                </div>
+                                <div class="c q3"><span class="icn rang"></span></div>
+                            </a>
+                        </div>
+                        <div class="all-menu">
+                            <ul class="lvl2">
+                                <li>
+                                    <h2>신용대출</h2>
+                                    <ul class="lvl3">
+                                        <li><a href="#">한도조회</a></li>
+                                        <li><a href="#">상품소개</a></li>
+                                        <li><a href="#">신청서작성</a></li>
+                                        <li><a href="#">추가대출 알아보기</a></li>
+                                        <li><a href="#">신용조회동의</a></li>
+                                        <li><a href="#">대출상담사조회</a></li>
+                                        <li><a href="#">대출계산기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>자동차금융</h2>
+                                    <ul class="lvl3">
+                                        <li><a href="#">견적조회</a></li>
+                                        <li><a href="#">상품소개</a></li>
+                                        <li><a href="#">신용조회동의</a></li>
+                                        <li><a href="#">스마트서류제출</a></li>
+                                        <li><a href="#">추가서류제출</a></li>
+                                        <li><a href="#">결제정보및청구지등록</a></li>
+                                        <li><a href="#">전자약정</a></li>
+                                        <li><a href="#">차량인수등록</a></li>
+                                        <li><a href="#">에이전시조회</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>기업금융</h2>
+                                    <ul class="lvl3">
+                                        <li><a href="#">상품소개</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>리스금융</h2>
+                                    <ul class="lvl3">
+                                        <li><a href="#">상품소개</a></li>
+                                        <li><a href="#">일반/리스 금융상담연락처</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>전세자금대출</h2>
+                                    <ul class="lvl3">
+                                        <li><a href="#">상품소개</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="lvl2">
+                                <li>
+                                    <h2 class="pc-only">인터넷서류제출</h2>
+                                    <h2 class="mo-only">모바일서류제출</h2>
+                                    <ul class="lvl3">
+                                        <li><a href="#">재직/소득서류제출</a></li>
+                                        <li><a href="#">신분증제출</a></li>
+                                        <li><a href="#">추가증빙서류제출</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <h2>마이페이지</h2>
+                                    <ul class="lvl3">
+                                        <li><a href="#">전체계좌조회</a></li>
+                                        <li><a href="#">거래내역조회</a></li>
+                                        <li><a href="#">범칙금조회</a></li>
+                                        <li><a href="#">보험정보조회</a></li>
+                                        <li><a href="#">상환스케줄조회</a></li>
+                                        <li><a href="#">카드관리</a></li>
+                                        <li><a href="#">내정보관리</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>고객센터</h2>
+                                    <ul class="lvl3">
+                                        <li><a href="#">ARS서비스</a></li>
+                                        <li><a href="#">상담서비스</a></li>
+                                        <li><a href="#">전자민원</a></li>
+                                        <li><a href="#">열람청구신청</a></li>
+                                        <li><a href="#">금리인하요구권</a></li>
+                                        <li><a href="#">리스케줄링동의</a></li>
+                                        <li><a href="#">증명서류발급</a></li>
+                                        <li><a href="#">신용정보이용및제공사실조회</a></li>
+                                        <li><a href="#">전화권유판매원 조회</a></li>
+                                        <li><a href="#">세이프키발급</a></li>
+                                        <li><a href="#">자주묻는질문</a></li>
+                                        <li><a href="#">이메일정보무단수집거부</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>알림</h2>
+                                    <ul class="lvl3">
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="#">이벤트</a></li>
+                                        <li><a href="#">대출모집인수수료율공시</a></li>
+                                        <li><a href="#">업무위탁현황</a></li>
+                                        <li><a href="#">제3자제공현황</a></li>
+                                        <li><a href="#">LPOINT이용안내</a></li>
+                                        <li><a href="#">롯데캡론카드안내</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>회사소개</h2>
+                                    <ul class="lvl3">
+                                        <li><a href="#">LOTTE CAPITAL소개</a></li>
+                                        <li><a href="#">윤리경영</a></li>
+                                        <li><a href="#">경영정보</a></li>
+                                        <li><a href="#">PR</a></li>
+                                        <li><a href="#">사회공헌</a></li>
+                                        <li><a href="#">채용정보</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="btn-bar">
+                            <a href="#" class="btn btn-outlined"><span class="lbl">로그아웃</span><span class="icn"></span></a>
+                        </div>
+                    </div>
+                    <div class="responsive"><a href="#" class="btn btn-close close-site-menu"><span class="icn"></span><span class="lbl">닫기</span></a></div>
+                </div>
+            </div>
+            <div class="site-search">
+                <div class="section">
+                    <div class="menu-bar">
+                        <div class="t">
+                            <div class="r">
+                                <div class="c q1"><div class="logo"><img src="../../../w/images/logo-lotte-full.png" alt="롯데캐피탈"></div></div>
+                                <div class="c q2"></div>
+                                <div class="c q3"><a href="#" class="btn btn-close close-site-search"><span class="icn"></span><span class="lbl">닫기</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content nano">
+                        <div class="nano-content">
+                            <div class="form">
+                                <div class="field search search-site">
+                                    <div class="input">
+                                        <div class="t">
+                                            <div class="c"><input type="text" placeholder="검색어" title="검색어"><span class="btn btn-input-clear" tabindex="0"><span class="icn"></span><span class="lbl">삭제</span></span></div>
+                                            <div class="c"><a href="#" class="btn btn-search-submit"><span class="icn mag"></span><span class="lbl">검색</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gnb-bg"></div>
+    </div>
+    <div id="main" class="main" tabindex="-1">
+        <div class="section">
+            <div class="content">
+                <div class="sub-tit">
+                    <div class="location t">
+                        <div class="r">
+                            <div class="c">
+                                <a href="#" class="btn"><span class="lbl">1depth</span><span class="icn rang"></span></a><a href="#" class="btn"><span class="lbl">2depth</span><span class="icn rang"></span></a><a href="#" class="btn"><span class="lbl">3depth</span><span class="icn rang"></span></a><a href="#" class="btn current"><span class="lbl">4depth</span><span class="icn rang"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-bar">
+                        <h2 class="title">반갑습니다<br> 사업자등록번호를<br class="br"> 입력하고<br class="br"> 롯데캐피탈 서비스를<br class="br"> 이용해보세요</h2>
+                        <p class="desc">법인 공인인증서 인증으로 롯데캐피탈의<br> 모든 서비스를 이용해보세요.</p>
+                    </div>
+                    <div class="visual vis-tablet"></div>
+                </div>
+                <div class="sub-cont">
+                    <div class="form">
+                        <div class="field crn case-2">
+                            <label class="lbl">사업자등록번호를 입력해주세요</label>
+                            <div class="input tar">
+                                <input type="tel" class="db" placeholder="숫자 10자리">
+                            </div>
+                            <div class="btn-bar tar">
+                                <a href="#" class="btn btn-next run-next"><span class="lbl">다음</span><span class="icn rarr"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer common"></div>
+</div>
+</body>
+</html>

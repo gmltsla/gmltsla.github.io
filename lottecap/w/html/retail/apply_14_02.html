@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/device.css">
+<script type="text/javascript" src="../../../w/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="../../../w/scripts/common.js"></script>
+<script type="text/javascript" src="../../../w/scripts/default.js"></script>
+<script type="text/javascript" src="../../../w/scripts/device.js"></script>
+</head>
+
+<body>
+<div class="container retail ui-sheet has-stepper">
+    <div class="header common"></div>
+    <div id="main" class="main" tabindex="-1">
+        <div class="section">
+            <div class="content">
+                <div class="ui-stepper">
+                    <ol>
+                        <li class="q1">
+                            <div class="stepper"><span class="num">1</span><span class="lbl">대출정보</span></div>
+                        </li>
+                        <li class="q2">
+                            <div class="stepper"><span class="num">2</span><span class="lbl">결제정보</span></div>
+                        </li>
+                        <li class="q3">
+                            <div class="stepper"><span class="num">3</span><span class="lbl">약관동의</span></div>
+                        </li>
+                        <li class="q4 current">
+                            <div class="stepper"><span class="num">4</span><span class="lbl">신청정보확인</span></div>
+                        </li>
+                        <li class="q5">
+                            <div class="stepper"><span class="num">5</span><span class="lbl">본인인증</span></div>
+                        </li>
+                    </ol>
+                    <a href="#" class="handle stepper-over"></a>
+                </div>
+            </div>
+            <div class="sheet retail new">
+                <div class="content">
+                    <div class="title-bar">
+                        <h2>재직/소득서류제출 서비스</h2>
+                    </div>
+                    <div class="form">
+                        <div class="field checkbox doc">
+                            <label class="lbl">제출하실 서류를 선택해주세요</label>
+                            <div class="input">
+                                <div class="ui-irc select-type checked">
+                                    <label>
+                                        <input type="checkbox" autocomplete="off" checked="checked">
+                                        <div class="t">
+                                            <div class="c">
+                                                <span class="lbl">건강보험료납입확인서/자격득실확인서</span>
+                                            </div>
+                                            <div class="c"><span class="icn"></span></div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ui-irc select-type ui-accordion checked">
+                                    <label>
+                                        <input type="checkbox" autocomplete="off" checked="checked" class="get-accordion">
+                                        <div class="t">
+                                            <div class="c"><span class="lbl">소득금액증명</span></div>
+                                            <div class="c"><span class="icn"></span></div>
+                                        </div>
+                                    </label>
+                                    <div class="set-accordion" style="display: block;">
+                                        <div class="dropdown ui-dropdown" title="선택">
+                                            <a href="#" class="output"><span class="val">근로소득자용(직장인 및 일용근로자)</span></a>
+                                            <div class="input">
+                                                <ul class="options">
+                                                    <li class="option selected"><span class="lbl">근로소득자용(직장인 및 일용근로자)</span><span class="icn"></span><span class="val">근로소득자용(직장인 및 일용근로자)</span></li>
+                                                    <li class="option"><span class="lbl">종합소득세 신고자용(개인사업자)</span><span class="icn"></span><span class="val">종합소득세 신고자용(개인사업자)</span></li>
+                                                    <li class="option"><span class="lbl">연말정산한 사업소득자용(보험모집인 등)</span><span class="icn"></span><span class="val">연말정산한 사업소득자용(보험모집인 등)</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui-irc select-type ui-accordion checked">
+                                    <label>
+                                        <input type="checkbox" autocomplete="off" class="get-accordion" disabled="disabled">
+                                        <!-- <input type="checkbox" autocomplete="off" class="get-accordion" checked="checked"> -->
+                                        <div class="t">
+                                            <div class="c"><span class="lbl">부가세증빙서류</span></div>
+                                            <div class="c"><span class="icn"></span></div>
+                                        </div>
+                                    </label>
+                                    <div class="set-accordion" style="display: block;">
+                                        <!-- <div class="dropdown ui-dropdown" title="선택">
+                                            <a href="#" class="output"><span class="val">부가가치세과세표준증명</span></a>
+                                            <div class="input">
+                                                <ul class="options">
+                                                    <li class="option selected"><span class="lbl">부가가치세과세표준증명</span><span class="icn"></span><span class="val">부가가치세과세표준증명</span></li>
+                                                    <li class="option"><span class="lbl">면세사업자수입금액증명</span><span class="icn"></span><span class="val">면세사업자수입금액증명</span></li>
+                                                </ul>
+                                            </div>
+                                        </div> -->
+                                        <div class="inline-tip mt4"><span class="icn"></span><span class="lbl">국세청에 등록된 사업자정보가 없습니다</span></div>
+                                    </div>
+                                </div>
+                                <div class="ui-irc select-type">
+                                    <div class="t">
+                                        <div class="c">
+                                            <label>
+                                                <input type="checkbox" autocomplete="off">
+                                                <div class="t">
+                                                    <div class="c">
+                                                        <span class="lbl">주민등록서류</span>
+                                                    </div>
+                                                    <div class="c"><span class="icn"></span></div>
+                                                </div>
+                                            </label>
+                                            <div class="desc">경기도 광명시 하안로 320</div>
+
+                                        </div>
+                                        <div class="c">
+                                            <!-- <a href="#" class="btn btn-into"><span class="icn rang"></span><span class="lbl">보기</span></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui-irc select-type">
+                                    <label>
+                                        <input type="checkbox" autocomplete="off">
+                                        <div class="t">
+                                            <div class="c">
+                                                <span class="lbl">신용카드/직불카드 공제대상금액합계</span>
+                                            </div>
+                                            <div class="c"><span class="icn"></span></div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ui-irc select-type">
+                                    <div class="t">
+                                        <div class="c">
+                                            <label>
+                                                <input type="checkbox" autocomplete="off">
+                                                <div class="t">
+                                                    <div class="c">
+                                                        <span class="lbl">은행거래내역서</span>
+                                                    </div>
+                                                    <div class="c"><span class="icn"></span></div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="c">
+                                            <!-- <a href="#" class="btn btn-into"><span class="icn rang"></span><span class="lbl">보기</span></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-bar botm-fix">
+                                <a href="#" class="btn btn-contained"><span class="lbl">서류제출</span><span class="icn"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- //section-->
+    </div><!-- //main -->
+    <div class="footer common"></div><!-- //footer -->
+</div><!-- //container -->
+</body>
+</html>

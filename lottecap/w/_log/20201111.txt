@@ -1,0 +1,24 @@
+제목: 자동차금융 > 상품소개 > 오토리스 (김상호)
+내용: 조판부호 삭제
+대상: 1페이지
+/w/html/auto/about_01.html
+
+제목: 신용대출 > 상품소개 (김상호)
+내용: 문구수정 (레드마인#2390)
+대상: 1페이지
+/w/html/retail/about_01.html (70-367)
+
+제목: 리스금융 (김진주)
+내용: 연락처문구수정 및 추가
+대상: 6페이지
+/w/html/lease/about_01_01.html(595-620)
+/w/html/lease/about_01_02.html(252-277)
+/w/html/lease/about_01_03.html(373-398)
+/w/html/lease/about_01_04.html(327-352)
+/w/html/lease/about_01_05.html(326-351)
+/w/html/lease/contact_01.html(81-106, 자동차금융 연락처 삭제)
+
+제목: 회사소개 (김진주)
+내용: 문구수정
+대상: 1페이지
+/w/html/about/company_02_1.html (129, 139)

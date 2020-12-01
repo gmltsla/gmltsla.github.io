@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../w/styles/device.css">
+<script type="text/javascript" src="../../../w/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../w/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="../../../w/scripts/common.js"></script>
+<script type="text/javascript" src="../../../w/scripts/default.js"></script>
+<script type="text/javascript" src="../../../w/scripts/device.js"></script>
+</head>
+
+<body>
+<div class="container ntfc ui-split"><!-- .ui-split: 양쪽으로 나뉜 페이지 형식-->
+    <div class="header common"></div>
+    <div id="main" class="main" tabindex="-1">
+        <div class="section">
+            <div class="content">
+                <div class="sub-tit">
+                    <div class="location t">
+                        <div class="r">
+                            <div class="c">
+                                <a href="#" class="btn"><span class="lbl">1depth</span><span class="icn rang"></span></a><a href="#" class="btn"><span class="lbl">2depth</span><span class="icn rang"></span></a><a href="#" class="btn"><span class="lbl">3depth</span><span class="icn rang"></span></a><a href="#" class="btn current"><span class="lbl">4depth</span><span class="icn rang"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-bar">
+                        <h2 class="title">업무위탁현황을<br>확인하세요</h2>
+                        <div class="desc">
+                            <p>업무위탁현황을 확인하실 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="visual"></div>
+                </div>
+				<div class="sub-cont">
+					<div class="title-bar">
+						<h2>업무위탁현황</h2>
+					</div>
+                    <div class="content">
+                        <div class="data-grd consignment-grd t2">
+                            <table>
+                                <caption>업무위탁현황</caption>
+                                <colgroup>
+                                    <col class="q1">
+                                    <col class="q2">
+                                    <col class="q3">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="th0">위탁목적</th>
+                                        <th scope="col">수탁사</th>
+                                        <th scope="col">연락처</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="first-td">대출카드 배송(전국) </td>
+                                        <td>㈜국제</td>
+                                        <td>1544-3411 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td">안내장, 청구서 및 상환스케줄 발송, 대출금상환 확인서, 신용정보 제공 사실 통지서, 연체대출원리금 상환안내장, 소송접수 완료 및 전액상환 청구 안내, 소송에 따른 강제집행 예정 통보</td>
+                                        <td>빌포스트㈜ </td>
+                                        <td>02-2024-9358 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td" rowspan=5>대출신청서 상 기재사항의 확인<br>사업장 운영여부, 직종확인 및 현장정보 확인<br>현장실사업무 및 부가서비스(대출신청 관련 구비서류 전달)<br>채무변제 유도 및 변제금 수령 대행<br>할부 또는 리스차량 회수 대행 </td>
+                                        <td rowspan=5>SM 신용정보<br>주식회사</td>
+                                        <td>02-3477-2860</td>
+                                    </tr>
+                                    <tr>
+                                        <td>02-390-9698 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02-3277-9178 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02-3277-9298 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02-390-9699 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td" rowspan=3>사업장 운영여부, 직종확인 및 현장정보 확인,<br>현장실사업무 및 부가서비스<br>민원서류 발급 대행 업무계약<br>채무변제 유도 및 변제금 수령대행 </td>
+                                        <td rowspan=3>미래 신용정보</td>
+                                        <td>02-3451-9681 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02-3151-9661 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02-2211-8988 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td">채무변제 유도 및 변제금 수령 대행 </td>
+                                        <td>고려신용정보</td>
+                                        <td>02-3450-9600 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td" rowspan=3>할부 또는 리스차량 회수 대행 <br><br>채무변제 유도 및 변제금 수령 대행 </td>
+                                        <td rowspan=3>중앙신용정보</td>
+                                        <td>02-559-0114 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02-559-0130 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02-559-0148 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td">리스물건 또는 담보물건 점유확보를 위한 경비대행 </td>
+                                        <td>㈜맥풍</td>
+                                        <td>02-516-4141 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td" rowspan=4>연계계좌개설 </td>
+                                        <td>우리은행 </td>
+                                        <td>1588-5000 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>국민은행 </td>
+                                        <td>1599-9999 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>KEB하나은행 </td>
+                                        <td>1588-1111 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>농협은행 </td>
+                                        <td>1661-3000 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td">모바일 신용정보 동의, cms업무 </td>
+                                        <td>삼성SDS</td>
+                                        <td>02-6155-3114 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td" rowspan=2>sms 발송 </td>
+                                        <td>롯데정보통신 </td>
+                                        <td>02-2626-4000 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>KT</td>
+                                        <td>100 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td">홈페이지 및 모바일 서비스 운영 및 관리 </td>
+                                        <td>이니텍㈜ </td>
+                                        <td>02-6445-7113 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td">ars의 visual voice 외 3개 서비스 </td>
+                                        <td>㈜스마트구루 </td>
+                                        <td>02-3462-4003 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td" rowspan=8>차량출고, 차량등록, 탁송(신차, 반환차 등),소모품제공, <br>이전 및 변경</td>
+                                        <td>㈜로이</td>
+                                        <td>02-507-5411</td>
+                                    </tr>
+                                    <tr>
+                                        <td>(유)유림로지텍</td>
+                                        <td>031-667-9218</td>
+                                    </tr>
+                                    <tr>
+                                        <td>㈜동운로지스</td>
+                                        <td>02-3432-0355</td>
+                                    </tr>
+                                    <tr>
+                                        <td>㈜선보</td>
+                                        <td>031-378-5461</td>
+                                    </tr>
+                                    <tr>
+                                        <td>㈜롯데렌탈</td>
+                                        <td>031-650-2525</td>
+                                    </tr>
+                                    <tr>
+                                        <td>㈜에스티모터스</td>
+                                        <td>02-577-7250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>㈜카홀딩스</td>
+                                        <td>1600-0394</td>
+                                    </tr>
+                                    <tr>
+                                        <td>롯데글로벌로지스㈜</td>
+                                        <td>1588-2121</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td" rowspan=3>잔가보장 대상차량에 대한 차량진단, 반납, 평가, 잔가보장, 소유권 이전 </td>
+                                        <td>㈜L&amp;B Networks</td>
+                                        <td>1661-5253 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>㈜카서울모터스</td>
+                                        <td>02-2210-8222</td>
+                                    </tr>
+                                    <tr>
+                                        <td>㈜카루스</td>
+                                        <td>02-6959-0501</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td" rowspan=2>리스 자동차의 정비 및 관리 </td>
+                                        <td>㈜카일이삼제스퍼 </td>
+                                        <td>02-539-5477 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>롯데칠성음료신용협동조합 </td>
+                                        <td>02-2621-6664 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td">리스 자동차의 과태료, 범칙금 청구서 우편발송 및 납부 </td>
+                                        <td>주식회사 발렉스</td>
+                                        <td>02-3393-8344 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td" rowspan=4>차량 탁송(반환차 등) 및 공매 </td>
+                                        <td>㈜카옥션 </td>
+                                        <td>1661-5777 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>(주)마이카옥션</td>
+                                        <td>031-282-0858 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>AJ셀카 주식15회사</td>
+                                        <td>1588-0015</td>
+                                    </tr>
+                                    <tr>
+                                        <td>롯데글로벌로지스㈜</td>
+                                        <td>1588-2121</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td">할부상품 신청 및 약정 대행 </td>
+                                        <td>㈜와이케이건기 </td>
+                                        <td>02-1588-3806 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td" rowspan=2>리스상품 신청 및 약정 대행, 재매입 약정</td>
+                                        <td>캐논코리아비지니스솔루션㈜</td>
+                                        <td>02-3450-0836 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>칼자이스비전코리아㈜</td>
+                                        <td>02-3140-2898 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td">차량등록(명의이전등록 포함), 차량 근저당권 설정등록, 변경, 말소 대행업체 </td>
+                                        <td>㈜오토클릭서비스 </td>
+                                        <td>02-3461-6630</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td" rowspan=4>자동차 매각 업체 </td>
+                                        <td>롯데렌탈 주식회사 </td>
+                                        <td>031-650-2525 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>주식회사 에스티모터스 </td>
+                                        <td>02-577-7250 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>(주)카홀딩스 </td>
+                                        <td>1600-0394 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>SJ셀카 주식회사</td>
+                                        <td>1588-0015</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td">대출모집, 리스금융 등 대출상품 중개 및 알선 </td>
+                                        <td><!--<input type="text" size="30" name="cnt" style="text-align:center; border:0 solid black;">-->
+                                            <div><a class="pdf-download" href="#">상담사</a> , <a class="pdf-download" href="#" target="_blank">에이전시</a> , (주)카카오뱅크, (주)비바리퍼블리카, (주)핀다, (주)카카오페이, 주식회사 디렉션인크레딧</div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td">건설기계, 공작기계, 의료기기 및 일반산업설비 등에 대한 리스, 할부, 론, 취급의 상담.중개.알선 및 대출계약의 체결대행</td>
+                                        <td>
+                                            <div><a class="pdf-download" href="#">에이전시</a> , <a class="pdf-download" href="#" target="_blank">판매사원</a></div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td" rowspan=6>자문, 소송 위임</td>
+                                        <td>법무법인(유)한결</td>
+                                        <td>02-3487-3000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>법무법인(유한)율촌 </td>
+                                        <td>02-528-5200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>김앤장법률사무소</td>
+                                        <td>02-3703-1114</td>
+                                    </tr>
+                                    <tr>
+                                        <td>법무사 김광선사무소</td>
+                                        <td>02-755-5446</td>
+                                    </tr>
+                                    <tr>
+                                        <td>법무법인 케이씨엘</td>
+                                        <td>02-721-4000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>법무법인 경연 </td>
+                                        <td>02-2058-0071</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td" rowspan=3>전세자금대출 모집</td>
+                                        <td>주식회사 선하</td>
+                                        <td>031-287-8059</td>
+                                    </tr>
+                                    <tr>
+                                        <td>(주)에이드컴</td>
+                                        <td>032-424-9908</td>
+                                    </tr>
+                                    <tr>
+                                        <td>(주)서현에프엘</td>
+                                        <td>031-212-2605</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td">전세자금대출 관련 질권설정 통지, 대환, 대출금 지급 대행 등 </td>
+                                        <td>법무법인 에이디엘 </td>
+                                        <td>02-525-9451 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td">약정서 등 서류 수령, 물건점검 등 사후 업무 일체 </td>
+                                        <td>나이스 신용정보㈜</td>
+                                        <td>02-2122-2000 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-td">카드본인확인서비스 </td>
+                                        <td>라온시큐어 </td>
+                                        <td>1644-1687 </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+				</div>
+            </div><!-- //content -->
+        </div><!-- //section -->
+    </div><!-- //main -->
+    <div class="footer common"></div><!-- //footer -->
+</div><!-- //container -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+제목: 드랍다운 접근성 추가 (김상호)
+내용: <div.output> 엘리먼트를 <a>로 수정
+대상: 4페이지
+/w/html/retail/apply_11_01.html (82)
+/w/html/retail/contract_11_01.html (81)
+/w/html/retail/new_11_01.html (82)
+/w/html/retail/new_11_02.html (82)
+
+제목: 접근성 관련 title 추가 (김상호)
+내용: <input> 엘리먼트에 title 추가
+대상: 1페이지
+/w/html/my/acc_01_01.html (100)
+
+제목: 신용대출 > 약관동의 > 선택약관 (김정희)
+내용: 약관 문구 수정
+대상: 1페이지
+/w/html/retail/new_13_02.html (79,96,159)
+
+제목: 마이페이지 > 대출관리 > 결제계좌변경 > 정보입력 (김정희)
+내용: .lbl 아래 .tip-lst 마크업 추가
+대상: 1페이지
+/w/html/my/acc_01_01.html(63-65)

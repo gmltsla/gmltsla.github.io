@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/device.css">
+<script type="text/javascript" src="../../../m/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../m/scripts/common.js"></script>
+<script type="text/javascript" src="../../../m/scripts/default.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="btn btn-back">
+									<span class="icn"></span>
+									<span class="lbl">뒤로</span>
+								</a>
+								<a href="#" class="btn btn-close-sheet">
+									<span class="icn"></span>
+									<span class="lbl">닫기</span>
+								</a>
+							</div>
+							<div class="c q2"></div>
+							<div class="c q3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div class="section">
+			<div class="content">
+				<div class="title-bar">
+					<h2>선택 약관에 동의해주시고<br>혜택을 받으세요</h2>
+				</div>
+				<div class="ui-term">
+					<div class="ui-irc checked">
+						<div class="t">
+							<div class="c">
+								<label>
+									<input type="checkbox" autocomplete="off">
+									<div class="t">
+										<div class="c"><span class="icn check"></span></div>
+										<div class="c">
+											<p class="lbl">L.POINT 신청<br> 개인(신용)정보의 제공 동의</p>
+										</div>
+									</div>
+								</label>
+							</div>
+							<div class="c"><a href="#" class="btn btn-into"><span class="icn rang"></span><span class="lbl">보기</span></a></div>
+						</div>
+					</div>
+					<div class="ui-accordion">
+						<div class="ui-irc">
+							<div class="t">
+								<div class="c">
+									<label>
+										<input type="checkbox" autocomplete="off" class="checkbox-group-01-apex">
+										<div class="t">
+											<div class="c"><span class="icn check"></span></div>
+											<div class="c">
+												<p class="lbl">개인(신용)정보의 제공 필수적 동의</p>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div class="c get-accordion"><span class="icn angle"></span></div>
+							</div>
+						</div>
+						<div class="inline-tip"><span class="icn"></span><span class="lbl">신청 시 L.POINT 적립 혜택을 드려요</span></div>
+						<div class="set-accordion">
+							<ul>
+								<li>
+									<div class="ui-irc">
+										<div class="t">
+											<div class="c">
+												<label>
+													<input type="checkbox" autocomplete="off" class="checkbox-group-01">
+													<div class="t">
+														<div class="c"><span class="icn check"></span></div>
+														<div class="c">
+															<span class="lbl">개인정보의 필수적인 수집 · 이용에 관한사항</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="c">
+												<a href="#" class="btn btn-into"><span class="icn rang"></span><span class="lbl">보기</span></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ui-irc">
+										<div class="t">
+											<div class="c">
+												<label>
+													<input type="checkbox" autocomplete="off" class="checkbox-group-01">
+													<div class="t">
+														<div class="c"><span class="icn check"></span></div>
+														<div class="c">
+															<span class="lbl">개인정보의 필수적인 제3자 제공에 관한사항</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="c">
+												<a href="#" class="btn btn-into"><span class="icn rang"></span><span class="lbl">보기</span></a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ui-accordion">
+						<div class="ui-irc">
+							<div class="t">
+								<div class="c">
+									<label>
+										<input type="checkbox" autocomplete="off" class="checkbox-group-02-apex">
+										<div class="t">
+											<div class="c"><span class="icn check"></span></div>
+											<div class="c">
+												<span class="lbl">개인(신용)정보의 제공 선택적 동의</span>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div class="c get-accordion"><span class="icn angle"></span></div>
+							</div>
+						</div>
+						<div class="set-accordion">
+							<ul>
+								<li>
+									<div class="ui-irc">
+										<div class="t">
+											<div class="c">
+												<label>
+													<input type="checkbox" autocomplete="off" class="checkbox-group-02">
+													<div class="t">
+														<div class="c"><span class="icn check"></span></div>
+														<div class="c">
+															<span class="lbl">개인정보의 선택적인 수집이용에 관한 사항</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="c">
+												<a href="#" class="btn btn-into"><span class="icn rang"></span><span class="lbl">보기</span></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ui-irc">
+										<div class="t">
+											<div class="c">
+												<label>
+													<input type="checkbox" autocomplete="off" class="checkbox-group-02">
+													<div class="t">
+														<div class="c"><span class="icn check"></span></div>
+														<div class="c">
+															<span class="lbl">개인정보의 선택적인 제3자 제공에 관한 사항</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="c">
+												<a href="#" class="btn btn-into"><span class="icn rang"></span><span class="lbl">보기</span></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ui-irc">
+										<div class="t">
+											<div class="c">
+												<label>
+													<input type="checkbox" autocomplete="off" class="checkbox-group-02 checkbox-group-0201-apex at-least">
+													<div class="t">
+														<div class="c"><span class="icn check"></span></div>
+														<div class="c">
+															<span class="lbl">(L.POINT) 서비스 및 마케팅 정보 수신 동의</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="c"></div>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<div class="ui-irc">
+												<div class="t">
+													<div class="c">
+														<label>
+															<input type="checkbox" autocomplete="off" class="checkbox-group-0201">
+															<div class="t">
+																<div class="c"><span class="icn check"></span></div>
+																<div class="c">
+																	<span class="lbl">DM 수신</span>
+																</div>
+															</div>
+														</label>
+													</div>
+													<div class="c"></div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="ui-irc">
+												<div class="t">
+													<div class="c">
+														<label>
+															<input type="checkbox" autocomplete="off" class="checkbox-group-0201">
+															<div class="t">
+																<div class="c"><span class="icn check"></span></div>
+																<div class="c">
+																	<span class="lbl">TM 수신</span>
+																</div>
+															</div>
+														</label>
+													</div>
+													<div class="c"></div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="ui-irc">
+												<div class="t">
+													<div class="c">
+														<label>
+															<input type="checkbox" autocomplete="off" class="checkbox-group-0201">
+															<div class="t">
+																<div class="c"><span class="icn check"></span></div>
+																<div class="c">
+																	<span class="lbl">SMS 수신</span>
+																</div>
+															</div>
+														</label>
+													</div>
+													<div class="c"></div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="ui-irc">
+												<div class="t">
+													<div class="c">
+														<label>
+															<input type="checkbox" autocomplete="off" class="checkbox-group-0201">
+															<div class="t">
+																<div class="c"><span class="icn check"></span></div>
+																<div class="c">
+																	<span class="lbl">E-mail 수신</span>
+																</div>
+															</div>
+														</label>
+													</div>
+													<div class="c"></div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="ui-term">
+					<div class="ui-irc">
+						<div class="t">
+							<div class="c">
+								<label>
+									<div class="t">
+										<div class="c">
+											<span class="lbl">L.POINT 회원약관</span>
+										</div>
+									</div>
+								</label>
+							</div>
+							<div class="c">
+								<a href="#" class="btn btn-into"><span class="icn rang"></span><span class="lbl">보기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ui-term">
+					<div class="ui-irc">
+						<div class="t">
+							<div class="c">
+								<label>
+									<input type="checkbox" autocomplete="off" class="checkbox-group-03-apex">
+									<div class="t">
+										<div class="c"><span class="icn check"></span></div>
+										<div class="c">
+											<span class="lbl">상품 안내를 위한 개인 동의(선택)</span>
+										</div>
+									</div>
+								</label>
+							</div>
+							<div class="c"></div>
+						</div>
+					</div>
+					<div class="inline-tip ml30"><span class="icn"></span><span class="lbl">동의 시 추가대출이 가능할 때 안내드려요</span></div>
+					<ul>
+						<li>
+							<div class="ui-irc">
+								<div class="t">
+									<div class="c">
+										<label>
+											<input type="checkbox" autocomplete="off" class="checkbox-group-03 checkbox-group-0301-apex at-least">
+											<div class="t">
+												<div class="c"><span class="icn check"></span></div>
+												<div class="c">
+													<span class="lbl">상품서비스 안내를 위한 개인(신용)정보의 수집 및 이용 동의</span>
+												</div>
+											</div>
+										</label>
+									</div>
+									<div class="c">
+										<a href="#" class="btn btn-into"><span class="icn rang"></span><span class="lbl">보기</span></a>
+									</div>
+								</div>
+							</div>
+							<ul>
+								<li>
+									<div class="ui-irc">
+										<div class="t">
+											<div class="c">
+												<label>
+													<input type="checkbox" autocomplete="off" class="checkbox-group-0301">
+													<div class="t">
+														<div class="c"><span class="icn check"></span></div>
+														<div class="c">
+															<span class="lbl">전화</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="c"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ui-irc">
+										<div class="t">
+											<div class="c">
+												<label>
+													<input type="checkbox" autocomplete="off" class="checkbox-group-0301">
+													<div class="t">
+														<div class="c"><span class="icn check"></span></div>
+														<div class="c">
+															<span class="lbl">전자메일</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="c"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ui-irc">
+										<div class="t">
+											<div class="c">
+												<label>
+													<input type="checkbox" autocomplete="off" class="checkbox-group-0301">
+													<div class="t">
+														<div class="c"><span class="icn check"></span></div>
+														<div class="c">
+															<span class="lbl">문자</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="c"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ui-irc">
+										<div class="t">
+											<div class="c">
+												<label>
+													<input type="checkbox" autocomplete="off" class="checkbox-group-0301">
+													<div class="t">
+														<div class="c"><span class="icn check"></span></div>
+														<div class="c">
+															<span class="lbl">서면</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="c"></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<hr>
+				<div class="form">
+					<div class="field radio">
+						<label class="lbl">
+							<p class="h2-title">취약금융소비자(선택)</p>
+						</label>
+						<div class="input">
+							<ul>
+								<li>
+									<div class="ui-irc">
+										<div class="t">
+											<div class="c">
+												<label>
+													<input type="radio" autocomplete="off" name="radio_customer_01">
+													<div class="t">
+														<div class="c"><span class="icn"></span></div>
+														<div class="c">
+															<span class="lbl">해당사항 없음</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="c"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ui-irc">
+										<div class="t">
+											<div class="c">
+												<label>
+													<input type="radio" autocomplete="off" name="radio_customer_01">
+													<div class="t">
+														<div class="c"><span class="icn"></span></div>
+														<div class="c">
+															<span class="lbl">65세 이상의 고령자</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="c"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ui-irc">
+										<div class="t">
+											<div class="c">
+												<label>
+													<input type="radio" autocomplete="off" name="radio_customer_01">
+													<div class="t">
+														<div class="c"><span class="icn"></span></div>
+														<div class="c">
+															<span class="lbl">은퇴자</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="c"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ui-irc">
+										<div class="t">
+											<div class="c">
+												<label>
+													<input type="radio" autocomplete="off" name="radio_customer_01">
+													<div class="t">
+														<div class="c"><span class="icn"></span></div>
+														<div class="c">
+															<span class="lbl">주부</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="c"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ui-irc">
+										<div class="t">
+											<div class="c">
+												<label>
+													<input type="radio" autocomplete="off" name="radio_customer_01">
+													<div class="t">
+														<div class="c"><span class="icn"></span></div>
+														<div class="c">
+															<span class="lbl">기타</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="c"></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="btn-bar tar">
+					<a href="#" class="btn btn-proc btn-next"><span class="lbl">다음</span><span class="icn rarr"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="section">
+			<div class="content"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

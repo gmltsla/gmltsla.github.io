@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Default">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/plugins/swiper-5.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/base.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/common.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/default.css">
+<link type="text/css" rel="stylesheet" href="../../../m/styles/device.css">
+<script type="text/javascript" src="../../../m/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/hammer-2.0.8.min.js"></script>
+<script type="text/javascript" src="../../../m/plugins/swiper-5.4.2.min.js"></script>
+<script type="text/javascript" src="../../../m/scripts/common.js"></script>
+<script type="text/javascript" src="../../../m/scripts/default.js"></script>
+<style type="text/css">
+.ui-viewer{}
+.ui-viewer > div + div{margin-top:20px;}
+.ui-viewer .tool-bar{}
+.ui-viewer .tool-bar > .t{}
+.ui-viewer .tool-bar > .t > .r{}
+.ui-viewer .tool-bar > .t > .r > .c{vertical-align:middle;}
+.ui-viewer .tool-bar > .t > .r > .c.td-select{}
+.ui-viewer .tool-bar > .t > .r > .c.td-btn{width:1px;padding:0 0 0 20px;}
+.ui-viewer .tool-bar select{display:block;width:100%;height:40px;font-size:16px;padding:0 10px;border:1px solid #ccc;border-radius:8px;}
+.ui-viewer .tool-bar .btn-submit{height:40px;padding:0 20px;border-radius:8px;background:#a9a9a9;}
+.ui-viewer .tool-bar .btn-submit .lbl{color:#fff;}
+.ui-viewer .pane{}
+.ui-viewer .pane > .t,
+.ui-viewer .pane > .t > .c{display:block;}
+.ui-viewer .pane > .t > .c + .c{margin-top:20px;}
+.ui-viewer .pane .form{}
+.ui-viewer .pane .form .field{}
+.ui-viewer .pane .form .field .input{border:0;}
+.ui-viewer .pane .form .field textarea{display:block;width:100%;height:25vh;font-size:16px;padding:10px;border:1px solid #ccc;border-radius:8px;background:#f3f3f3;}
+.ui-viewer .pane .viewer{display:block;width:100%;min-height:50vh;border:1px solid #ccc;border-radius:8px;}
+.ui-viewer .pane .viewer .temp{padding:20px;}
+
+@media all and (min-width:568px){
+	.ui-viewer .pane > .t{display:table;width:100%;}
+	.ui-viewer .pane > .t > .c{display:table-cell;vertical-align:top;}
+	.ui-viewer .pane > .t > .c.q1{width:35%;}
+	.ui-viewer .pane > .t > .c.q2{padding:0 0 0 20px;}
+	.ui-viewer .pane .form .field textarea,
+	.ui-viewer .pane .viewer{display:block;width:100%;min-height:50vh;}
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="menu-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="btn btn-back">
+									<span class="icn"></span>
+									<span class="lbl">뒤로</span>
+								</a>
+							</div>
+							<div class="c q2"></div>
+							<div class="c q3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div class="section">
+			<div class="content">
+				<div class="ui-viewer">
+					<div class="tool-bar">
+						<div class="t">
+							<div class="r">
+								<div class="c td-select">
+									<select>
+										<option value="">옵션 #1</option>
+										<option value="">옵션 #2</option>
+										<option value="">옵션 #3</option>
+										<option value="">옵션 #4</option>
+										<option value="">옵션 #5</option>
+									</select>
+								</div>
+								<div class="c td-btn">
+									<a href="#" class="btn btn-submit"><span class="icn"></span><span class="lbl">버튼</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pane">
+						<div class="t">
+							<div class="c q1">
+								<div class="form">
+									<div class="field">
+										<div class="input">
+											<textarea></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="c q2">
+								<div class="viewer">
+									<div class="temp">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum qui ex corrupti a voluptates mollitia perferendis voluptate, voluptatem repudiandae omnis praesentium cum laboriosam numquam aperiam error atque distinctio ipsam. Eum.</p>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum qui ex corrupti a voluptates mollitia perferendis voluptate, voluptatem repudiandae omnis praesentium cum laboriosam numquam aperiam error atque distinctio ipsam. Eum.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="section">
+			<div class="content">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
