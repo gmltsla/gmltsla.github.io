@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈 관리자</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="/a/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/swiper-6.2.0.min.css">
+<link type="text/css" rel="stylesheet" href="/a/styles/admin.css">
+<script type="text/javascript" src="/a/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="/a/plugins/swiper-6.2.0.min.js"></script>
+<script type="text/javascript" src="/a/scripts/admin.js"></script>
+</head>
+<body>
+<div class="container admin"><!-- .container.admin: 관리자 -->
+	<div class="header common"><!-- ajax load: common.html --></div>
+	<div class="nav common"><!-- ajax load: common.html --></div>
+	<div id="main" class="main">
+		<div class="section q1">
+			<div class="content">
+				<div class="title-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c">
+								<h2>이벤트 관리</h2>
+							</div>
+							<div class="c"></div>
+						</div>
+					</div>
+				</div>
+				<div class="tbl-dtl bbs-dtl"><!-- .bbs-dtl: 게시판 상세 -->
+					<div class="post-stat-bar">
+						<div class="t">
+							<div class="r">
+								<div class="c">
+									<dl>
+										<dt>번호</dt>
+										<dd>100</dd>
+									</dl>
+									<dl>
+										<dt>작성자</dt>
+										<dd>롯데캐피탈</dd>
+									</dl>
+								</div>
+								<div class="c">
+									<dl>
+										<dt>작성일</dt>
+										<dd>2020.08.30</dd>
+									</dl>
+									<dl>
+										<dt>최종수정일</dt>
+										<dd>2020-09-21</dd>
+									</dl>
+									<dl>
+										<dt>조회수</dt>
+										<dd>1,000</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="article">
+						<table>
+							<colgroup>
+								<col class="th">
+								<col class="td">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">제목</th>
+									<td>
+										<div class="field sbj"><input type="text" value="행운상자를 열어서 포인트를 받으세요!"></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">기간</th>
+									<td>
+										<div class="field fromto-date">
+											<input type="text" class="datepicker" value="2020.09.01">
+											<span class="tilde">~</span>
+											<input type="text" class="datepicker" value="2020.10.01">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">방식</th>
+									<td>
+										<div class="field">
+											<label class="irc"><input type="radio" autocomplete="off" name="radio_option_01" checked="checked"><span class="lbl">공지형(텍스트)</span></label>
+											<label class="irc"><input type="radio" autocomplete="off" name="radio_option_01"><span class="lbl">참여형(링크)</span></label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">내용</th>
+									<td>
+										<div class="field cnt">
+<textarea>
+응시자격
+해외 여행 및 건강상 결격 사유가 없는 분
+남성의 경우, 군필 혹은 면제자
+장애인, 국가유공자 및 보훈대상자는 관련 법령에 의거하여 우대
+산업안전 관련 학위 취득자 및 관련 자격 소지자 (산업안전, 건설안전 산업기사 등) 우대
+
+채용조건
+고용형태 : 정규직
+직급 및 처우 : 회사 내규에 따름 - 면접 후 결정
+
+지원서 접수
+접수기간 : 2020년 07월 08일 (수) ~ 2020년 07월 20일 (월)
+※ 접수시작 : 접수시작일 00시 01분, 접수마감 : 접수마감일 23시 59분
+접수방법 : 채용홈페이지 온라인 접수 (http://job.lotte.co.kr) - 하단 입사지원하기 클릭
+</textarea>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">PC 썸네일</th>
+									<td>
+										<div class="field db">
+											<div class="ui-file">
+												<div class="t">
+													<div class="r">
+														<div class="c"><a href="/a/images/temp/index_banner_01_w.png" target="_blank" class="fig"><img src="/a/images/temp/index_banner_01_w.png"></a></div>
+														<div class="c">
+															<div class="field"><button type="button" class="btn btn-file-del"><span class="icn"></span><span class="lbl">파일삭제</span></button></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="file-meta">
+												<div class="t">
+													<div class="r">
+														<div class="c th">링크주소(href)</div>
+														<div class="c td"><input type="text" class="db" value="http://www.lottecap.com"></div>
+													</div>
+													<div class="r">
+														<div class="c th">대체텍스트(alt)</div>
+														<div class="c td"><input type="text" class="db" value="롯데캐피탈 모바일앱 다운로드하기"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">모바일 썸네일</th>
+									<td>
+										<div class="field db">
+											<div class="ui-file">
+												<div class="t">
+													<div class="r">
+														<div class="c"><a href="/a/images/temp/index_banner_01_m.png" target="_blank" class="fig"><img src="/a/images/temp/index_banner_01_m.png"></a></div>
+														<div class="c">
+															<div class="field"><button type="button" class="btn btn-file-del"><span class="icn"></span><span class="lbl">파일삭제</span></button></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="file-meta">
+												<div class="t">
+													<div class="r">
+														<div class="c th">링크주소(href)</div>
+														<div class="c td"><input type="text" class="db" value="http://www.lottecap.com"></div>
+													</div>
+													<div class="r">
+														<div class="c th">대체텍스트(alt)</div>
+														<div class="c td"><input type="text" class="db" value="롯데캐피탈 모바일앱 다운로드하기"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="btn-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c">
+								<button type="button" class="btn btn-proc btn-del"><span class="icn"></span><span class="lbl">삭제</span></button>
+							</div>
+							<div class="c">
+								<button type="button" class="btn btn-proc btn-sav"><span class="icn"></span><span class="lbl">저장</span></button>
+								<button type="button" class="btn btn-proc btn-rst"><span class="icn"></span><span class="lbl">취소</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer common"><!-- ajax load: common.html --></div>
+</div>
+</body>
+</html>

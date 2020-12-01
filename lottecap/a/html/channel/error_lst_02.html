@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index, follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>롯데캐피탈 관리자</title>
+<link type="image/png" rel="shortcut icon" href="">
+<link type="text/css" rel="stylesheet" href="/a/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/jquery-ui-1.12.1.theme.min.css">
+<link type="text/css" rel="stylesheet" href="/a/plugins/swiper-6.2.0.min.css">
+<link type="text/css" rel="stylesheet" href="/a/styles/admin_02.css">
+<script type="text/javascript" src="/a/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="/a/plugins/jquery.nanoscroller-0.8.7.min.js"></script>
+<script type="text/javascript" src="/a/plugins/swiper-6.2.0.min.js"></script>
+<script type="text/javascript" src="/a/scripts/admin.js"></script>
+</head>
+<body>
+<div class="container admin"><!-- .container.admin: 관리자 -->
+	<div class="header">
+		<div class="section">
+			<div class="content">
+				<div class="status-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c q1">
+								<a href="#" class="logo"><img src="/a/images/header_logo.png" alt="롯데캐피탈"></a>
+								<div class="gnb">
+									<div class="a3">
+										<ul>
+											<li class="current">
+												<a href="#" class="btn btn-nav"><span class="icn"></span><span class="lbl">디지털채널통합관리</span></a>
+											</li>
+											<li>
+												<a href="#" class="btn btn-nav"><span class="icn"></span><span class="lbl">영업지원</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="c q2">
+								<div class="status">
+									<span class="stat time"><span class="icn"></span><span class="lbl">접속시간</span><span class="val">2020.10.01 13:11:50</span></span>
+									<span class="stat user"><span class="icn"></span><span class="lbl">경영혁신팀</span><span class="val">이하정</span><span class="suffix">님</span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="nav common"><!-- ajax load: common.html --></div>
+	<div id="main" class="main">
+		<div class="section q1">
+			<div class="content">
+				<div class="title-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c">
+								<h2>에러모니터링</h2>
+							</div>
+							<div class="c"></div>
+						</div>
+					</div>
+				</div>
+				<div class="tool-bar prop-bar">
+					<div class="t">
+						<div class="r">
+							<div class="c">
+								<table>
+									<colgroup>
+										<col class="th">
+										<col class="td">
+										<col class="th">
+										<col class="td">
+										<col class="th">
+										<col class="td">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">에러순번</th>
+											<td>
+												<div class="field fromto-num">
+													<input type="text">
+													<span class="tilde">~</span>
+													<input type="text">
+												</div>
+											</td>
+											<th scope="row">에러일자</th>
+											<td>
+												<div class="field fromto-date">
+													<input type="text" class="datepicker">
+													<span class="tilde">~</span>
+													<input type="text" class="datepicker">
+												</div>
+											</td>
+											<th scope="row">에러시간</th>
+											<td>
+												<div class="field fromto-time">
+													<input type="text" class="time hour">
+													<span class="colon">:</span>
+													<input type="text" class="time minute">
+													<span class="colon">:</span>
+													<input type="text" class="time second">
+													<span class="tilde">~</span>
+													<input type="text" class="time hour">
+													<span class="colon">:</span>
+													<input type="text" class="time minute">
+													<span class="colon">:</span>
+													<input type="text" class="time second">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" rowspan="2">고객번호</th>
+											<td rowspan="2">
+												<div class="field"><input type="text" class="db"></div>
+											</td>
+											<th scope="row">앱웹구분</th>
+											<td>
+												<div class="field">
+													<select>
+														<option>전체</option>
+														<option>모바일웹</option>
+													</select>
+												</div>
+											</td>
+											<th scope="row" rowspan="2">프로그램</th>
+											<td rowspan="2">
+												<div class="field db">
+													<select>
+														<option>전체</option>
+														<option>서류제출자동화 서비스</option>
+													</select>
+												</div>
+												<div class="field db">
+													<select>
+														<option>전체</option>
+														<option>서류선택 화면호출 (LC123456Action)</option>
+													</select>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">OS종류</th>
+											<td>
+												<div class="field">
+													<select>
+														<option>전체</option>
+														<option>MS Windows 10</option>
+													</select>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="c"><button type="submit" class="btn btn-search"><span class="icn"></span><span class="lbl">검색</span></button></div>
+						</div>
+					</div>
+				</div>
+				<div class="data-grd error-lst"><!-- .error-lst: 에러 목록 -->
+					<table>
+						<colgroup>
+							<col width="8%">
+							<col width="8%">
+							<col width="8%">
+							<col width="8%">
+							<col width="8%">
+							<col width="8%">
+							<col>
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>에러순번</th>
+								<th>에러일자</th>
+								<th>에러시간</th>
+								<th>고객번호</th>
+								<th>앱웹구분</th>
+								<th>OS종류</th>
+								<th>프로그램명</th>
+								<th>메시지</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>241299</td>
+								<td>2020-12-12</td>
+								<td>17:25:30</td>
+								<td>A1234567890</td>
+								<td>APP</td>
+								<td>Android</td>
+								<td>
+									<div class="prg">서류제출자동화 서비스 서류선택 화면호출 (LC123456Action)</div>
+								</td>
+								<td>
+									<div class="msg">java.lang.NullPointerException [x0000000]</div>
+								</td>
+							</tr>
+							<tr>
+								<td>241299</td>
+								<td>2020-12-12</td>
+								<td>17:25:30</td>
+								<td>A1234567890</td>
+								<td>APP</td>
+								<td>Android</td>
+								<td>
+									<div class="prg">서류제출자동화 서비스 서류선택 화면호출 (LC123456Action)</div>
+								</td>
+								<td>
+									<div class="msg">java.lang.NullPointerException [x0000000]</div>
+								</td>
+							</tr>
+							<tr>
+								<td>241299</td>
+								<td>2020-12-12</td>
+								<td>17:25:30</td>
+								<td>A1234567890</td>
+								<td>APP</td>
+								<td>Android</td>
+								<td>
+									<div class="prg">서류제출자동화 서비스 서류선택 화면호출 (LC123456Action)</div>
+								</td>
+								<td>
+									<div class="msg">java.lang.NullPointerException [x0000000]</div>
+								</td>
+							</tr>
+							<tr>
+								<td>241299</td>
+								<td>2020-12-12</td>
+								<td>17:25:30</td>
+								<td>A1234567890</td>
+								<td>APP</td>
+								<td>Android</td>
+								<td>
+									<div class="prg">서류제출자동화 서비스 서류선택 화면호출 (LC123456Action)</div>
+								</td>
+								<td>
+									<div class="msg">java.lang.NullPointerException [x0000000]</div>
+								</td>
+							</tr>
+							<tr>
+								<td>241299</td>
+								<td>2020-12-12</td>
+								<td>17:25:30</td>
+								<td>A1234567890</td>
+								<td>APP</td>
+								<td>Android</td>
+								<td>
+									<div class="prg">서류제출자동화 서비스 서류선택 화면호출 (LC123456Action)</div>
+								</td>
+								<td>
+									<div class="msg">java.lang.NullPointerException [x0000000]</div>
+								</td>
+							</tr>
+							<tr>
+								<td>241299</td>
+								<td>2020-12-12</td>
+								<td>17:25:30</td>
+								<td>A1234567890</td>
+								<td>APP</td>
+								<td>Android</td>
+								<td>
+									<div class="prg">서류제출자동화 서비스 서류선택 화면호출 (LC123456Action)</div>
+								</td>
+								<td>
+									<div class="msg">java.lang.NullPointerException [x0000000]</div>
+								</td>
+							</tr>
+							<tr>
+								<td>241299</td>
+								<td>2020-12-12</td>
+								<td>17:25:30</td>
+								<td>A1234567890</td>
+								<td>APP</td>
+								<td>Android</td>
+								<td>
+									<div class="prg">서류제출자동화 서비스 서류선택 화면호출 (LC123456Action)</div>
+								</td>
+								<td>
+									<div class="msg">java.lang.NullPointerException [x0000000]</div>
+								</td>
+							</tr>
+							<tr>
+								<td>241299</td>
+								<td>2020-12-12</td>
+								<td>17:25:30</td>
+								<td>A1234567890</td>
+								<td>APP</td>
+								<td>Android</td>
+								<td>
+									<div class="prg">서류제출자동화 서비스 서류선택 화면호출 (LC123456Action)</div>
+								</td>
+								<td>
+									<div class="msg">java.lang.NullPointerException [x0000000]</div>
+								</td>
+							</tr>
+							<tr>
+								<td>241299</td>
+								<td>2020-12-12</td>
+								<td>17:25:30</td>
+								<td>A1234567890</td>
+								<td>APP</td>
+								<td>Android</td>
+								<td>
+									<div class="prg">서류제출자동화 서비스 서류선택 화면호출 (LC123456Action)</div>
+								</td>
+								<td>
+									<div class="msg">java.lang.NullPointerException [x0000000]</div>
+								</td>
+							</tr>
+							<tr>
+								<td>241299</td>
+								<td>2020-12-12</td>
+								<td>17:25:30</td>
+								<td>A1234567890</td>
+								<td>APP</td>
+								<td>Android</td>
+								<td>
+									<div class="prg">서류제출자동화 서비스 서류선택 화면호출 (LC123456Action)</div>
+								</td>
+								<td>
+									<div class="msg">java.lang.NullPointerException [x0000000]</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="pagination">
+					<div class="align">
+						<div class="direction">
+							<a href="#" class="d first disabled"><span class="icn"></span><span class="lbl">처음</span></a>
+							<a href="#" class="d prev disabled"><span class="icn"></span><span class="lbl">이전</span></a>
+						</div>
+						<div class="fraction">
+							<span class="d current"><span class="icn"></span><span class="lbl">1</span></span>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">2</span></a>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">3</span></a>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">4</span></a>
+							<a href="#" class="d"><span class="icn"></span><span class="lbl">5</span></a>
+						</div>
+						<div class="direction">
+							<a href="#" class="d next"><span class="icn"></span><span class="lbl">다음</span></a>
+							<a href="#" class="d last"><span class="icn"></span><span class="lbl">끝</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer common"><!-- ajax load: common.html --></div>
+</div>
+</body>
+</html>
