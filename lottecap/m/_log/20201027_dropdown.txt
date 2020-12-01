@@ -1,7 +1,0 @@
-제목: 드랍다운 접근성 추가 (김상호)
-내용: <div.output> 엘리먼트를 <a>로 수정
-대상: 4파일
-/m/html/etc/preaudit_02.html (73, 105, 152, 163, 174, 185)
-/m/html/my/insr_01.html (65)
-/m/html/my/penalty_01.html (65)
-/m/html/retail/calc_01.html (92, 106)
